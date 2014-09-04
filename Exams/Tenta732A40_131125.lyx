@@ -1,0 +1,1159 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LINKÖPINGS UNIVERSITET
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2013-11-25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Institutionen för datavetenskap
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 7cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Probability Theory, 6 hp
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Avdelningen för statistik
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+732A40 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="22" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size large
+Exam in Probability Theory, 6 credits
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0cm"
+width "97.5col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exam time:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9-13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Allowed:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pocket calculator.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Table with common formulas and moment generating functions (distributed
+ with the exam).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Table of integrals (distributed with the exam).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Table with distributions from Appendix B in the course book (distributed
+ with the exam).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Examinator:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mattias Villani, phone.
+ 
+\begin_inset Formula $0709-373799$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grades:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Grades:	Maximum is 20 points.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+A=19-20 points 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+B=17-18 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+C=12-16 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+D=10-11 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+E=8-9 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+F=0-7 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+- Write clear and concise answers to the questions.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0cm"
+width "97.5col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The random variables 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ have a joint probability density of the form
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=\begin{cases}
+(1+x)y^{x}\exp(-x) & \text{if }0\leq x\leq\infty\text{ and }0\leq y\leq1\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Are 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ independent?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_layout Enumerate
+Compute the marginal density of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Does it belong to any of the known distributions?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_layout Enumerate
+Compute the conditional density of 
+\begin_inset Formula $Y|X=x$
+\end_inset
+
+.
+ Does it belong to any of the known distributions?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_layout Enumerate
+Compute 
+\begin_inset Formula $E\left[(X+2)Y\right]$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $Y|\theta\sim Bin(n,\theta)$
+\end_inset
+
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is a known positive integer.
+ Let the density of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ be
+\begin_inset Formula 
+\[
+p(\theta)=3\cdot(1-\theta)^{2}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $\theta\in[0,1]$
+\end_inset
+
+ and 
+\begin_inset Formula $p(\theta)=0$
+\end_inset
+
+ otherwise.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate the expected value and variance of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\begin_layout Enumerate
+Calculate the moment generating function for 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_layout Enumerate
+Compute the density of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X_{k}\sim Tri(0,1),\; k=1,2,...$
+\end_inset
+
+ be independent random variables.
+ (
+\begin_inset Formula $Tri(a,b)$
+\end_inset
+
+ is the triangular density over the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Derive the density of 
+\begin_inset Formula $Z_{n}=\mathrm{max}(X_{1},X_{2},...,X_{n}$
+\end_inset
+
+).
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $Y_{n}=\frac{1}{n}\sum_{k=1}^{n}X_{k}$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $Y_{n}\overset{p}{\rightarrow}\frac{1}{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty.$
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $W_{n}$
+\end_inset
+
+ be a sequence of random variables with finite mean 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and variance 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\bar{W}_{n}=\frac{1}{n}\sum_{i=1}^{n}W_{i}$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\bar{W}_{n}\cdot Y_{n}$
+\end_inset
+
+ converges in distribution as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+, and find the limiting distribution.
+ 
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X\sim\Gamma(\alpha,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $Y\sim\Gamma(\beta,1)$
+\end_inset
+
+ be independent Gamma variables.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $X+Y$
+\end_inset
+
+ and 
+\begin_inset Formula $X/(X+Y)$
+\end_inset
+
+ are independent
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_layout Enumerate
+Find the marginal density of 
+\begin_inset Formula $X/(X+Y)$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_layout Enumerate
+What is the moment generating function of 
+\begin_inset Formula $Z=\frac{c\cdot(X+Y)^{2}+d\cdot X}{X+Y}$
+\end_inset
+
+, where 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ are positive constants?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+Good luck!
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+Mattias
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1691 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\setcounter{MaxMatrixCols}{10}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{RawSienna}{cmyk}{0,0.87,0.82,0.31}
+\definecolor{gray97}{cmyk}{0,0,0,0.03}
+\definecolor{robinsegg}{cmyk}{0.18,0.04,0,0.07}
+\definecolor{cola}{cmyk}{0.642, 0, 0.566, 0.584}
+\definecolor{darkgreen}{cmyk}{0.37, 0, 0.71, 0.69}
+\definecolor{darkpurple}{cmyk}{0.33, 0.99, 0.0, 0.4}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usecolortheme[named=RawSienna]{structure}
+%\usecolortheme[RGB={205,0,0}]{structure}
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{infolines}
+\usetheme{default}
+\setbeamertemplate{blocks}[shadow=true]
+%\setbeamerfont{structure}{shape=\itshape}
+\usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{background canvas}{
+ % \ifnum \thepage>0 \relax % we are on the first page
+%\includegraphics[width=\paperwidth,height=\paperheight]{/home/mv/Dropbox/Foton/IconsWallpaper/greyribbonLighter.jpg}
+ % \else
+ 	% No background for page 2 and onwards
+ % \fi
+}
+\usepackage{bbding}
+\end_preamble
+\options xcolor=svgnames
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Probability Theory - L6
+\end_layout
+
+\end_inset
+
+
+\shape smallcaps
+Probability Theory
+\shape default
+
+\begin_inset VSpace 0.2cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lecture 6
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+
+
+\series bold
+Mattias Villani
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Statistics, LiU
+\end_layout
+
+\end_inset
+
+Division of Statistics
+\begin_inset Newline newline
+\end_inset
+
+Dept.
+ of Computer and Information Science
+\begin_inset Newline newline
+\end_inset
+
+Linköping University 
+\end_layout
+
+\begin_layout Date
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Overview Lecture 6
+\end_layout
+
+\begin_layout Itemize
+Modes of convergence
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+almost surely
+\end_layout
+
+\begin_layout Itemize
+in probability
+\end_layout
+
+\begin_layout Itemize
+in 
+\begin_inset Formula $r$
+\end_inset
+
+-mean
+\end_layout
+
+\begin_layout Itemize
+in distribution
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Law of large numbers
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Central limit theorem
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Convergence of sums, differences and products.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Introduction
+\end_layout
+
+\begin_layout Itemize
+We are often interested in the 
+\series bold
+large sample
+\series default
+, or 
+\series bold
+asymptotic,
+\series default
+ behavior of random variables.
+ 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We are considering a 
+\series bold
+sequence
+\series default
+ of random variables 
+\begin_inset Formula $X_{1},X_{2},....$
+\end_inset
+
+, also denoted by 
+\begin_inset Formula $\{X_{n}\}_{n=1}^{\infty}$
+\end_inset
+
+.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example: what can we say about the sample mean 
+\begin_inset Formula $X_{n}=n^{-1}\sum_{i=1}^{n}Y_{i}$
+\end_inset
+
+ in large samples? 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Does it converge to a single number? (
+\series bold
+law of large numbers
+\series default
+)
+\end_layout
+
+\begin_layout Itemize
+How fast? (central limit theorem)
+\end_layout
+
+\begin_layout Itemize
+What is the distribution of the sample mean in large samples? (
+\series bold
+central limit theorem
+\series default
+)
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The usual limit theorems from mathematics will not do.
+ Need to consider that 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ is a 
+\series bold
+random
+\series default
+ variable.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Markov and Chebyshev's inequalities
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Markov's inequality
+\series default
+.
+ For a positive random variable 
+\begin_inset Formula $X$
+\end_inset
+
+ and constant 
+\begin_inset Formula $a>0$
+\end_inset
+
+
+\series bold
+
+\begin_inset Formula 
+\[
+Pr(X\geq a)\leq\frac{E(X)}{a}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Proof: 
+\begin_inset Formula $a\cdot I_{X\geq a}\leq X$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula $E(a\cdot I_{X\geq a})=a\cdot Pr(X\geq a)\leq E(X)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Chebyshev's inequality
+\series default
+.
+ Let 
+\begin_inset Formula $Y$
+\end_inset
+
+ be a random variable with finite mean 
+\begin_inset Formula $m$
+\end_inset
+
+ and variance 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+Pr(\left|Y-m\right|\geq\varepsilon)\leq\frac{\sigma^{2}}{\varepsilon^{2}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Proof: Use Markov's inequality with 
+\begin_inset Formula $X=\left(Y-m\right)^{2}$
+\end_inset
+
+and 
+\begin_inset Formula $a=\varepsilon^{2}$
+\end_inset
+
+, and that 
+\begin_inset Formula $E(X)=E(Y-m)^{2}=\sigma^{2}$
+\end_inset
+
+.
+ We then have
+\begin_inset Formula 
+\[
+Pr\left(\left(Y-m\right)^{2}\geq\epsilon^{2}\right)\leq\frac{\sigma^{2}}{\varepsilon^{2}}
+\]
+
+\end_inset
+
+and therefore 
+\begin_inset Formula 
+\[
+Pr\left(\left|Y-m\right|\geq\varepsilon\right)\leq\frac{\sigma^{2}}{\varepsilon^{2}}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Almost sure convergence
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X_{1},...X_{n}$
+\end_inset
+
+ and 
+\begin_inset Formula $X$
+\end_inset
+
+ are random variables on the same probability space.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ converges 
+\series bold
+almost surely
+\series default
+ (a.s.) to 
+\begin_inset Formula $X$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ iff
+\begin_inset Formula 
+\[
+P\left(\left\{ \omega:X_{n}(\omega)\rightarrow X(\omega)\text{ as }n\rightarrow\infty\right\} \right)=1.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Denoted by 
+\begin_inset Formula $X_{n}\overset{a.s.}{\rightarrow}X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+For a given 
+\begin_inset Formula $\omega\in\Omega$
+\end_inset
+
+, 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $X_{n}(\omega)$
+\end_inset
+
+ 
+\begin_inset Formula $(n=1,2,...)$
+\end_inset
+
+ and 
+\begin_inset Formula $X(\omega)$
+\end_inset
+
+ are real numbers (not random variables).
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Almost sure convergence: check if the sequence of real numbers 
+\begin_inset Formula $X_{n}(\omega)$
+\end_inset
+
+ converges to the real number 
+\begin_inset Formula $X(\omega)$
+\end_inset
+
+ for all 
+\begin_inset Formula $\omega$
+\end_inset
+
+, except those 
+\begin_inset Formula $\omega$
+\end_inset
+
+ that have probability zero.
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example: roll two dice (
+\begin_inset Formula $\Omega=\{(1,1),(1,2),...,(6,6)\}$
+\end_inset
+
+).
+ Let 
+\begin_inset Formula $Y_{n}(\omega)$
+\end_inset
+
+ be the sum of the two dice in the 
+\begin_inset Formula $n$
+\end_inset
+
+th roll.
+ Let 
+\begin_inset Formula $X_{n}(\omega)=\frac{1}{n}\sum_{i=1}^{n}Y_{i}$
+\end_inset
+
+.
+ [Show simulation in R.]
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Convergence in probability
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ 
+\series bold
+converges in probability
+\series default
+ to 
+\begin_inset Formula $X$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ iff
+\begin_inset Formula 
+\[
+P\left(\left|X_{n}-X\right|>\varepsilon\right)\rightarrow0\quad\text{as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Denoted by 
+\begin_inset Formula $X_{n}\overset{p}{\rightarrow}X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{n}\sim Beta(n,n)$
+\end_inset
+
+ show that 
+\begin_inset Formula $X_{n}\overset{p}{\rightarrow}\frac{1}{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Pause
+
+\series bold
+Solution
+\series default
+: 
+\begin_inset Formula $E(X_{n})=\frac{n}{n+n}=\frac{1}{2}$
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+Var(X_{n})=\frac{n\cdot n}{(n+n)^{2}(n+n+1)}=\frac{1}{4(2n+1)}.
+\]
+
+\end_inset
+
+By Chebyshev's inequality, for all 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Pr\left(\left|X_{n}-1/2\right|\geq\varepsilon\right)\leq\frac{1}{4(2n+1)\varepsilon^{2}}\rightarrow0\;\text{as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Convergence in r-mean
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ 
+\series bold
+converges in 
+\begin_inset Formula $r$
+\end_inset
+
+-mean
+\series default
+ to 
+\begin_inset Formula $X$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ iff
+\begin_inset Formula 
+\[
+E\left|X_{n}-X\right|^{r}\rightarrow0\quad\text{as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Denoted by 
+\begin_inset Formula $X_{n}\overset{r}{\rightarrow}X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ be a random variable with
+\begin_inset Formula 
+\[
+P(X_{n}=0)=1-\frac{1}{n}\;\text{ , }P(X_{n}=1)=\frac{1}{2n}\;\text{ and \ensuremath{P(X_{n}=-1)=\frac{1}{2n}}}.
+\]
+
+\end_inset
+
+Show that 
+\begin_inset Formula $X_{n}\overset{r}{\rightarrow}0$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\series bold
+Solution
+\series default
+: we have 
+\begin_inset Formula 
+\begin{align*}
+E\left|X_{n}-X\right|^{r} & =\left|0-0\right|^{r}\cdot\left(1-\frac{1}{n}\right)+\left|1-0\right|\cdot\frac{1}{2n}+\left|-1-0\right|^{r}\cdot\frac{1}{2n}\\
+ & =\frac{1}{n}\rightarrow0.
+\end{align*}
+
+\end_inset
+
+as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ for all 
+\begin_inset Formula $r>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Convergence in distribution
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ 
+\series bold
+converges in distribution
+\series default
+ to 
+\begin_inset Formula $X$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ iff
+\begin_inset Formula 
+\[
+F_{X_{n}}(x)\rightarrow F(x)\quad\text{as }n\rightarrow\infty
+\]
+
+\end_inset
+
+at all continuity points of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Denoted by 
+\begin_inset Formula $X_{n}\overset{d}{\rightarrow}X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Suppose 
+\begin_inset Formula $X_{n}\sim Bin(n,\lambda/n)$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $X_{n}\rightarrow Po(\lambda)$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\series bold
+Solution
+\series default
+: For fixed 
+\begin_inset Formula $k$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\[
+{n \choose k}\left(\frac{\lambda}{n}\right)^{k}\left(1-\frac{\lambda}{n}\right)^{n-k}\rightarrow e^{-\lambda}\frac{\lambda^{k}}{k!}
+\]
+
+\end_inset
+
+as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+More on convergence
+\end_layout
+
+\begin_layout Itemize
+Theorem 6.1.2 tells us that if 
+\begin_inset Formula $X_{n}\rightarrow X$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{n}\rightarrow Y$
+\end_inset
+
+, then 
+\begin_inset Formula $X=Y$
+\end_inset
+
+ almost surely (
+\begin_inset Formula $X\overset{d}{=}Y$
+\end_inset
+
+ for convergence in distribution).
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The different notions of convergence are related as follows:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+X_{n}\overset{a.s.}{\rightarrow}X &  & \Rightarrow &  & X_{n}\overset{p}{\rightarrow}X &  & \Rightarrow &  & X_{n}\overset{d}{\rightarrow}X\\
+ &  &  &  & \Uparrow\\
+ &  &  &  & X_{n}\overset{r}{\rightarrow}X\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+So 
+\begin_inset Formula $\overset{a.s.}{\rightarrow}$
+\end_inset
+
+ is stronger than 
+\begin_inset Formula $\overset{p}{\rightarrow}$
+\end_inset
+
+ which is stronger than 
+\begin_inset Formula $\overset{d}{\rightarrow}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Convergence via transforms
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $X,X_{1},X_{2},...$
+\end_inset
+
+ be random variables.
+ What if the moment generating function of 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ converges to the moment generation function of 
+\begin_inset Formula $X$
+\end_inset
+
+? Does that mean that 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ converges to 
+\begin_inset Formula $X$
+\end_inset
+
+? 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X,X_{1},X_{2},...$
+\end_inset
+
+ be random variables, and suppose that
+\begin_inset Formula 
+\[
+\varphi_{X_{n}}(t)\rightarrow\varphi_{X}(t)\;\text{\text{as \ensuremath{n\rightarrow\infty}}}
+\]
+
+\end_inset
+
+then
+\begin_inset Formula 
+\[
+X_{n}\overset{d}{\rightarrow}X\;\text{\text{as \ensuremath{n\rightarrow\infty}}}.
+\]
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+The converse also holds.
+ If 
+\begin_inset Formula $X_{n}\overset{d}{\rightarrow}X$
+\end_inset
+
+, then 
+\begin_inset Formula $\varphi_{X_{n}}(t)\rightarrow\varphi_{X}(t)$
+\end_inset
+
+.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Similar theorems hold for the generating function and moment generating
+ function (Th 6.4.1-6.4.3).
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Law of large numbers - some preliminaries
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $X_{1},..,X_{n}$
+\end_inset
+
+ be independent variables with mean 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and variance 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\bar{X}_{n}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$
+\end_inset
+
+ be the sample mean of 
+\begin_inset Formula $n$
+\end_inset
+
+ observations.
+\end_layout
+
+\begin_layout Itemize
+We then have 
+\begin_inset Formula 
+\[
+E(\bar{X}_{n})=\frac{1}{n}\sum_{i=1}^{n}E(X_{i})=\frac{1}{n}n\mu=\mu
+\]
+
+\end_inset
+
+ and 
+\begin_inset Formula 
+\[
+Var(\bar{X}_{n})=\frac{1}{n^{2}}\sum_{i=1}^{n}Var(X_{i})=\frac{\sigma^{2}}{n}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Law of large numbers
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+(Weak) law of large numbers
+\series default
+.
+ Let 
+\begin_inset Formula $X_{1},..,X_{n}$
+\end_inset
+
+ be independent variables with mean 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and finite variance 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+\bar{X}_{n}\overset{p}{\rightarrow}\mu.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Proof: By Chebychev's inequality 
+\begin_inset Formula 
+\[
+Pr\left(\left|\bar{X}_{n}-\mu\right|>\varepsilon\right)\leq\frac{\sigma^{2}/n}{\varepsilon^{2}}=\frac{\sigma^{2}}{n\varepsilon^{2}}\rightarrow0\;\text{as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+This version of the law of large numbers requires a population variance
+ which is finite.
+ Theorem 6.5.1 gives a version where only the mean needs to be finite.
+\end_layout
+
+\begin_layout Itemize
+The strong law of large numbers proves that 
+\begin_inset Formula $\bar{X}_{n}\overset{a.s.}{\rightarrow}\mu$
+\end_inset
+
+ if the mean is finite.
+\end_layout
+
+\begin_layout Itemize
+The assumption of a finite mean is important.
+ Example: if 
+\begin_inset Formula $X_{1},X_{2},...$
+\end_inset
+
+ are independent 
+\begin_inset Formula $C(0,1)$
+\end_inset
+
+, then 
+\begin_inset Formula $\bar{X}_{n}\overset{d}{=}X_{1}$
+\end_inset
+
+ for all 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ The law of large numbers does not hold since the Cauchy does not exist.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Central limit theorem
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},X_{2},...$
+\end_inset
+
+ be iid random variables with finite expectation 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and variance 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+\left(\frac{\bar{X}_{n}-\mu}{\sigma/\sqrt{n}}\right)\overset{d}{\rightarrow}N(0,1)\text{ as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Proof by showing that 
+\begin_inset Formula 
+\[
+\varphi_{\frac{\bar{X}_{n}-\mu}{\sigma/\sqrt{n}}}(t)\rightarrow\varphi_{N(0,1)}(t)=e^{-t^{2}/2}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Application: empirical distribution function 
+\begin_inset Formula 
+\[
+F_{n}(x)=\frac{\#\text{observations}\leq x}{n}
+\]
+
+\end_inset
+
+then as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+F_{n}(x) & \overset{p}{\rightarrow}F(x)\\
+\sqrt{n}\left(F_{n}(x)-F(x)\right) & \overset{d}{\rightarrow}N\left(0,\sigma^{2}(x)\right)
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $\sigma^{2}(x)=F(x)\left[1-F(x)\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Convergence of sums of sequences of RVs
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $X_{n}\rightarrow X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{n}\rightarrow Y$
+\end_inset
+
+, then 
+\begin_inset Formula $X_{n}+Y_{n}\rightarrow X+Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Holds for 
+\begin_inset Formula $a.s.$
+\end_inset
+
+, 
+\begin_inset Formula $p$
+\end_inset
+
+ and 
+\begin_inset Formula $r$
+\end_inset
+
+-convergence without assuming independence.
+\end_layout
+
+\begin_layout Itemize
+The theorem also holds for 
+\begin_inset Formula $d$
+\end_inset
+
+-convergence if we assume independence.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $X_{n}\overset{d}{\rightarrow}X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{n}\overset{p}{\rightarrow}a$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ is a constant, then as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+X_{n}+Y_{n} & \overset{d}{\rightarrow}X+a\\
+X_{n}-Y_{n} & \overset{d}{\rightarrow}X-a\\
+X_{n}\cdot Y_{n} & \overset{d}{\rightarrow}X\cdot a\\
+\frac{X_{n}}{Y_{n}} & \overset{d}{\rightarrow}\frac{X}{a}\;\text{ for }a\neq0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},X_{2},...$
+\end_inset
+
+ be independent 
+\begin_inset Formula $U(0,1)$
+\end_inset
+
+.
+ Show that
+\begin_inset Formula 
+\[
+\frac{X_{1}+X_{2}+...+X_{n}}{X_{1}^{2}+X_{2}^{2}+...+X_{n}^{2}}\overset{p}{\rightarrow}\frac{3}{2}\;\text{as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Convergence of functions of convergent RVs
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},X_{2},...$
+\end_inset
+
+ be random variables such that 
+\begin_inset Formula $X_{n}\overset{p}{\rightarrow}a$
+\end_inset
+
+ for some constant 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $g()$
+\end_inset
+
+ be a function which is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+g(X_{n})\overset{p}{\rightarrow}g(a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},X_{2},...$
+\end_inset
+
+ be iid random variables with finite mean 
+\begin_inset Formula $\mu\geq0$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\sqrt{\bar{X}_{n}}\overset{p}{\rightarrow}\sqrt{\mu}$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\series bold
+Solution
+\series default
+: from the law of large numbers we have 
+\begin_inset Formula $\bar{X}_{n}\overset{p}{\rightarrow}\mu$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $g(x)=\sqrt{x}$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $x=\mu$
+\end_inset
+
+ the above theorem proves that 
+\begin_inset Formula $\sqrt{\bar{X}_{n}}\overset{p}{\rightarrow}\sqrt{\mu}$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $Z_{n}\sim N(0,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $V_{n}\sim\chi^{2}(n)$
+\end_inset
+
+ be independent RVs.
+ Show that
+\begin_inset Formula 
+\[
+T_{n}=\frac{Z_{n}}{\sqrt{\frac{V_{n}}{n}}}\overset{d}{\sim}N(0,1)\;\text{ as }n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,2677 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 477
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\setcounter{MaxMatrixCols}{10}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{RawSienna}{cmyk}{0,0.87,0.82,0.31}
+\definecolor{gray97}{cmyk}{0,0,0,0.03}
+\definecolor{robinsegg}{cmyk}{0.18,0.04,0,0.07}
+\definecolor{cola}{cmyk}{0.642, 0, 0.566, 0.584}
+\definecolor{darkgreen}{cmyk}{0.37, 0, 0.71, 0.69}
+\definecolor{darkpurple}{cmyk}{0.33, 0.99, 0.0, 0.4}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usecolortheme[named=RawSienna]{structure}
+%\usecolortheme[RGB={205,0,0}]{structure}
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{infolines}
+\usetheme{default}
+\setbeamertemplate{blocks}[shadow=true]
+%\setbeamerfont{structure}{shape=\itshape}
+\usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{background canvas}{
+ % \ifnum \thepage>0 \relax % we are on the first page
+%\includegraphics[width=\paperwidth,height=\paperheight]{/home/mv/Dropbox/Foton/IconsWallpaper/greyribbonLighter.jpg}
+ % \else
+ 	% No background for page 2 and onwards
+ % \fi
+}
+\end_preamble
+\options xcolor=svgnames
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Probability Theory - L1
+\end_layout
+
+\end_inset
+
+
+\shape smallcaps
+Probability Theory
+\shape default
+
+\begin_inset VSpace 0.2cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lecture 1
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+
+
+\series bold
+Mattias Villani
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Statistics, LiU
+\end_layout
+
+\end_inset
+
+Division of Statistics
+\begin_inset Newline newline
+\end_inset
+
+Dept.
+ of Computer and Information Science
+\begin_inset Newline newline
+\end_inset
+
+Linköping University 
+\end_layout
+
+\begin_layout Date
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Overview Lecture 1
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Course outline
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Introduction and a recap of some background
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Functions of random variables
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Course Outline
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Lectures
+\series default
+: theory interleaved with illustrative solved examples.
+ Responsible: Mattias.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Exercises/Seminars
+\series default
+: problem solving sessions + open discussions.
+ Responsible: Per Sidén and 
+\series bold
+You
+\series default
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Exam
+\series default
+: written exam with formula sheet, but no book or notes.
+ Responsible: You!
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Random variables
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The sample space 
+\begin_inset Formula $\Omega=\{\omega_{1},\omega_{2},...\}$
+\end_inset
+
+ of an experiment is the most basic representation of a problem's randomness
+ (uncertainty).
+\end_layout
+
+\begin_layout Itemize
+More convenient to work with real-valued measurements.
+\end_layout
+
+\begin_layout Itemize
+A 
+\series bold
+random variable 
+\begin_inset Formula $X$
+\end_inset
+
+
+\series default
+ is a real-valued function from a sample space: 
+\begin_inset Formula $X=f(\omega)$
+\end_inset
+
+, where 
+\begin_inset Formula $f:\text{}\Omega\rightarrow\mathbb{R}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A 
+\series bold
+multivariate random vector
+\series default
+: 
+\begin_inset Formula $\mathbf{X}=f(\omega)$
+\end_inset
+
+ such that 
+\begin_inset Formula $f:\text{}\Omega\rightarrow\mathbb{R}^{n}.$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Examples:
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Roll a die: 
+\begin_inset Formula $\Omega=\{1,2,3,4,5,6\}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+X(\omega)=\begin{cases}
+0 & \text{ if \ensuremath{\omega=1,2\text{ or }3}}\\
+1 & \text{ if \ensuremath{\omega=4,5\text{ or }6}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Roll two fair dice.
+ 
+\begin_inset Formula $X(\omega)$
+\end_inset
+
+=sum of the two dice.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\Omega$
+\end_inset
+
+ the set of all possible states of the economy (whatever that means!).
+ 
+\begin_inset Formula $X(\omega)$
+\end_inset
+
+ next quarter's unemployment in a given region.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Sample space of two dice example
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename twoDice.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The distribution of a random variable
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The probabilities of events on the sample space 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ imply a 
+\series bold
+probability distribution
+\series default
+ for a random variable 
+\begin_inset Formula $X(\omega)$
+\end_inset
+
+ on 
+\begin_inset Formula $\Omega$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The probability distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+ is given by 
+\begin_inset Formula 
+\[
+\mathrm{Pr}(X\in C)=\mathrm{Pr}(\{\omega:X(\omega)\in C\}),
+\]
+
+\end_inset
+
+where 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\{\omega:X(\omega)\in C\}$
+\end_inset
+
+ is the event (in 
+\begin_inset Formula $\Omega$
+\end_inset
+
+) consisting of all outcomes 
+\begin_inset Formula $\omega$
+\end_inset
+
+ that gives a value of 
+\begin_inset Formula $X$
+\end_inset
+
+ in 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+A random variable is 
+\series bold
+discrete
+\series default
+ if it can take only a finite or a countable number of different values
+ 
+\begin_inset Formula $x_{1},x_{2},...$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Continuous 
+\series default
+random variables can take every value in an interval.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+probability mass function
+\series default
+,
+\series bold
+ pmf
+\series default
+, is the function 
+\begin_inset Formula $f$
+\end_inset
+
+(
+\begin_inset Formula $x)=\mathrm{Pr}(X=x)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Random variable - sum of two dice
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename sumOfTwoDice.png
+	scale 22
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Uniform, Bernoulli och Poisson
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Uniform
+\series default
+ 
+\series bold
+discrete
+\series default
+ distribution.
+ 
+\begin_inset Formula $X\in\{a,a+1,...,b\}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+\frac{1}{b-a+1} & \text{for }x=a,a+1...,b\\
+0 & \text{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Bernoulli
+\series default
+ 
+\series bold
+distribution
+\series default
+.
+ 
+\begin_inset Formula $X\in\{0,1\}.$
+\end_inset
+
+ 
+\begin_inset Formula $\mathrm{Pr}(X=0)=1-p$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathrm{Pr}(X=1)=p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Poisson distribution
+\series default
+: 
+\begin_inset Formula $X\in\{0,1,2,...\}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(x)=\frac{\exp(-\lambda)\cdot\lambda^{x}}{x!}\quad\text{ for }x=0,1,2,...
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Binomial distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Binomial distribution
+\series default
+.
+ Sum of 
+\begin_inset Formula $n$
+\end_inset
+
+ independent Bernoulli variables 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+ with the same success probability 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+X=X_{1}+X_{2}+...+X_{n}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X\sim Bin(n,p)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Probability function for a 
+\begin_inset Formula $\mathrm{Bin}(n,p)$
+\end_inset
+
+ variable:
+\begin_inset Formula 
+\[
+P(X=x)={n \choose x}p^{x}(1-p)^{n-x},\text{ for }\mbox{}x=0,1,...,n.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The binomial coefficient 
+\begin_inset Formula ${n \choose x}$
+\end_inset
+
+ is the number of binary sequences of length 
+\begin_inset Formula $n$
+\end_inset
+
+ that sum exactly to 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Probability density functions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Continuous random variables can assume 
+\series bold
+every
+\series default
+ value in an interval.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Probability density function
+\series default
+ (
+\series bold
+pdf
+\series default
+) 
+\begin_inset Formula $f(x)$
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathrm{Pr}(a\leq X\leq b)=\int_{a}^{b}f(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f(x)\geq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $x$
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset space \quad{}
+\end_inset
+
+
+\begin_inset Graphics
+	filename pdf.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int_{-\infty}^{\infty}f(x)dx=1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+A pdf is like a histogram with tiny bin widths.
+ Integral replaces sums.
+\end_layout
+
+\begin_layout Itemize
+Continuous distibutions assign probability zero to individual values, but
+ 
+\begin_inset Formula 
+\[
+\mathrm{Pr}\left(a-\frac{\epsilon}{2}\leq X\leq a+\frac{\epsilon}{2}\right)\approx\epsilon\cdot f(a).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Densities - Some examples
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The 
+\series bold
+uniform
+\series default
+ distribution
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+\frac{1}{b-a} & \text{ for \ensuremath{a\leq x\leq b}}\\
+0 & \text{ otherwise.}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+triangle
+\series default
+ or linear pdf
+\begin_inset Formula 
+\[
+f(x)=\begin{cases}
+\frac{2}{a^{2}}x & \text{ for \ensuremath{0<x<a}}\\
+0 & \text{ otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+normal
+\series default
+, or
+\series bold
+ Gaussian
+\series default
+, distribution
+\begin_inset Formula 
+\[
+f(x)=\frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left(-\frac{1}{2\sigma^{2}}\left(x-\mu\right)^{2}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Important facts about densities
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A 
+\series bold
+density is not a probability
+\series default
+ and can be greater than one, or even unbounded.
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+A 
+\series bold
+density is not unique
+\series default
+.
+ Since 
+\begin_inset Formula $\mathrm{Pr}(X=x)=0$
+\end_inset
+
+ for every 
+\begin_inset Formula $x$
+\end_inset
+
+, a density can be changed at a finite number of poins without affecting
+ the probabilities from it.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+normalization constant of a density can always be recovered
+\series default
+ using 
+\begin_inset Formula $\int_{-\infty}^{\infty}f(x)=1$
+\end_inset
+
+.
+ Example: Triangle density: it is enough to know that 
+\begin_inset Formula $f(x)=c\cdot x$
+\end_inset
+
+, for some constant 
+\begin_inset Formula $c>0$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+The Cumulative distribution function
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The (cumulative) 
+\series bold
+distribution function
+\series default
+ (
+\series bold
+cdf
+\series default
+) 
+\begin_inset Formula $F(\cdot)$
+\end_inset
+
+ of a random variable 
+\begin_inset Formula $X$
+\end_inset
+
+ is the function
+\begin_inset Formula 
+\[
+F(x)=\mathrm{Pr}(X\leq x)\text{ for }-\infty\leq x\leq\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Same definition for discrete and continuous variables.
+\end_layout
+
+\begin_layout Itemize
+The cdf is 
+\series bold
+non-decreasing
+\series default
+
+\begin_inset Formula 
+\[
+\mbox{If }x_{1}\leq x_{2}\mbox{ then }F(x_{1})\leq F(x_{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Limits at 
+\begin_inset Formula $\pm\infty$
+\end_inset
+
+: 
+\begin_inset Formula $\lim_{x\to-\infty}F(x)=0$
+\end_inset
+
+ and 
+\begin_inset Formula $\lim_{x\to\infty}F(x)=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+For continuous variables: 
+\series bold
+relation between pdf and cdf
+\series default
+
+\begin_inset Formula 
+\[
+F(x)=\int_{-\infty}^{x}f(t)dt
+\]
+
+\end_inset
+
+and conversely 
+\begin_inset Formula 
+\[
+\frac{dF(x)}{dx}=f(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+R commands for distributions etc
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example 1: 
+\series bold
+Normal distribution
+\series default
+ with mean zero and unit variance:
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+dnorm(0)
+\series default
+ gives the pdf in the point 
+\begin_inset Formula $x=0$
+\end_inset
+
+ (answer: 0.3989)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+pnorm(0)
+\series default
+ gives the cdf in the point 
+\begin_inset Formula $x=0$
+\end_inset
+
+ (answer: 0.5)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+qnorm(0.5)
+\series default
+ gives the 
+\begin_inset Formula $50$
+\end_inset
+
+-quantile (answer: 0).
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+rnorm(10)
+\series default
+ gives 10 random draws
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Example 2: Exponential distribution with mean one
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+dexp(0.5)
+\series default
+ gives the pdf in the point 
+\begin_inset Formula $x=0.5$
+\end_inset
+
+ (answer: 0.6065)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+pexp(0.5)
+\series default
+ gives the cdf in the point 
+\begin_inset Formula $x=0.5$
+\end_inset
+
+ (answer: 0.3934)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+qexp(0.9)
+\series default
+ gives the 
+\begin_inset Formula $90$
+\end_inset
+
+-quantile (answer: 2.3026).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+rexp(10)
+\series default
+ gives 10 random draws
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Example 3.
+ Plotting the standard normal pdf in R:
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+x <- seq(-4,4,length=10000)
+\series default
+ # setting up a vector x with a 
+\series bold
+grid
+\series default
+ of 10000 values between -4 and 4
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+plot(x,dnorm(x),type="l")
+\series default
+ # plotting the standard normal pdf as a line (type=
+\begin_inset Quotes erd
+\end_inset
+
+l
+\begin_inset Quotes erd
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+See also http://cran.r-project.org/web/views/Distributions.html
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Functions of random variables
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Quite common situation: You know the distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+, but need the distribution of 
+\begin_inset Formula $Y=g(X)$
+\end_inset
+
+, where 
+\begin_inset Formula $g(\cdot)$
+\end_inset
+
+ is some function.
+\end_layout
+
+\begin_layout Itemize
+Example 1: 
+\begin_inset Formula $Y=a+b\cdot X$
+\end_inset
+
+, where 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+ are constants.
+\end_layout
+
+\begin_layout Itemize
+Example 2: 
+\begin_inset Formula $Y=1/X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example 3: 
+\begin_inset Formula $Y=\ln(X)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Example 4: 
+\begin_inset Formula $Y=\log\frac{X}{1-X}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y=g(X)$
+\end_inset
+
+, where 
+\begin_inset Formula $X$
+\end_inset
+
+ is discrete.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f_{X}(x)$
+\end_inset
+
+ is p.f.
+ for 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f_{Y}(y)$
+\end_inset
+
+ is p.f.
+ for 
+\begin_inset Formula $Y$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\mathrm{f_{Y}(y)=Pr}(Y=y)=\mathrm{Pr}\left[g(X)=y\right]=\sum_{x:g(x)=y}f_{X}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Function of a continuous random variable
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Suppose that 
+\begin_inset Formula $X$
+\end_inset
+
+ is continuous with support 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+F_{Y}(y)=\mathrm{Pr}(Y\leq y)=\mathrm{Pr}\left[g(X)\leq y\right]=\int_{x:g(x)\leq y}f_{X}(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $g(X)$
+\end_inset
+
+ be monotonically 
+\emph on
+increasing
+\emph default
+ with inverse 
+\begin_inset Formula $X=h(Y)$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+F_{Y}(y)=Pr(Y\leq y)=Pr(g(X)\leq y)=Pr(X\leq h(y))=F_{X}(h(y))
+\]
+
+\end_inset
+
+ and
+\begin_inset Formula 
+\[
+f_{Y}(y)=f_{X}(h(y))\cdot\frac{\partial h(y)}{\partial y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For general monotonic transformation 
+\begin_inset Formula $Y=g(X)$
+\end_inset
+
+ we have 
+\begin_inset Formula 
+\[
+f_{Y}(y)=f_{X}\left[h(y)\right]\left|\frac{\partial h(y)}{y}\right|\text{ for }\mbox{\alpha<y<\beta}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $(\alpha,\beta)$
+\end_inset
+
+ is the mapped interval from 
+\begin_inset Formula $(a,b)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Examples: functions of a random variable
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example 1.
+ 
+\begin_inset Formula $Y=a\text{\cdot}X+b$
+\end_inset
+
+.
+ 
+\begin_inset Formula 
+\[
+f_{Y}(y)=\frac{1}{\left|a\right|}f_{X}\left(\frac{y-a}{b}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example 2: 
+\series bold
+log-normal
+\series default
+.
+ 
+\begin_inset Formula $X\sim N(\mu,\sigma^{2})$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Y=g(X)=\exp(X)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X=h(Y)=\ln Y$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+f_{Y}(y)=\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{1}{2\sigma^{2}}\left(\ln y-\mu\right)^{2}\right)\cdot\frac{1}{y}\text{ for }y>0.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example 3.
+ 
+\begin_inset Formula $X\sim LogN(\mu,\sigma^{2})$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Y=a\cdot X$
+\end_inset
+
+, where 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X=h(Y)=Y/a$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+f_{Y}(y) & =\frac{1}{y/a}\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{1}{2\sigma^{2}}\left(\ln\frac{y}{a}-\mu\right)^{2}\right)\frac{1}{a}\cdot\\
+ & =\frac{1}{y}\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{1}{2\sigma^{2}}\left(\ln y-\mu-\ln a\right)^{2}\right)
+\end{align*}
+
+\end_inset
+
+which means that 
+\begin_inset Formula $Y\sim LogN(\mu+\ln a,\sigma^{2})$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Examples: functions of a random variable
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example 4.
+ 
+\begin_inset Formula $X\sim LogN(\mu,\sigma^{2})$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Y=X^{a}$
+\end_inset
+
+, where 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $X=h(Y)=Y^{1/a}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+f_{Y}(y) & =\frac{1}{y^{1/a}}\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{1}{2\sigma^{2}}\left(\ln y^{1/a}-\mu\right)^{2}\right)\frac{1}{a}y^{1/a-1}\cdot\\
+ & =\frac{1}{y}\frac{1}{\sqrt{2\pi}a\sigma}\exp\left(-\frac{1}{2a^{2}\sigma^{2}}\left(\ln y-a\mu\right)^{2}\right)
+\end{align*}
+
+\end_inset
+
+which means that 
+\begin_inset Formula $Y\sim LogN(a\mu,a^{2}\sigma^{2}).$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bivariate distributions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The 
+\series bold
+joint
+\series default
+ (or 
+\series bold
+bivariate
+\series default
+) 
+\series bold
+distribution
+\series default
+ of the two random variables 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ is the collection of all probabilities of the form
+\begin_inset Formula 
+\[
+\mathrm{Pr}\left[(X,Y)\in C\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Example 1: 
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $X=$
+\end_inset
+
+# of visits to doctor.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y=$
+\end_inset
+
+#visits to emergency.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C$
+\end_inset
+
+ may be 
+\begin_inset Formula $\{(x,y):x=0\text{ and }y\geq1\}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Example 2: 
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $X=$
+\end_inset
+
+monthly percentual return to SP500 index 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Y=$
+\end_inset
+
+monthly return to Stockholm index.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C$
+\end_inset
+
+ may be 
+\begin_inset Formula $\{(x,y):x<-10\text{ and }y<-10\}$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Discrete
+\series default
+ random variables: 
+\series bold
+joint probability function
+\series default
+ (joint p.f.)
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=\mathrm{Pr}(X=x,Y=y)
+\]
+
+\end_inset
+
+such that 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\mathrm{Pr}\left[(X,Y)\in C\right]=\sum_{(x,y)\in C}f_{X,Y}(x,y)$
+\end_inset
+
+ and 
+\begin_inset Formula $\sum_{All\text{ }(x,y)}f_{X,Y}(x,y)=1$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Continuous joint distributions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+Continuous joint distribution
+\series default
+ (joint p.d.f.)
+\begin_inset Formula 
+\[
+\mathrm{Pr}[(X,Y)\in C]=\iint_{C}f_{X,Y}(x,y)dxdy,
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $f_{X,Y}(x,y)\geq0$
+\end_inset
+
+ is the 
+\series bold
+joint density
+\series default
+.
+\end_layout
+
+\begin_layout Itemize
+Univariate distributions: probability is area under density.
+ 
+\end_layout
+
+\begin_layout Itemize
+Bivariate distributions: probability is volume under density.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename pdf.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/mv/Dropbox/Teaching/TheoryStatI2011/Pics/cake.JPG
+	lyxscale 10
+	scale 5
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Be careful about the regions of integration.
+ Example: 
+\begin_inset Formula $C=\{(x,y):x^{2}\leq y\leq1\}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Example
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Example
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=\frac{3}{2}y^{2}\text{ for}\text{ }0\leq x\leq2\text{ and }0\leq y\leq1.
+\]
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename /home/mv/Dropbox/Teaching/TheoryStatI2011/Pics/Ex3_4_4.png
+	lyxscale 30
+	scale 30
+	clip
+
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bivariate normal distribution
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The most famous of them all: the 
+\series bold
+bivariate normal distribution
+\series default
+, with pdf
+\family typewriter
+\size footnotesize
+
+\begin_inset Formula 
+\begin{align*}
+f_{X,Y}(x,y) & =\frac{1}{2\pi(1-\rho^{2})^{1/2}\sigma_{x}\sigma_{y}}\times
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\exp\left(-\frac{1}{2\left(1-\rho^{2}\right)}\left[\left(\frac{x-\mu_{x}}{\sigma_{x}}\right)^{2}-2\rho\left(\frac{x-\mu_{x}}{\sigma_{x}}\right)\left(\frac{y-\mu_{y}}{\sigma_{y}}\right)+\left(\frac{y-\mu_{y}}{\sigma_{y}}\right)^{2}\right]\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Five parameters: 
+\begin_inset Formula $\mu_{x},\mu_{y},\sigma_{x},\sigma_{y}\text{ and }\rho$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename /home/mv/Dropbox/Teaching/TheoryStatI2011/Pics/MultivariateNormalPDF.png
+	lyxscale 20
+	scale 40
+	clip
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bivariate c.d.f.
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Joint cumulative distribution function (joint c.d.f.):
+\begin_inset Formula 
+\[
+F_{X,Y}(x,y)=\mathrm{Pr}(X\leq x,Y\leq y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Calculating probabilities of rectangles 
+\begin_inset Formula $\mathrm{Pr}(a<X\leq b\text{ and }c<Y\leq d)$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+F_{X,Y}(b,d)-F_{X,Y}(a,d)-F_{X,Y}(b,c)+F_{X,Y}(a,c)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Properties of the joint c.d.f.
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Marginal of 
+\begin_inset Formula $X$
+\end_inset
+
+: 
+\begin_inset Formula $F_{X}(x)=\lim_{y\rightarrow\infty}F_{X,Y}(x,y)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $F_{X,Y}(x,y)=\int_{-\infty}^{y}\int_{-\infty}^{x}f_{X,Y}(r,s)drds$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f_{X,Y}(x,y)=\frac{\partial^{2}F_{X,Y}(x,y)}{\partial x\partial y}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Marginal distributions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Marginal p.f.
+ of a bivariate distribution is
+\begin_inset Formula 
+\begin{align*}
+f_{X}(x) & =\sum_{All\text{ }y}f_{X,Y}(x,y)\text{ [Discrete case]}\\
+f_{X}(x) & =\int_{-\infty}^{\infty}f_{X,Y}(x,y)dy\text{ [Continuous case]}
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+A marginal distribution for 
+\begin_inset Formula $X$
+\end_inset
+
+ tells you about the probability of different values of 
+\begin_inset Formula $X$
+\end_inset
+
+, averaged over all possible values of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Independent variables
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Two random variables are 
+\series bold
+independent
+\series default
+ if 
+\begin_inset Formula 
+\[
+\mathrm{Pr(X\in A\text{ and }Y\in B)=Pr(X\in A)\mathrm{\cdot Pr}(Y\in B)}
+\]
+
+\end_inset
+
+for all sets of real numbers 
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ (such that 
+\begin_inset Formula $\{X\in A\}$
+\end_inset
+
+ and 
+\begin_inset Formula $\{Y\in B\}$
+\end_inset
+
+ are events).
+\end_layout
+
+\begin_layout Itemize
+Two variables are 
+\series bold
+independent
+\series default
+ if and only if the joint density can be factorized as
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=h_{1}(x)\cdot h_{2}(y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Note: this factorization must hold for 
+\series bold
+all
+\series default
+ values of 
+\begin_inset Formula $x$
+\end_inset
+
+ and 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Watch out for non-rectangular support!
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are independent if learning something about 
+\begin_inset Formula $X$
+\end_inset
+
+ (e.g.
+ 
+\begin_inset Formula $X>2$
+\end_inset
+
+) has no effect on the probabilties for different values of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Multivariate distributions
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Obvious extension to more than two random variables, 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Joint p.d.f.
+\begin_inset Formula 
+\[
+f(x_{1},x_{2},...,x_{n})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Marginal distribution of 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{1}(x_{1})=\int_{x_{2}}\cdots\int_{x_{n}}f(x_{1},x_{2},...,x_{n})dx_{2}\cdots dx_{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Marginal distribution of 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{12}(x_{1},x_{2})=\int_{x_{3}}\cdots\int_{x_{n}}f(x_{1},x_{2},...,x_{n})dx_{3}\cdots dx_{n}
+\]
+
+\end_inset
+
+and so on.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Functions of random vectors
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ be an 
+\begin_inset Formula $n$
+\end_inset
+
+-dimensional continuous random variable
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ have density 
+\begin_inset Formula $f_{\mathbf{X}}(\mathbf{x})$
+\end_inset
+
+ on support 
+\begin_inset Formula $S\subset\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $Y=g(X)$
+\end_inset
+
+, where 
+\begin_inset Formula $g:S\rightarrow T\subset\mathbb{R}^{n}$
+\end_inset
+
+ is a bijection (1:1 and onto).
+\end_layout
+
+\begin_layout Itemize
+Assume 
+\begin_inset Formula $g$
+\end_inset
+
+ and 
+\begin_inset Formula $g^{-1}$
+\end_inset
+
+ are continuously differentiable with Jacobian
+\begin_inset Formula 
+\[
+\mathbf{J}=\left|\begin{array}{ccc}
+\frac{\partial x_{1}}{\partial y_{1}} & \cdots & \frac{\partial x_{1}}{\partial y_{n}}\\
+\vdots & \ddots & \vdots\\
+\frac{\partial x_{n}}{\partial y_{1}} & \cdots & \frac{\partial x_{n}}{\partial y_{n}}
+\end{array}\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Theorem
+The density of Y is 
+\begin_inset Formula 
+\[
+f_{\mathbf{Y}}(\mathbf{y})=f_{\mathbf{X}}\left[h_{1}(\mathbf{y}),h_{2}(\mathbf{y}),...,h_{n}(\mathbf{y})\right]\cdot\left|\mathbf{J}\right|
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $h=(h_{1},h_{2},...,h_{n})$
+\end_inset
+
+ is the unique inverse of 
+\begin_inset Formula $g=(g_{1},g_{2},...,g_{n})$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

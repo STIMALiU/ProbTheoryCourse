@@ -1,0 +1,2073 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2.5cm
+\rightmargin 2.5cm
+\bottommargin 2.5cm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="3">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<column alignment="right" valignment="top" width="0">
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+LINKÖPINGS UNIVERSITET
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2013-11-25
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Institutionen för datavetenskap
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset space \hspace{}
+\length 7cm
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Probability Theory, 6 hp
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Avdelningen för statistik
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+732A40 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="right" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+\begin_inset Tabular
+<lyxtabular version="3" rows="22" columns="2">
+<features tabularvalignment="middle">
+<column alignment="left" valignment="top" width="0">
+<column alignment="left" valignment="top" width="0">
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+\size large
+Exam in Probability Theory, 6 credits
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0cm"
+width "97.5col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Exam time:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9-13
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Allowed:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Pocket calculator.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Table with common formulas and moment generating functions (distributed
+ with the exam).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Table of integrals (distributed with the exam).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Table with distributions from Appendix B in the course book (distributed
+ with the exam).
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Examinator:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mattias Villani, phone.
+ 
+\begin_inset Formula $0709-373799$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Grades:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Grades:	Maximum is 20 points.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+A=19-20 points 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+B=17-18 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+C=12-16 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+D=10-11 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+E=8-9 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+F=0-7 points
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\series bold
+- Write clear and concise answers to the questions.
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset CommandInset line
+LatexCommand rule
+offset "0cm"
+width "97.5col%"
+height "1pt"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.3cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+The random variables 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ have a joint probability density of the form
+\begin_inset Formula 
+\[
+f_{X,Y}(x,y)=\begin{cases}
+(1+x)y^{x}\exp(-x) & \text{if }0\leq x\leq\infty\text{ and }0\leq y\leq1\\
+0 & \mbox{otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Are 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ independent?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+The joint density cannot be factorized as 
+\begin_inset Formula $f_{X,Y}(x,y)=g(x)g(y)$
+\end_inset
+
+ so 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are not independent.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Compute the marginal density of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ Does it belong to any of the known distributions?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{X}(x) & =\int_{0}^{1}(1+x)y^{x}\exp(-x)dy=(1+x)\exp(-x)\int_{0}^{1}y^{x}dy\\
+ & =(1+x)\exp(-x)\left[\frac{1}{1+x}y^{x+1}\right]_{0}^{1}=(1+x)\exp(-x)\frac{1}{1+x}=\exp(-x)
+\end{align*}
+
+\end_inset
+
+so 
+\begin_inset Formula $X\sim Exp(1)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Compute the conditional density of 
+\begin_inset Formula $Y|X=x$
+\end_inset
+
+.
+ Does it belong to any of the known distributions?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{Y|X=x}(y)=\frac{f_{X,Y}(x,y)}{f_{X}(x)}=\frac{(1+x)y^{x}\exp(-x)}{\exp(-x)}=(1+x)y^{x}=(1+x)y^{x+1-1}(1-y)^{b-1}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $b=1$
+\end_inset
+
+.
+ Note that this looks like a 
+\begin_inset Formula $Beta(x+1,1)$
+\end_inset
+
+ density, if we can show that the normalizing constant of this density is
+ 
+\begin_inset Formula $(1+x)$
+\end_inset
+
+.
+ The normalizing constant of the 
+\begin_inset Formula $Beta(x+1,1)$
+\end_inset
+
+ density is
+\begin_inset Formula 
+\[
+\frac{\Gamma(x+1+1)}{\Gamma(x+1)\Gamma(1)}=\frac{\Gamma(x+2)}{\Gamma(x+1)}=\frac{(x+1)\Gamma(x+1)}{\Gamma(x+1)}=1+x
+\]
+
+\end_inset
+
+since 
+\begin_inset Formula $\Gamma(a+1)=a\Gamma(a)$
+\end_inset
+
+ for any 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+ Thus, 
+\begin_inset Formula $Y|X=x\sim Beta(x+1,1)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Compute 
+\begin_inset Formula $E\left[(X+2)Y\right]$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+By the law of iterated expectation
+\begin_inset Formula 
+\begin{align*}
+E\left[(X+2)Y\right] & =EE\left[(X+2)Y|X\right]=E\left((X+2)E\left[Y|X\right]\right)\\
+ & =E\left((X+2)\frac{X+1}{X+2}\right)=E\left(X+1\right)=1+1=2
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $Y|X=x\sim Beta(x+1,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $X\sim Exp(1)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $Y|\theta\sim Bin(n,\theta)$
+\end_inset
+
+, where 
+\begin_inset Formula $n$
+\end_inset
+
+ is a known positive integer.
+ Let the density of 
+\begin_inset Formula $\theta$
+\end_inset
+
+ be
+\begin_inset Formula 
+\[
+p(\theta)=3\cdot(1-\theta)^{2}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $\theta\in[0,1]$
+\end_inset
+
+ and 
+\begin_inset Formula $p(\theta)=0$
+\end_inset
+
+ otherwise.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Calculate the expected value and variance of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Note first that 
+\begin_inset Formula $\theta\sim Beta(1,3)$
+\end_inset
+
+ which has 
+\begin_inset Formula $E(\theta)=1/4$
+\end_inset
+
+ and 
+\begin_inset Formula $V(\theta)=3/(4^{2}\cdot5)=3/80$
+\end_inset
+
+.
+ By the law of iterated expectation
+\begin_inset Formula 
+\[
+E(Y)=EE(Y|\theta)=E\left[n\theta\right]=\frac{n}{4}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+V(Y) & =E\left[V(Y|\theta)\right]+V\left[E(Y|\theta)\right]\\
+ & =E\left[n\theta(1-\theta)\right]+V\left[n\theta\right]\\
+ & =nE(\theta)-nE(\theta^{2})+\frac{3n}{80}\\
+ & =\frac{n}{4}-n\left(3/80+\left(\frac{n}{4}\right)^{2}\right)+\frac{3n}{80}\\
+ & =\frac{n}{4}-\frac{n^{3}}{16}=\frac{n}{4}\left(1-\frac{n^{2}}{4}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate the moment generating function for 
+\begin_inset Formula $Y$
+\end_inset
+
+ when 
+\begin_inset Formula $n=1$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+E^{tY}=E\left(e^{tY}|\theta\right)=E\left(1-\theta+\theta e^{t}\right)=\frac{3}{4}+\frac{1}{4}e^{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Compute the density of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+f_{Y}(y) & =\int_{0}^{1}f_{Y|X=x}(y)f_{X}(x)dx=\int_{0}^{1}\binom{n}{y}\theta^{y}(1-\theta)^{n-y}3\cdot(1-\theta)^{2}d\theta\\
+ & =3\binom{n}{y}\int_{0}^{1}\theta^{y}(1-\theta)^{n-y+2}d\theta
+\end{align*}
+
+\end_inset
+
+this integral is easy to solve by realizing that 
+\begin_inset Formula $\theta^{y}(1-\theta)^{n-y+2}$
+\end_inset
+
+ is proportional to the 
+\begin_inset Formula $Beta(y+1,n-y+3)$
+\end_inset
+
+ density, so
+\begin_inset Formula 
+\[
+\int_{0}^{1}\theta^{y}(1-\theta)^{n-y+2}d\theta=\frac{\Gamma(y+1)\Gamma(n-y+3)}{\Gamma(n+4)}.
+\]
+
+\end_inset
+
+This is enough for full points, but the distribution can be simplified further
+ as
+\begin_inset Formula 
+\[
+f_{Y}(y)=3\binom{n}{y}\frac{\Gamma(y+1)\Gamma(n-y+3)}{\Gamma(n+4)}=3\frac{n!}{y!(n-y)!}\frac{y!(n-y+2)!}{(n+3)!}=\frac{3(n-y+2)(n-y+1)}{(n+3)(n+2)(n+1)}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $y=0,1,...,n$
+\end_inset
+
+ and zero otherwise.
+ I have used that 
+\begin_inset Formula $\Gamma(x+1)=x!$
+\end_inset
+
+ if 
+\begin_inset Formula $x$
+\end_inset
+
+ is a positive integer.
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X_{k}\sim Tri(0,1),\; k=1,2,...$
+\end_inset
+
+ be independent random variables.
+ (
+\begin_inset Formula $Tri(a,b)$
+\end_inset
+
+ is the triangular density over the interval 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Derive the density of 
+\begin_inset Formula $Z_{n}=\mathrm{max}(X_{1},X_{2},...,X_{n}$
+\end_inset
+
+).
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+The distribution function is by definition 
+\begin_inset Formula 
+\begin{align*}
+F_{Z_{n}}(z) & =P(Z_{n}\leq z)=P(X_{1}\leq z,X_{2}\leq z,...,X_{n}\leq z)\\
+ & =\prod_{i=1}^{n}F_{X_{i}}(z)=\left[F_{X}(z)\right]^{n}
+\end{align*}
+
+\end_inset
+
+ (the maximum is smaller than 
+\begin_inset Formula $z$
+\end_inset
+
+ means that all the 
+\begin_inset Formula $X_{i}$
+\end_inset
+
+ are smaller than 
+\begin_inset Formula $z$
+\end_inset
+
+).
+ We need to compute 
+\begin_inset Formula $F_{X}(z)$
+\end_inset
+
+.
+ From Appendix B we know that the density of 
+\begin_inset Formula $Tri(0,1)$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+f_{X}(x)=2\left(1-2\left|x-\frac{1}{2}\right|\right)
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula 
+\[
+F_{X}(x)=\int_{0}^{x}f_{X}(t)dt=\int_{0}^{x}2\left(1-2\left|x-\frac{1}{2}\right|\right)dt.
+\]
+
+\end_inset
+
+Let look first at the case 
+\begin_inset Formula $x\leq1/2$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\[
+\int_{0}^{x}2\left(1-2\left|t-\frac{1}{2}\right|\right)dt=2\int_{0}^{x}\left(1+2\left(t-\frac{1}{2}\right)\right)dt=2\int_{0}^{x}2tdt=4\left[\frac{1}{2}t^{2}\right]_{0}^{x}=2x^{2}
+\]
+
+\end_inset
+
+If 
+\begin_inset Formula $x\geq1/2$
+\end_inset
+
+ we have
+\begin_inset Formula 
+\begin{align*}
+F_{X}(x) & =\frac{1}{2}+\int_{1/2}^{x}f_{X}(t)dt=\frac{1}{2}+\int_{1/2}^{x}2\left(1-2\left(t-\frac{1}{2}\right)\right)dt=\frac{1}{2}+2\int_{1/2}^{x}\left(2(1-t)\right)dt\\
+ & =\frac{1}{2}+4\left[t\left(1-\frac{t}{2}\right)\right]_{1/2}^{x}=\frac{1}{2}+4\left[x\left(1-\frac{x}{2}\right)-\frac{1}{2}\left(1-\frac{1}{4}\right)\right]=4x\left(1-\frac{x}{2}\right)-1
+\end{align*}
+
+\end_inset
+
+So 
+\begin_inset Formula 
+\[
+F_{Z_{n}}(z)=\left[F_{X}(z)\right]^{n}=\begin{cases}
+2^{n}z^{2n} & \mathrm{for\;}z\leq1/2\\
+\left[4z\left(1-\frac{z}{2}\right)-1\right]^{n} & \mathrm{for\;}z>1/2
+\end{cases}
+\]
+
+\end_inset
+
+and 
+\begin_inset Formula 
+\[
+f_{Z_{n}}(z)=\begin{cases}
+2^{n+1}nz^{2n-1} & \mathrm{for\;}z\leq1/2\\
+n\left[4z\left(1-\frac{z}{2}\right)-1\right]^{n-1}4(1-z) & \mathrm{for\;}z>1/2
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $Y_{n}=\frac{1}{n}\sum_{k=1}^{n}X_{k}$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $Y_{n}\overset{p}{\rightarrow}\frac{1}{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty.$
+\end_inset
+
+ 
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+We will use Chebyshev inequality.
+ Note that 
+\begin_inset Formula $E(Y_{n})=E(X_{k})=1/2$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma^{2}=V(Y_{n})=\frac{1}{n^{2}}\sum_{i=1}^{n}V(X_{n})=\frac{\text{1}}{n}Var(X)$
+\end_inset
+
+ where 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $X\sim Tri(0,1)$
+\end_inset
+
+.
+ From Appendix B, we have 
+\begin_inset Formula $Var(X)=\frac{1}{24}$
+\end_inset
+
+, so 
+\begin_inset Formula $\sigma^{2}=V(Y_{n})=\frac{1}{24n}$
+\end_inset
+
+.
+ Now, from Chebyshev's inequality
+\begin_inset Formula 
+\[
+Pr\left(\left|Y_{n}-\frac{1}{2}\right|\leq\varepsilon\right)\leq\frac{\sigma^{2}}{\varepsilon^{2}}=\frac{1}{24n\varepsilon^{2}}\rightarrow0
+\]
+
+\end_inset
+
+for any 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+.
+ By the definition of convergence in probability, this shows that 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $Y_{n}\overset{p}{\rightarrow}\frac{1}{2}$
+\end_inset
+
+ as 
+\begin_inset Formula $n\rightarrow\infty.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $W_{n}$
+\end_inset
+
+ be a sequence of random variables with finite mean 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and variance 
+\begin_inset Formula $\sigma^{2}$
+\end_inset
+
+.
+ Let 
+\begin_inset Formula $\bar{W}_{n}=\frac{1}{n}\sum_{i=1}^{n}W_{i}$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $\bar{W}_{n}\cdot Y_{n}$
+\end_inset
+
+ converges in distribution as 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+, and find the limiting distribution.
+ 
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+By the central limit theorem we know that 
+\begin_inset Formula $\bar{W}_{n}\overset{d}{\rightarrow}N\left(\mu,\frac{\sigma^{2}}{n}\right)$
+\end_inset
+
+.
+ Since 
+\begin_inset Formula $Y_{n}\overset{p}{\rightarrow}\frac{1}{2}$
+\end_inset
+
+, it follows from Slutsky's theorem that 
+\begin_inset Formula $\bar{W}_{n}\cdot Y_{n}\overset{d}{\rightarrow}\frac{1}{2}\cdot N\left(\mu,\frac{\sigma^{2}}{n}\right)$
+\end_inset
+
+ (with some abuse of notation).
+ That is, 
+\begin_inset Formula $\bar{W}_{n}\cdot Y_{n}\overset{d}{\rightarrow}N\left(\frac{\mu}{2},\frac{\sigma^{2}}{4n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+Let 
+\begin_inset Formula $X\sim\Gamma(\alpha,1)$
+\end_inset
+
+ and 
+\begin_inset Formula $Y\sim\Gamma(\beta,1)$
+\end_inset
+
+ be independent Gamma variables.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $X+Y$
+\end_inset
+
+ and 
+\begin_inset Formula $X/(X+Y)$
+\end_inset
+
+ are independent
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+First note that the density of 
+\begin_inset Formula $X\sim\Gamma(\alpha,1)$
+\end_inset
+
+ is of the form
+\begin_inset Formula 
+\[
+f_{X}(x)=\frac{1}{\Gamma(\alpha)}x^{\alpha-1}e^{-x}
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $U=X+Y$
+\end_inset
+
+ and 
+\begin_inset Formula $V=X/(X+Y)$
+\end_inset
+
+.
+ The inverse transformation is 
+\begin_inset Formula $X=UV$
+\end_inset
+
+ and 
+\begin_inset Formula $Y=U-UV=U(1-V)$
+\end_inset
+
+.
+ The Jacobian is
+\begin_inset Formula 
+\[
+J=\left|\begin{array}{cc}
+v & u\\
+1-v & -u
+\end{array}\right|=-vu-u(1-v)=-u
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $\left|J\right|=u$
+\end_inset
+
+.
+ Then 
+\begin_inset Formula 
+\begin{align*}
+f_{U,V}(u,v) & =f_{X}(uv)f_{Y}(u(1-v))\cdot\left|J\right|=\frac{1}{\Gamma(\alpha)}(uv)^{\alpha-1}e^{-uv}\frac{1}{\Gamma(\beta)}(u(1-v))^{\beta-1}e^{-u(1-v)}\cdot u\\
+ & =\frac{1}{\Gamma(\alpha)\Gamma(\beta)}u^{\alpha}u^{\beta-1}e^{-u}v{}^{\alpha-1}(1-v){}^{\beta-1}
+\end{align*}
+
+\end_inset
+
+since 
+\begin_inset Formula $f_{U,V}(u,v)$
+\end_inset
+
+ can be factorized as 
+\begin_inset Formula $f_{U,V}(u,v)=g(u)h(v)$
+\end_inset
+
+, 
+\begin_inset Formula $u$
+\end_inset
+
+ and 
+\begin_inset Formula $v$
+\end_inset
+
+ are independent.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Find the marginal density of 
+\begin_inset Formula $X/(X+Y)$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+From 4a) we know that the joint density is
+\begin_inset Formula 
+\[
+f_{U,V}(u,v)=\frac{1}{\Gamma(\alpha)\Gamma(\beta)}u^{\alpha+\beta-1}e^{-u}v{}^{\alpha-1}(1-v){}^{\beta-1}
+\]
+
+\end_inset
+
+which directly shows (because of the independence) that the marginal density
+ of 
+\begin_inset Formula $V$
+\end_inset
+
+ is proportional to
+\begin_inset Formula 
+\[
+v{}^{\alpha-1}(1-v){}^{\beta-1}
+\]
+
+\end_inset
+
+which implies that 
+\begin_inset Formula $V=X/(X+Y)\sim Beta(\alpha,\beta)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+What is the moment generating function of 
+\begin_inset Formula $Z=\frac{c\cdot(X+Y)^{2}+d\cdot X}{X+Y}$
+\end_inset
+
+, where 
+\begin_inset Formula $c$
+\end_inset
+
+ and 
+\begin_inset Formula $d$
+\end_inset
+
+ are positive constants?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Note that
+\begin_inset Formula 
+\[
+Z=c\cdot(X+Y)+d\frac{X}{X+Y}=cU+dV
+\]
+
+\end_inset
+
+and the we know from 4a that 
+\begin_inset Formula $U$
+\end_inset
+
+ and 
+\begin_inset Formula $V$
+\end_inset
+
+ are independent.
+ The moment generating function of 
+\begin_inset Formula $Z$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+E(e^{tZ})=E\left[e^{t\left(c\cdot U+dV\right)}\right]=E\left[e^{tcU}\right]E\left[e^{tdV}\right]=\varphi_{U}(tc)\cdot\varphi_{V}(td)
+\]
+
+\end_inset
+
+We know that 
+\begin_inset Formula $V\sim Beta(\alpha,\beta)$
+\end_inset
+
+ so 
+\begin_inset Formula $\varphi_{V}(\cdot)$
+\end_inset
+
+ is the moment generating function of the 
+\begin_inset Formula $Beta(\alpha,\beta)$
+\end_inset
+
+.
+ We can compute 
+\begin_inset Formula $\varphi_{U}(tc)$
+\end_inset
+
+ directly from its definition, but we rather try to find the distribution
+ of 
+\begin_inset Formula $U$
+\end_inset
+
+ and then read off the moment generating function from the Tables.
+ From above, the marginal density of 
+\begin_inset Formula $U$
+\end_inset
+
+ is proportional to 
+\begin_inset Formula 
+\[
+u^{\alpha+\beta-1}e^{-u}
+\]
+
+\end_inset
+
+which means that 
+\begin_inset Formula $U\sim\Gamma(\alpha+\beta,1)$
+\end_inset
+
+ and so
+\begin_inset Formula 
+\[
+\varphi_{U}(t)=\frac{1}{(1-t)^{\alpha+\beta}}
+\]
+
+\end_inset
+
+for 
+\begin_inset Formula $t<1$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+E(e^{tZ})=\frac{1}{(1-tc)^{\alpha+\beta}}\cdot\varphi_{V}(td),
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\varphi_{V}(t)$
+\end_inset
+
+ is the moment generating function of the 
+\begin_inset Formula $Beta(\alpha,\beta)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+Good luck!
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\shape smallcaps
+Mattias
+\end_layout
+
+\end_body
+\end_document

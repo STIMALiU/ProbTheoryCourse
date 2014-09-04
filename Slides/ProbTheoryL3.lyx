@@ -1,0 +1,1711 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\setcounter{MaxMatrixCols}{10}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{RawSienna}{cmyk}{0,0.87,0.82,0.31}
+\definecolor{gray97}{cmyk}{0,0,0,0.03}
+\definecolor{robinsegg}{cmyk}{0.18,0.04,0,0.07}
+\definecolor{cola}{cmyk}{0.642, 0, 0.566, 0.584}
+\definecolor{darkgreen}{cmyk}{0.37, 0, 0.71, 0.69}
+\definecolor{darkpurple}{cmyk}{0.33, 0.99, 0.0, 0.4}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usecolortheme[named=RawSienna]{structure}
+%\usecolortheme[RGB={205,0,0}]{structure}
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{infolines}
+\usetheme{default}
+\setbeamertemplate{blocks}[shadow=true]
+%\setbeamerfont{structure}{shape=\itshape}
+\usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{background canvas}{
+ % \ifnum \thepage>0 \relax % we are on the first page
+%\includegraphics[width=\paperwidth,height=\paperheight]{/home/mv/Dropbox/Foton/IconsWallpaper/greyribbonLighter.jpg}
+ % \else
+ 	% No background for page 2 and onwards
+ % \fi
+}
+\usepackage{bbding}
+\end_preamble
+\options xcolor=svgnames
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Probability Theory - L3
+\end_layout
+
+\end_inset
+
+
+\shape smallcaps
+Probability Theory
+\shape default
+
+\begin_inset VSpace 0.2cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lecture 3
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+
+
+\series bold
+Mattias Villani
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Statistics, LiU
+\end_layout
+
+\end_inset
+
+Division of Statistics
+\begin_inset Newline newline
+\end_inset
+
+Dept.
+ of Computer and Information Science
+\begin_inset Newline newline
+\end_inset
+
+Linköping University 
+\end_layout
+
+\begin_layout Date
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Overview Lecture 3
+\end_layout
+
+\begin_layout Itemize
+Transforms
+\end_layout
+
+\begin_layout Itemize
+Probability generating function
+\end_layout
+
+\begin_layout Itemize
+Moment generating function
+\end_layout
+
+\begin_layout Itemize
+Characteristic function
+\end_layout
+
+\begin_layout Itemize
+Transforms and distributions with random parameters
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Transforms
+\end_layout
+
+\begin_layout Itemize
+Finding the distribution of sum of random variables is hard.
+ Convolution is messy.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Transforms are functions that 
+\emph on
+uniquely
+\emph default
+ describe probability distributions.
+ 
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+If you know the transform, you know the distribution, and vice versa.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X\overset{d}{=}Y$
+\end_inset
+
+ 
+\begin_inset Formula $\Longleftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $g_{X}(t)=g_{Y}(t)$
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Summation
+\series default
+ of independent variables corresponds to 
+\series bold
+multiplication of transforms
+\series default
+.
+ Nice!
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Probability generating function
+\end_layout
+
+\begin_layout Itemize
+Applies to 
+\series bold
+non-negative
+\series default
+, 
+\series bold
+integer-valued
+\series default
+ random variables.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+The 
+\series bold
+probability generating function
+\series default
+ of 
+\begin_inset Formula $X$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+g_{X}(t)=\mathrm{E}t^{X}=\sum_{n=0}^{\infty}t^{n}\cdot P(X=n)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g_{X}(t)$
+\end_inset
+
+ is defined at least for 
+\begin_inset Formula $\left|t\right|\leq1$
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $g_{X}=g_{Y}$
+\end_inset
+
+ then 
+\begin_inset Formula $p_{X}=p_{Y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+ be independent.
+ Then
+\begin_inset Formula 
+\[
+g_{X_{1}+X_{2}+...+X_{n}}(t)=\prod_{k=1}^{n}g_{X_{k}}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Probability generating function, cont.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Cor]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+ be independent and identically distributed.
+ Then
+\begin_inset Formula 
+\[
+g_{X_{1}+X_{2}+...+X_{n}}(t)=\left(g_{X}(t)\right)^{n}
+\]
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The name probability generating function comes from:
+\begin_inset Formula 
+\[
+P(X=n)=\frac{g_{X}^{(n)}(0)}{n!}
+\]
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+where 
+\begin_inset Formula $g_{X}^{(n)}(t)$
+\end_inset
+
+ is the 
+\begin_inset Formula $n$
+\end_inset
+
+th derivative of 
+\begin_inset Formula $g_{X}(t)$
+\end_inset
+
+ wrt to 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Factorial moments (if 
+\begin_inset Formula $\mathrm{E}\left|X\right|^{k}<\infty$
+\end_inset
+
+)
+\begin_inset Formula 
+\[
+\mathrm{E}X(X-1)\cdots(X-k+1)=g_{X}^{(k)}(1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Moments can be computed
+\begin_inset Formula 
+\begin{align*}
+\mathrm{E}X & =g'_{X}(1)\\
+\mathrm{Var}X & =g''_{X}(1)+g'_{X}(1)-\left(g'_{X}(1)\right)^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Probability generating function - examples
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+Checkmark]
+\end_layout
+
+\end_inset
+
+binomial theorem: 
+\begin_inset Formula $(x+y)^{n}=\sum_{k=0}^{n}\binom{n}{k}x^{k}y^{n-k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Bernoulli, 
+\begin_inset Formula $X\sim Be(p)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{X}(t)=\sum_{n=0}^{\infty}t^{n}\cdot P(X=n)=t^{0}q+t^{1}p=q+pt
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Binomial, 
+\begin_inset Formula $X\sim Bin(n,p)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+g_{X}(t)=\sum_{k=0}^{n}t^{k}\binom{n}{k}p^{k}q^{n-k}=\sum_{k=0}^{n}\binom{n}{k}(pt)^{k}q^{n-k}=(q+pt)^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},...,X_{n}\overset{iid}{\sim}Be(p)$
+\end_inset
+
+ and 
+\begin_inset Formula $X=X_{1}+...+X_{n}$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+g_{X}(t)=\prod_{i=1}^{n}g_{X_{i}(t)}=\prod_{i=1}^{n}(q+pt)=(q+pt)^{n}
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $X\sim Bin(n,p)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Probability generating function - examples
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+Checkmark]
+\end_layout
+
+\end_inset
+
+Poisson prob func: 
+\begin_inset Formula $p(X=k)=e^{-m}m^{k}/k!$
+\end_inset
+
+ 
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+Checkmark]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $e^{x}=\sum_{k=0}^{\infty}\frac{x^{k}}{k!}$
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+If Poisson, 
+\begin_inset Formula $X\sim Po(m)$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+g_{X}(t)=\sum_{k=0}^{\infty}t^{k}\frac{e^{-m}m^{k}}{k!}=e^{-m}\sum_{k=0}^{\infty}\frac{(mt)^{k}}{k!}=e^{m(t-1)}
+\]
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $X_{1}\sim Po(m_{1})$
+\end_inset
+
+ independently of 
+\begin_inset Formula $X_{2}\sim Po(m_{2})$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+g_{X_{1}+X_{2}}(t)=e^{m_{1}(t-1)}e^{m_{2}(t-1)}=e^{(m_{1}+m_{2})(t-1)}
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $X_{1}+X_{2}\sim Po(m_{1}+m_{2})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Moment generating function
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $g_{X}(t)$
+\end_inset
+
+ limited to non-negative integer-valued variables.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+
+\series bold
+Moment generating function
+\series default
+ of a variable 
+\begin_inset Formula $X$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi_{X}(t)=\mathrm{E}e^{tX}
+\]
+
+\end_inset
+
+
+\series bold
+if
+\series default
+ the expectation exist and is finite for 
+\begin_inset Formula $\left|t\right|<h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $\psi_{X}(t)$
+\end_inset
+
+ exists for 
+\begin_inset Formula $\left|t\right|<h$
+\end_inset
+
+ for some 
+\begin_inset Formula $h>0$
+\end_inset
+
+, then
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+All moments exist 
+\begin_inset Formula $\mathrm{E}\left|X\right|^{r}<\infty$
+\end_inset
+
+ for all 
+\begin_inset Formula $r>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathrm{E}X^{n}=\psi_{X}^{(n)}(0)$
+\end_inset
+
+ for 
+\begin_inset Formula $n=1,2,...$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Taylor expansion around 
+\begin_inset Formula $t=0$
+\end_inset
+
+ [note 
+\begin_inset Formula $\frac{\partial^{k}e^{tX}}{\partial t^{k}}=X^{k}e^{tX}$
+\end_inset
+
+]
+\begin_inset Formula 
+\[
+e^{tX}=1+\sum_{n=1}^{\infty}\frac{t^{n}X^{n}}{n!}
+\]
+
+\end_inset
+
+so
+\begin_inset Formula 
+\[
+Ee^{tX}=1+\sum_{n=1}^{\infty}\frac{t^{n}}{n!}EX^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Moment generating function - examples
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X\sim Be(p)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi_{X}(t)=Ee^{tX}=qe^{t\cdot0}+pe^{t\cdot1}=q+pe^{t}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\psi'_{X}(t)=pe^{t}$
+\end_inset
+
+ so 
+\begin_inset Formula $E(X)=\psi'_{X}(0)=p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\psi''_{X}(t)=pe^{t}$
+\end_inset
+
+ so 
+\begin_inset Formula $E(X^{2})=\psi''_{X}(0)=p$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Var(X)=E(X^{2})-\left[E(X)\right]^{2}=p-p^{2}=pq$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X\sim\Gamma(p,a)$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi_{X}(t)=\frac{1}{(1-at)^{p}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\psi'_{X}(t)=\frac{ap}{(1-at)^{p+1}}$
+\end_inset
+
+ so 
+\begin_inset Formula $E(X)=\psi'_{X}(0)=ap$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+\begin_inset Formula $\psi''_{X}(t)=\frac{a^{2}p(p+1)}{(1-at)^{p+2}}$
+\end_inset
+
+ so 
+\begin_inset Formula $E(X^{2})=\psi''_{X}(0)=a^{2}p(p+1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Var(X)=E(X^{2})-\left[E(X)\right]^{2}=a^{2}p(p+1)-a^{2}p^{2}=a^{2}p.$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Moment generating function, cont.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $\exists$
+\end_inset
+
+ 
+\begin_inset Formula $h>0$
+\end_inset
+
+ such that 
+\begin_inset Formula $\psi_{X}(t)=\psi_{Y}(t)$
+\end_inset
+
+ for 
+\begin_inset Formula $\left|t\right|<h$
+\end_inset
+
+, then 
+\begin_inset Formula $X\overset{d}{=}Y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+ are independent with moment generating functions that exist for 
+\begin_inset Formula $\left|t\right|<h$
+\end_inset
+
+ for some 
+\begin_inset Formula $h>0$
+\end_inset
+
+, then
+\begin_inset Formula 
+\[
+\psi_{X_{1}+...X_{n}}(t)=\prod_{i=1}^{n}\psi_{X_{i}}(t),\text{ }\mathbf{\;}t<\left|h\right|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Moment generating function of a linear combination 
+\begin_inset Formula $a\cdot X+b$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi_{aX+b}(t)=e^{tb}\psi_{X}(at)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $X\sim\Gamma(d,p)$
+\end_inset
+
+, what is the distribution of 
+\begin_inset Formula $Y=\sigma\cdot X$
+\end_inset
+
+?
+\begin_inset Formula 
+\[
+\psi_{X}(t)=\frac{1}{(1-dt)^{p}}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\psi_{Y}(t)=\frac{1}{(1-d\sigma t)^{p}},
+\]
+
+\end_inset
+
+which is the mgf of 
+\begin_inset Formula $\Gamma(d\sigma,p)$
+\end_inset
+
+.
+ Gamma family is closed under scaling.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+The characteristic function
+\end_layout
+
+\begin_layout Itemize
+Moment generating function is not defined for all random variable.
+ No mgf for Cauchy or LogNormal.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+characteristic
+\series default
+ 
+\series bold
+function
+\series default
+ is more general and exists for any variable, 
+\series bold
+but complex valued
+\series default
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+The characteristic function of a random variable 
+\begin_inset Formula $X$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+\varphi_{X}(t)=Ee^{itX}=E\left(\cos tX+i\sin tX\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $i$
+\end_inset
+
+ is the imaginary number (
+\begin_inset Formula $i^{2}=-1$
+\end_inset
+
+).
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X\sim Be(p)$
+\end_inset
+
+, then 
+\begin_inset Formula $\varphi_{X}(t)=(q+pe^{it})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Complex numbers
+\end_layout
+
+\begin_layout Itemize
+Complex number 
+\begin_inset Formula $z=a+b\cdot i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Re(z)=a$
+\end_inset
+
+ is the real part of 
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Im(z)=b$
+\end_inset
+
+ is the imaginary part of 
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Complex conjugate 
+\begin_inset Formula $\bar{z}=a-b\cdot i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Addition: 
+\begin_inset Formula $z_{1}+z_{2}=a_{1}+a_{2}+(b_{1}+b_{2})\cdot i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Multiplication: 
+\begin_inset Formula $z_{1}z_{2}=a_{1}a_{2}-b_{1}b_{2}+(a_{1}b_{2}+a_{2}b_{1})i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Modulus: 
+\begin_inset Formula $\left|z\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+.
+ Length of vector.
+\end_layout
+
+\begin_layout Itemize
+Complex exponentials: 
+\begin_inset Formula $e^{ix}=\cos x+i\cdot\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Complex_number_illustration.svg.png
+	scale 55
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Euler's_formula.svg.png
+	lyxscale 30
+	scale 18
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout BeginFrame
+The characteristic function, cont.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+If 
+\begin_inset Formula $\varphi_{X}=\varphi_{Y}$
+\end_inset
+
+ then 
+\begin_inset Formula $X\overset{d}{=}Y$
+\end_inset
+
+.
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $F$
+\end_inset
+
+ be the distribution function of 
+\begin_inset Formula $X$
+\end_inset
+
+.
+ If 
+\begin_inset Formula $F$
+\end_inset
+
+ is continuous at 
+\begin_inset Formula $a$
+\end_inset
+
+ and 
+\begin_inset Formula $b$
+\end_inset
+
+, and 
+\begin_inset Formula $\int_{-\infty}^{\infty}\left|\varphi(t)\right|dt<\infty$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\[
+f(x)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-itx}\varphi(t)dt
+\]
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Characteristic function of a sums of independent variables
+\begin_inset Formula 
+\[
+\varphi_{X_{1}+...+X_{n}}(t)=\prod_{i=1}^{n}\varphi_{X_{i}}(t)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Moments
+\begin_inset Formula 
+\[
+\varphi_{X}^{(k)}(0)=i^{k}\cdot EX^{k}
+\]
+
+\end_inset
+
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Linear combinations
+\begin_inset Formula 
+\[
+\varphi_{aX+b}(t)=e^{ibt}\varphi_{X}(at)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Transforms - distributions with random parameters
+\end_layout
+
+\begin_layout Itemize
+Transforms are expected values (or 
+\begin_inset Formula $t^{X}$
+\end_inset
+
+, 
+\begin_inset Formula $e^{tX}$
+\end_inset
+
+ or 
+\begin_inset Formula $e^{itX}$
+\end_inset
+
+), so the law of iterated expectation is useful.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X|(N=n)\sim Bin(n,p)$
+\end_inset
+
+ and 
+\begin_inset Formula $N\sim Po(\lambda)$
+\end_inset
+
+.
+ What is the marginal distribution of 
+\begin_inset Formula $X$
+\end_inset
+
+? 
+\begin_inset Formula $X$
+\end_inset
+
+ is non-negative and integer-valued, so 
+\begin_inset Formula $g_{X}(t)$
+\end_inset
+
+ is defined.
+\begin_inset Formula 
+\[
+g_{X}(t)=E\left(E(t^{X}|N)\right)=Eh(N)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula 
+\[
+h(n)=E(t^{X}|N=n)=(q+pt)^{n}.
+\]
+
+\end_inset
+
+We then have
+\begin_inset Formula 
+\[
+g_{X}(t)=E\left((q+pt)^{N}\right)=g_{N}(q+pt)=e^{\lambda\left[(q+pt)-1\right]}=e^{\lambda p(t-1)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X|y\sim N(0,y)$
+\end_inset
+
+ and 
+\begin_inset Formula $y\sim\mathrm{Exp}(1)$
+\end_inset
+
+, then 
+\begin_inset Formula $X\sim L(1/\sqrt{2})$
+\end_inset
+
+.
+ Prove using characteristic functions.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1335 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\setcounter{MaxMatrixCols}{10}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{RawSienna}{cmyk}{0,0.87,0.82,0.31}
+\definecolor{gray97}{cmyk}{0,0,0,0.03}
+\definecolor{robinsegg}{cmyk}{0.18,0.04,0,0.07}
+\definecolor{cola}{cmyk}{0.642, 0, 0.566, 0.584}
+\definecolor{darkgreen}{cmyk}{0.37, 0, 0.71, 0.69}
+\definecolor{darkpurple}{cmyk}{0.33, 0.99, 0.0, 0.4}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usecolortheme[named=RawSienna]{structure}
+%\usecolortheme[RGB={205,0,0}]{structure}
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{infolines}
+\usetheme{default}
+\setbeamertemplate{blocks}[shadow=true]
+%\setbeamerfont{structure}{shape=\itshape}
+\usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{background canvas}{
+ % \ifnum \thepage>0 \relax % we are on the first page
+%\includegraphics[width=\paperwidth,height=\paperheight]{/home/mv/Dropbox/Foton/IconsWallpaper/greyribbonLighter.jpg}
+ % \else
+ 	% No background for page 2 and onwards
+ % \fi
+}
+\usepackage{bbding}
+\end_preamble
+\options xcolor=svgnames
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Probability Theory - L5
+\end_layout
+
+\end_inset
+
+
+\shape smallcaps
+Probability Theory
+\shape default
+
+\begin_inset VSpace 0.2cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lecture 5
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+
+
+\series bold
+Mattias Villani
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Statistics, LiU
+\end_layout
+
+\end_inset
+
+Division of Statistics
+\begin_inset Newline newline
+\end_inset
+
+Dept.
+ of Computer and Information Science
+\begin_inset Newline newline
+\end_inset
+
+Linköping University 
+\end_layout
+
+\begin_layout Date
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Overview Lecture 5
+\end_layout
+
+\begin_layout Itemize
+Linear algebra recap
+\end_layout
+
+\begin_layout Itemize
+Multivariate normal distribution
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Linear algebra recap
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Eigen-decomposition
+\series default
+ of an 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ symmetric matrix 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbf{C\textnormal{'}AC}=\mathbf{D}
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mathbf{D}=Diag(\lambda_{1},....,\lambda_{n})$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{C}$
+\end_inset
+
+ is an orthogonal matrix.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Orthogonal matrix
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{C}'\mathbf{C}=\mathbf{I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{C}^{-1}=\mathbf{C}'$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\det\mathbf{C}=\pm1$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The columns of 
+\begin_inset Formula $\mathbf{C}=\left(\mathbf{c}_{1},...,\mathbf{c}_{n}\right)$
+\end_inset
+
+ are the eigenvectors, and 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ is the 
+\begin_inset Formula $i$
+\end_inset
+
+th largest eigenvalue.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\det\mathbf{A}=\lambda_{1}\cdot\lambda_{2}\cdots\lambda_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Quadratic forms and positive-definiteness
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Quadratic form
+\series default
+
+\begin_inset Formula 
+\[
+Q(\mathbf{x})=\mathbf{x'Ax}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q(\mathbf{x})$
+\end_inset
+
+ is 
+\series bold
+positive-definite
+\series default
+ if 
+\begin_inset Formula $Q(\mathbf{x})>0$
+\end_inset
+
+ for all 
+\begin_inset Formula $\mathbf{x}\neq\mathbf{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q(\mathbf{x})$
+\end_inset
+
+ is 
+\series bold
+positive-semidefinite
+\series default
+ if 
+\begin_inset Formula $Q(\mathbf{x})\geq0$
+\end_inset
+
+ for all 
+\begin_inset Formula $\mathbf{x}\neq\mathbf{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q(\mathbf{x})$
+\end_inset
+
+ is 
+\series bold
+positive-definite
+\series default
+ iff all eigenvalues of 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ are positive.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $Q(\mathbf{x})$
+\end_inset
+
+ is 
+\series bold
+positive-semidefinite
+\series default
+ iff all eigenvalues of 
+\begin_inset Formula $\mathbf{A}$
+\end_inset
+
+ are non-negative.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Matrix square root
+\end_layout
+
+\begin_layout Itemize
+If 
+\begin_inset Formula $D=diag(\lambda_{1},...,\lambda_{n})$
+\end_inset
+
+ is diagonal, then 
+\begin_inset Formula $\tilde{D}=diag(\sqrt{\lambda_{1}},...,\sqrt{\lambda_{n}})$
+\end_inset
+
+ is the square root of 
+\begin_inset Formula $D$
+\end_inset
+
+:
+\begin_inset Formula 
+\[
+\tilde{D}\tilde{D}=D
+\]
+
+\end_inset
+
+and we can write 
+\begin_inset Formula $D^{1/2}=\tilde{D}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+square root of a positive definite matrix
+\series default
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+A=CDC'
+\]
+
+\end_inset
+
+ can be defined as 
+\begin_inset Formula 
+\[
+A^{1/2}=C\tilde{D}C'
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\tilde{D}==diag(\sqrt{\lambda_{1}},...,\sqrt{\lambda_{n}})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Check:
+\begin_inset Formula 
+\[
+A^{1/2}A^{1/2}=C\tilde{D}C'C\tilde{D}C'=C\tilde{D}\tilde{D}C'=CDC'=A
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+We also have
+\begin_inset Formula 
+\[
+\left(A^{-1}\right)^{1/2}=\left(A^{1/2}\right)^{-1}
+\]
+
+\end_inset
+
+which is denoted by 
+\begin_inset Formula $A^{-1/2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Covariance matrix
+\end_layout
+
+\begin_layout Itemize
+Mean vector
+\begin_inset Formula 
+\[
+\mu=\mathrm{E}\mathbf{X}=\left(\begin{array}{c}
+EX_{1}\\
+\vdots\\
+EX_{n}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Covariance matrix
+\begin_inset Formula 
+\begin{align*}
+\Lambda=Cov(\mathbf{X}) & =E(\mathbf{X}-\mu)(\mathbf{X}-\mu)'=
+\end{align*}
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula 
+\[
+\left(\begin{array}{cccc}
+E(X_{1}-\mu_{1})^{2} & E(X_{1}-\mu_{1})(X_{2}-\mu_{2}) & \cdots & E(X_{1}-\mu_{1})(X_{n}-\mu_{n})\\
+E(X_{2}-\mu_{2})(X_{1}-\mu_{1}) & E(X_{2}-\mu_{2})^{2} & \cdots\\
+ &  & \ddots\\
+E(X_{n}-\mu_{n})(X_{1}-\mu_{1}) & E(X_{n}-\mu_{n})(X_{2}-\mu_{2}) & \cdots & E(X_{n}-\mu_{n})^{2}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Every covariance matrix is positive semidefinite.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\det\Lambda\geq0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Linear transformations
+\end_layout
+
+\begin_layout Itemize
+Recall that if 
+\begin_inset Formula $Y=aX+b$
+\end_inset
+
+, where 
+\begin_inset Formula $E(X)=\mu$
+\end_inset
+
+ and 
+\begin_inset Formula $Var(X)=\sigma^{2}$
+\end_inset
+
+ then
+\begin_inset Formula 
+\begin{align*}
+E(Y) & =a\mu+b\\
+Var(Y) & =a^{2}\sigma^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+
+\series bold
+Multivariate linear transformation
+\series default
+
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Let 
+\begin_inset Formula $\mathbf{Y}=\mathbf{BX}+\mathbf{b}$
+\end_inset
+
+, where 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times1$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times n$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Assume 
+\begin_inset Formula $E\mathbf{X}=\mu$
+\end_inset
+
+ and 
+\begin_inset Formula $Cov(\mathbf{X})=\Lambda$
+\end_inset
+
+.
+ Then,
+\begin_inset Formula 
+\begin{align*}
+E(\mathbf{Y}) & =\mathbf{B}\mu+\mathbf{b}\\
+Cov(\mathbf{Y}) & =\mathbf{B}\Lambda\mathbf{B}'
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $\mathbf{X}=(X_{1},...,X_{n})'$
+\end_inset
+
+ where 
+\begin_inset Formula $X_{1},...,X_{n}\overset{iid}{\sim}N(0,1)$
+\end_inset
+
+.
+ Then NOTE TO SELF: univariate first!
+\begin_inset Formula 
+\[
+\mathbf{Y}=\mu+\Lambda^{1/2}\mathbf{X}\sim N(\mu,\Lambda)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Multivariate normal distribution
+\end_layout
+
+\begin_layout Itemize
+Multivariate normal 
+\begin_inset Formula $\mathbf{X}\sim N(\mu,\Lambda)$
+\end_inset
+
+, where 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ is a 
+\begin_inset Formula $n\times1$
+\end_inset
+
+ random vector.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Three equivalent definitions:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+
+\series default
+ is (multivariate) normal iff 
+\begin_inset Formula $\mathbf{a}'\mathbf{X}$
+\end_inset
+
+ is (univariate) normal for all 
+\begin_inset Formula $\mathbf{a}$
+\end_inset
+
+.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ is multivariate normal iff its characteristic function is
+\begin_inset Formula 
+\[
+\varphi_{\mathbf{X}}(\mathbf{t})=Ee^{i\mathbf{t}'\mathbf{X}}=\exp\left(i\mathbf{t}'\mu-\frac{1}{2}\mathbf{t}'\Lambda\mathbf{t}\right)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ is multivariate normal iff its density function is of the form
+\begin_inset Formula 
+\[
+f_{\mathbf{X}}(\mathbf{x})=\left(\frac{1}{2\pi}\right)^{n/2}\frac{1}{\sqrt{\det\Lambda}}\exp\left\{ -\frac{1}{2}(\mathbf{x}-\mu)'\Lambda^{-1}(\mathbf{x}-\mu)\right\} 
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Bivariate normal 
+\begin_inset Formula $(n=2)$
+\end_inset
+
+
+\series default
+
+\begin_inset Formula 
+\[
+\Lambda=\left(\begin{array}{cc}
+\sigma_{1}^{2} & \rho\sigma_{1}\sigma_{2}\\
+\rho\sigma_{1}\sigma_{2} & \sigma_{2}^{2}
+\end{array}\right)
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $-1\leq\rho\leq1$
+\end_inset
+
+ is the correlation coefficient.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Properties of the normal distribution
+\end_layout
+
+\begin_layout Itemize
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Let 
+\begin_inset Formula $\mathbf{X}\sim N(\mu,\Lambda)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+Linear combinations: 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula $\mathbf{Y}=\mathbf{BX}+\mathbf{b}$
+\end_inset
+
+, where 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ is 
+\begin_inset Formula $n\times1$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{B}$
+\end_inset
+
+ is 
+\begin_inset Formula $m\times n$
+\end_inset
+
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ Then
+\begin_inset Formula 
+\[
+\mathbf{Y}\sim N(\mathbf{B}\mu+\mathbf{b},\mathbf{B}\Lambda\mathbf{B}')
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Cor]
+\end_layout
+
+\end_inset
+
+The components of 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ are all normal (
+\begin_inset Formula $\mathbf{B}=(0,\ldots1,0,\ldots,0)$
+\end_inset
+
+)
+\begin_inset Formula 
+\[
+Y_{i}\sim N(\mu_{i},\Lambda_{ii})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Cor]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $\mathbf{X}=\left(\begin{array}{c}
+\mathbf{X}_{1}\\
+\mathbf{X}_{2}
+\end{array}\right)$
+\end_inset
+
+ where 
+\begin_inset Formula $\mathbf{X}_{1}$
+\end_inset
+
+ is 
+\begin_inset Formula $n_{1}\times1$
+\end_inset
+
+ and 
+\begin_inset Formula $\mathbf{X}_{2}$
+\end_inset
+
+ is 
+\begin_inset Formula $n_{2}\times1$
+\end_inset
+
+ (
+\begin_inset Formula $n_{1}+n_{2}=n$
+\end_inset
+
+).
+ Then
+\begin_inset Formula 
+\[
+\mathbf{X}_{1}\sim N(\mu_{1},\Lambda_{1})
+\]
+
+\end_inset
+
+where 
+\begin_inset Formula $\mu_{1}$
+\end_inset
+
+ are the 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ first elements of 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda_{1}$
+\end_inset
+
+ is the 
+\begin_inset Formula $n_{1}\times n_{1}$
+\end_inset
+
+ submatrix of 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Marginal normal may not be jointly normal
+\end_layout
+
+\begin_layout Itemize
+We know that 
+\begin_inset Formula $\mathbf{X}\sim N(\mu,\Lambda)$
+\end_inset
+
+ implies that all marginals are normal.
+\end_layout
+
+\begin_layout Itemize
+The converse does not hold.
+ Normal marginals does not imply that the joint distribution is normal.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename BivariateNormalDens.png
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename BivariteNormalCarvedOut.png
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Conditional distributions from 
+\begin_inset Formula $N(\mu,\Lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\left(\begin{array}{c}
+X\\
+Y
+\end{array}\right)\sim N_{2}(\mu,\Lambda)$
+\end_inset
+
+, where
+\begin_inset Formula 
+\[
+\mu=\left(\begin{array}{c}
+\mu_{x}\\
+\mu_{y}
+\end{array}\right)\text{}\quad\text{and\quad\ }\Lambda=\left(\begin{array}{cc}
+\sigma_{x}^{2} & \rho\sigma_{x}\sigma_{y}\\
+\rho\sigma_{x}\sigma_{y} & \sigma_{y}^{2}
+\end{array}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Then 
+\begin_inset Formula 
+\[
+Y|X=x\sim N\left[\mu_{y}+\rho\frac{\sigma_{y}}{\sigma_{x}}(x-\mu_{x}),\:\sigma_{y}^{2}(1-\rho^{2})\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+regression function
+\series default
+ 
+\begin_inset Formula $E(Y|X)$
+\end_inset
+
+ is 
+\series bold
+linear
+\series default
+ and 
+\begin_inset Formula $Var(Y|X)=$
+\end_inset
+
+residual variance.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $\mathbf{X}=\left(\begin{array}{c}
+\mathbf{X}_{1}\\
+\mathbf{X}_{2}
+\end{array}\right)$
+\end_inset
+
+ and partition 
+\begin_inset Formula $\mu$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda$
+\end_inset
+
+ accordingly as
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\begin_inset Formula $\mu=\left(\begin{array}{c}
+\mu_{1}\\
+\mu_{2}
+\end{array}\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $\Lambda=\left(\begin{array}{cc}
+\Lambda_{11} & \Lambda_{12}\\
+\Lambda_{21} & \Lambda_{22}
+\end{array}\right)$
+\end_inset
+
+.
+ Then
+\begin_inset VSpace smallskip
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\mathbf{X}_{1}|\mathbf{X}_{2}=\mathbf{x}_{2}\sim N\left[\mu_{1}+\Lambda_{12}\Lambda_{22}^{-1}(x_{2}-\mu_{2}),\;\Lambda_{11}-\Lambda_{12}\Lambda_{22}^{-1}\Lambda_{21}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Independence and normality
+\end_layout
+
+\begin_layout Itemize
+Correlation measures 
+\series bold
+linear
+\series default
+ association (dependence).
+\end_layout
+
+\begin_layout Itemize
+In general: 
+\begin_inset Formula $\text{Uncorrelated}\nrightarrow\text{Independence}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+In the normal distribution: 
+\begin_inset Formula $\text{Uncorrelated}\leftrightarrow\text{Independence}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Remember that: 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are jointly normal 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ the regression function is linear 
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+the linear predictor is optimal.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X_{1},...,X_{n}\overset{iid}{\sim}N(\mu,\sigma^{2})$
+\end_inset
+
+, then 
+\begin_inset Formula $\bar{X}_{n}=\frac{1}{n}\sum_{i=1}^{n}X_{i}$
+\end_inset
+
+ and 
+\begin_inset Formula $s^{2}=\frac{1}{n-1}\sum_{i=1}^{n}(X_{i}-\bar{X}_{n})^{2}$
+\end_inset
+
+ are independent.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Principal components
+\end_layout
+
+\begin_layout Itemize
+Let 
+\begin_inset Formula $\mathbf{C}\Lambda\mathbf{C}'=\mathbf{D}=diag(\lambda_{1},...,\lambda_{n})$
+\end_inset
+
+.
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $\mathbf{X}\sim N(\mu,\Lambda)$
+\end_inset
+
+ and set 
+\begin_inset Formula $\mathbf{Y}=\mathbf{C}'\mathbf{X}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\mathbf{Y}\sim N(\mathbf{C}'\mu,\mathbf{D})
+\]
+
+\end_inset
+
+so that the components of 
+\begin_inset Formula $\mathbf{Y}$
+\end_inset
+
+ are independent and 
+\begin_inset Formula $Var(Y_{i})=\lambda_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename PrincipalAxes.png
+	scale 25
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

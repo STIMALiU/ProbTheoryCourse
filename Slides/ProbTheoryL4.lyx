@@ -1,0 +1,797 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\setcounter{MaxMatrixCols}{10}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{RawSienna}{cmyk}{0,0.87,0.82,0.31}
+\definecolor{gray97}{cmyk}{0,0,0,0.03}
+\definecolor{robinsegg}{cmyk}{0.18,0.04,0,0.07}
+\definecolor{cola}{cmyk}{0.642, 0, 0.566, 0.584}
+\definecolor{darkgreen}{cmyk}{0.37, 0, 0.71, 0.69}
+\definecolor{darkpurple}{cmyk}{0.33, 0.99, 0.0, 0.4}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usecolortheme[named=RawSienna]{structure}
+%\usecolortheme[RGB={205,0,0}]{structure}
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{infolines}
+\usetheme{default}
+\setbeamertemplate{blocks}[shadow=true]
+%\setbeamerfont{structure}{shape=\itshape}
+\usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{background canvas}{
+ % \ifnum \thepage>0 \relax % we are on the first page
+%\includegraphics[width=\paperwidth,height=\paperheight]{/home/mv/Dropbox/Foton/IconsWallpaper/greyribbonLighter.jpg}
+ % \else
+ 	% No background for page 2 and onwards
+ % \fi
+}
+\usepackage{bbding}
+\end_preamble
+\options xcolor=svgnames
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Probability Theory - L4
+\end_layout
+
+\end_inset
+
+
+\shape smallcaps
+Probability Theory
+\shape default
+
+\begin_inset VSpace 0.2cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lecture 4
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+
+
+\series bold
+Mattias Villani
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Statistics, LiU
+\end_layout
+
+\end_inset
+
+Division of Statistics
+\begin_inset Newline newline
+\end_inset
+
+Dept.
+ of Computer and Information Science
+\begin_inset Newline newline
+\end_inset
+
+Linköping University 
+\end_layout
+
+\begin_layout Date
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Overview Lecture 4
+\end_layout
+
+\begin_layout Itemize
+Order statistics
+\end_layout
+
+\begin_layout Itemize
+Probability in data mining
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Order statistics
+\end_layout
+
+\begin_layout Itemize
+Finding the distribution of 
+\series bold
+extremes
+\series default
+: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $\min(X_{1},X_{2},...,X_{n})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\max(X_{1},X_{2},...,X_{n})$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\series bold
+Median
+\series default
+: 
+\begin_inset Formula $Pr(X\leq m)=1/2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Range
+\series default
+: 
+\begin_inset Formula $R=\max(X_{1},X_{2},...,X_{n})-\min(X_{1},X_{2},...,X_{n})$
+\end_inset
+
+.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+The 
+\series bold
+
+\begin_inset Formula $k$
+\end_inset
+
+th order variable
+\series default
+
+\begin_inset Formula 
+\[
+X_{(k)}=\text{the }k\mbox{\text{th} smallest of }X_{1},X_{2},...,X_{n}
+\]
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Def]
+\end_layout
+
+\end_inset
+
+The order statistics: 
+\begin_inset Formula $X_{(1)}\leq X_{(2)}\leq\cdots\leq X_{(n)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Even if the original sample 
+\begin_inset Formula $X_{1},X_{2},...,X_{n}$
+\end_inset
+
+ are independent, their order statistics 
+\begin_inset Formula $X_{(1)},X_{(2)},...,X_{(n)}$
+\end_inset
+
+ are not clearly not.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Distribution of the maximum
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+The distribution of the maximum 
+\begin_inset Formula $X_{(n)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+F_{X_{(n)}}(x) & =P\left(X_{1}\leq x,X_{2}\leq x,...,X_{n}\leq x\right)\\
+ & =\prod_{i=1}^{n}P(X_{i}\leq x)=\left[F(x)\right]^{n}.
+\end{align*}
+
+\end_inset
+
+The density of the maximum 
+\begin_inset Formula $X_{(n)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{X_{(n)}}(x)=n\left[F(x)\right]^{n-1}f(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},...,X_{n}\sim L(a)$
+\end_inset
+
+.
+ Find 
+\begin_inset Formula $F_{X_{(n)}}(x)$
+\end_inset
+
+.
+ Solution: If 
+\begin_inset Formula $X\sim L(a)$
+\end_inset
+
+ then 
+\begin_inset Formula 
+\[
+F(x)=\begin{cases}
+\frac{1}{2}\exp\left(\frac{x}{b}\right) & \text{ if }x<0\\
+1-\frac{1}{2}\exp\left(-\frac{x}{b}\right) & \text{ if }x\geq0
+\end{cases}
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula 
+\[
+F_{X_{(n)}}(x)=\left[F(x)\right]^{n}=\begin{cases}
+\frac{1}{2^{n}}\exp\left(\frac{nx}{b}\right) & \text{ if }x<0\\
+\left[1-\frac{1}{2}\exp\left(-\frac{x}{b}\right)\right]^{n} & \text{ if }x\geq0
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Distribution of the minimum
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+The distribution of the minimum 
+\begin_inset Formula $X_{(1)}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+F_{X_{(1)}}(x) & =1-P\left(X_{(1)}>x\right)\\
+ & =1-P\left(X_{1}>x,X_{2}>x,...,X_{n}>x\right)\\
+ & =1-\prod_{i=1}^{n}P(X_{i}>x)=1-\left[1-F(x)\right]^{n}.
+\end{align*}
+
+\end_inset
+
+The density of the minimum 
+\begin_inset Formula $X_{(n)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{X_{(1)}}(x)=n\left[1-F(x)\right]^{n-1}f(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{1},...,X_{n}\sim Exp(a)$
+\end_inset
+
+.
+ What is 
+\begin_inset Formula $f_{X_{(1)}}(x)$
+\end_inset
+
+ and 
+\begin_inset Formula $E(X_{(1)})$
+\end_inset
+
+?
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Solution
+\series default
+: We have 
+\begin_inset Formula 
+\[
+F(x)=1-e^{-ax}
+\]
+
+\end_inset
+
+so
+\begin_inset Formula 
+\[
+f_{X_{(1)}}(x)=n\left[e^{-ax}\right]^{n-1}ae^{-ax}=ane^{-anx}
+\]
+
+\end_inset
+
+so 
+\begin_inset Formula $X_{(1)}\sim Exp(an)$
+\end_inset
+
+ and 
+\begin_inset Formula $E(X_{(1)})=\frac{1}{an}$
+\end_inset
+
+.
+ [Serial electric circuits]
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Marginal distribution of X
+\begin_inset Formula $_{(k)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+The distribution of the 
+\begin_inset Formula $k$
+\end_inset
+
+th order variable 
+\begin_inset Formula $X_{(k)}$
+\end_inset
+
+ from a random sample from 
+\begin_inset Formula $F(x)$
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{align*}
+F_{X_{(k)}}(x) & =F_{\beta(k,n+1-k)}\left[F(x)\right]
+\end{align*}
+
+\end_inset
+
+where 
+\begin_inset Formula $F_{\beta(k,n+1-k)}(\cdot)$
+\end_inset
+
+ is the cdf of a 
+\begin_inset Formula $Beta(k,n+1-k)$
+\end_inset
+
+ variable.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+Let the individual jumps of 
+\begin_inset Formula $n$
+\end_inset
+
+ athletes in a long jump tournament be independently 
+\begin_inset Formula $U(a,b)$
+\end_inset
+
+ distributed.
+ What is the probability that the recorded score of the silver medalist
+ is longer than 
+\begin_inset Formula $c$
+\end_inset
+
+ meters? 
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Solution
+\series default
+: First, calculate the distribution of 
+\begin_inset Formula $Y_{i}$
+\end_inset
+
+ = longest jump out of three jumps for the 
+\begin_inset Formula $i$
+\end_inset
+
+th athlete, for 
+\begin_inset Formula $i=1,...,n$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+F_{Y_{i}}(y)=[F(y)]^{3}=\left(\frac{y-a}{b-a}\right)^{3}
+\]
+
+\end_inset
+
+Then derive 
+\begin_inset Formula $Y_{(n-1)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+F_{Y_{(n-1)}}(y)=F_{\beta(n-1,2)}\left(\left(\frac{y-a}{b-a}\right)^{3}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Joint distribution of the extremes and range
+\end_layout
+
+\begin_layout Itemize
+So far: only 
+\emph on
+marginal
+\emph default
+ distributions of order statistics.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+The joint density of 
+\begin_inset Formula $X_{(1)}$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{(n)}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+f_{X_{(1)},X_{(n)}}(x,y)=\begin{cases}
+n(n-1)\left(F(y)-F(x)\right)^{n-2}f(y)f(x) & \text{ if }x<y\\
+0 & \text{ otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+From 
+\begin_inset Formula $f_{X_{(1)},X_{(n)}}(x,y)$
+\end_inset
+
+ we can derive the distribution of the Range 
+\begin_inset Formula $R_{n}=X_{(n)}-X_{(1)}$
+\end_inset
+
+ by the transformation theorem.
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+The distribution of the 
+\series bold
+Range
+\series default
+ 
+\begin_inset Formula $R_{n}=X_{(n)}-X_{(1)}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+f_{R_{n}}(r)=n(n-1)\int_{-\infty}^{\infty}\left(F(u+r)-F(u)\right)^{n-2}f(u+r)f(u)du
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Joint distribution of order statistics
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+The joint density of the order statistics is 
+\begin_inset Formula 
+\[
+f_{X_{(1)},...,X_{(n)}}(y_{1},...,y_{n})=\begin{cases}
+n!\prod_{k=1}^{n}f(y_{k}) & \text{ if }y_{1}<y_{2}<\cdots<y_{n}\\
+0 & \text{ otherwise}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The marginal densities of any order variable can be derived by integrating
+ 
+\begin_inset Formula $f_{X_{(1)},...,X_{(n)}}(y_{1},...,y_{n})$
+\end_inset
+
+ in the usual fashion.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\end_body
+\end_document

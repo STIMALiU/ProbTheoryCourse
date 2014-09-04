@@ -1,0 +1,895 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass beamer
+\begin_preamble
+\setcounter{MaxMatrixCols}{10}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{mathpazo}
+\usepackage{hyperref}
+\usepackage{multimedia}
+\usepackage{xcolor}
+\usepackage{colortbl}
+\definecolor{RawSienna}{cmyk}{0,0.87,0.82,0.31}
+\definecolor{gray97}{cmyk}{0,0,0,0.03}
+\definecolor{robinsegg}{cmyk}{0.18,0.04,0,0.07}
+\definecolor{cola}{cmyk}{0.642, 0, 0.566, 0.584}
+\definecolor{darkgreen}{cmyk}{0.37, 0, 0.71, 0.69}
+\definecolor{darkpurple}{cmyk}{0.33, 0.99, 0.0, 0.4}
+
+\newenvironment{stepenumerate}{\begin{enumerate}[<+->]}{\end{enumerate}}
+\newenvironment{stepitemize}{\begin{itemize}[<+->]}{\end{itemize} }
+\newenvironment{stepenumeratewithalert}{\begin{enumerate}[<+-| alert@+>]}{\end{enumerate}}
+\newenvironment{stepitemizewithalert}{\begin{itemize}[<+-| alert@+>]}{\end{itemize} }
+\usecolortheme[named=RawSienna]{structure}
+%\usecolortheme[RGB={205,0,0}]{structure}
+\setbeamertemplate{navigation symbols}{}
+\useoutertheme{infolines}
+\usetheme{default}
+\setbeamertemplate{blocks}[shadow=true]
+%\setbeamerfont{structure}{shape=\itshape}
+\usefonttheme{structuresmallcapsserif}
+\setbeamertemplate{background canvas}{
+ % \ifnum \thepage>0 \relax % we are on the first page
+%\includegraphics[width=\paperwidth,height=\paperheight]{/home/mv/Dropbox/Foton/IconsWallpaper/greyribbonLighter.jpg}
+ % \else
+ 	% No background for page 2 and onwards
+ % \fi
+}
+\end_preamble
+\options xcolor=svgnames
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman palatino
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_amsmath 1
+\use_esint 0
+\use_mhchem 1
+\use_mathdots 1
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Probability Theory - L2
+\end_layout
+
+\end_inset
+
+
+\shape smallcaps
+Probability Theory
+\shape default
+
+\begin_inset VSpace 0.2cm
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Lecture 2
+\end_layout
+
+\begin_layout Author
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+Mattias Villani
+\end_layout
+
+\end_inset
+
+
+\series bold
+Mattias Villani
+\end_layout
+
+\begin_layout Institute
+
+\series bold
+\begin_inset Argument
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Statistics, LiU
+\end_layout
+
+\end_inset
+
+Division of Statistics
+\begin_inset Newline newline
+\end_inset
+
+Dept.
+ of Computer and Information Science
+\begin_inset Newline newline
+\end_inset
+
+Linköping University 
+\end_layout
+
+\begin_layout Date
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Overview Lecture 2
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conditional distributions
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conditional expectation, conditional variance
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Distributions with random parameters and the Bayesian approach
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Regression and Prediction
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Conditional distributions
+\end_layout
+
+\begin_layout Itemize
+For events [if 
+\begin_inset Formula $P(B)>0$
+\end_inset
+
+]
+\begin_inset Formula 
+\[
+P(A|B)=\frac{P(A\cap B)}{P(B)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A$
+\end_inset
+
+ and 
+\begin_inset Formula $B$
+\end_inset
+
+ are 
+\series bold
+independent
+\series default
+ if and only if 
+\begin_inset Formula $P(A|B)=P(A)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+For 
+\series bold
+discrete
+\series default
+ random variables
+\begin_inset Formula 
+\[
+p_{Y|X=x}(y)=p(Y=y|X=x)=\frac{p_{X,Y}(x,y)}{p_{X}(x)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{Y|X=x}(y)=\frac{p_{X,Y}(x,y)}{\sum_{y}p_{X,Y}(x,y)}.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+For 
+\series bold
+continuous
+\series default
+ random variables
+\begin_inset Formula 
+\[
+f_{Y|X=x}(y)=\frac{f_{X,Y}(x,y)}{f_{X}(x)}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{Y|X=x}(y)=\frac{f_{X,Y}(x,y)}{\int_{-\infty}^{\infty}f_{X,Y}(x,z)dz}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Conditional expectation
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conditional expectation of 
+\begin_inset Formula $Y$
+\end_inset
+
+ given 
+\begin_inset Formula $X=x$
+\end_inset
+
+
+\series default
+ is
+\begin_inset Formula 
+\[
+E(Y|X=x)=\begin{cases}
+\sum_{y}y\cdot p_{Y|X=x}(y) & \text{ if \ensuremath{Y}is discrete}\\
+\int_{-\infty}^{\infty}y\cdot f_{Y|X=x}(y)dy & \text{ if \ensuremath{Y}is continuous}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Note that 
+\begin_inset Formula $h(X)=E(Y|X)$
+\end_inset
+
+ is a random variable that only depends on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Theorem 2.1.
+ 
+\series bold
+Law of iterated expectation
+\series default
+.
+\begin_inset Formula 
+\[
+E\left[E(Y|X)\right]=E(Y)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Note that the 
+\emph on
+inner expectation
+\emph default
+ (
+\begin_inset Formula $E(Y|X)$
+\end_inset
+
+) is with respect to 
+\begin_inset Formula $f_{Y|X}(y)$
+\end_inset
+
+, while the 
+\emph on
+outer expectation
+\emph default
+ is with respect to 
+\begin_inset Formula $f_{X}(x)$
+\end_inset
+
+.
+
+\color magenta
+ 
+\size scriptsize
+[Ex.
+ 2.1, Page 33]
+\end_layout
+
+\begin_layout Itemize
+The law of iterated expectation is an 
+\begin_inset Quotes eld
+\end_inset
+
+expectation version
+\begin_inset Quotes erd
+\end_inset
+
+ of the law of total probability.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E(Y|X)=E(Y)$
+\end_inset
+
+ if 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ are independent.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Conditional variance
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Conditional variance of 
+\begin_inset Formula $Y$
+\end_inset
+
+ given 
+\begin_inset Formula $X=x$
+\end_inset
+
+
+\series default
+ is
+\begin_inset Formula 
+\[
+Var(Y|X=x)=E\left[\left(Y-E(Y|X=x)\right)^{2}|X=x\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Note that 
+\begin_inset Formula $v(X)=Var(Y|X)$
+\end_inset
+
+ is a random variable that only depends on 
+\begin_inset Formula $X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Corollary 2.3.1 
+\begin_inset Formula 
+\[
+Var(Y)=E\left[Var(Y|X)\right]+Var\left[E(Y|X)\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Note the naive version 
+\begin_inset Formula $Var(Y)=E\left[Var(Y|X)\right]$
+\end_inset
+
+ misses the uncertainty in 
+\begin_inset Formula $Y$
+\end_inset
+
+ that comes from not knowing 
+\begin_inset Formula $X$
+\end_inset
+
+ in 
+\begin_inset Formula $E(Y|X)$
+\end_inset
+
+.
+\size scriptsize
+\color magenta
+[Ex.
+ 2.1, Page 33]
+\end_layout
+
+\begin_layout Itemize
+See the more general version in Theorem 2.3.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Distributions with random parameters
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X|\theta\sim f_{X}(x;\theta)$
+\end_inset
+
+ and 
+\begin_inset Formula $\theta$
+\end_inset
+
+ is a random variable.
+\end_layout
+
+\begin_layout Itemize
+Example 1: 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $X|N=n\sim Bin(n,p)$
+\end_inset
+
+ and 
+\begin_inset Formula $N\sim Po(\lambda)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+If the number of potential bidders in an auction is 
+\begin_inset Formula $N=n$
+\end_inset
+
+ and each of them bids with probability 
+\begin_inset Formula $p$
+\end_inset
+
+, then 
+\begin_inset Formula $X\sim Bin(n,p)$
+\end_inset
+
+ bids will be placed.
+\end_layout
+
+\begin_layout Itemize
+The number of potential bidders is uncertain, 
+\begin_inset Formula $N\sim Po(\lambda)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+The marginal distribution for 
+\begin_inset Formula $X$
+\end_inset
+
+ is 
+\begin_inset Formula $Po(\lambda\cdot p)$
+\end_inset
+
+
+\size scriptsize
+\color magenta
+[Ex.
+ 3.2, Page 40]
+\end_layout
+
+\end_deeper
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+Example 2:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $X|(\sigma^{2}=1/\lambda)\sim N(0,1/\lambda)$
+\end_inset
+
+ and 
+\begin_inset Formula $\lambda\sim\Gamma\left(\frac{n}{2},\frac{2}{n}\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $X\sim t(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X$
+\end_inset
+
+ is daily stock market returns.
+ 
+\begin_inset Formula $X|\lambda\sim N(0,1/\lambda)$
+\end_inset
+
+, where 
+\begin_inset Formula $1/\lambda$
+\end_inset
+
+ is the daily variance.
+\end_layout
+
+\begin_layout Itemize
+The daily variance varies from day to day according to 
+\begin_inset Formula $\lambda\sim\Gamma\left(\frac{n}{2},\frac{2}{n}\right)$
+\end_inset
+
+.
+ Turbulent day: realization of 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ is very small.
+\end_layout
+
+\end_deeper
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Bayesian coin tossing
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $X_{n}$
+\end_inset
+
+=number of heads after 
+\begin_inset Formula $n$
+\end_inset
+
+ tosses.
+ 
+\begin_inset Formula 
+\[
+X_{n}|P=p\sim Bin(n,p)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Prior distribution
+\series default
+: 
+\begin_inset Formula $P\sim U(0,1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Posterior distribution
+\series default
+: 
+\begin_inset Formula $P|(X_{n}=k)\sim Beta(k+1,n+1-k)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Marginal of 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+X_{n}\sim U(\{1,2,...,n\})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Conditional of 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+ given 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+ 
+\series bold
+and
+\series default
+ 
+\begin_inset Formula $p$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P(X_{n+1}=n+1|X_{n}=n,p)=p
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Conditional of 
+\begin_inset Formula $X_{n+1}$
+\end_inset
+
+ given 
+\begin_inset Formula $X_{n}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+P(X_{n+1}=n+1|X_{n}=n)=\frac{n+1}{n+2}\rightarrow1\text{ as }n\rightarrow\infty
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Coin flips are no longer independent when 
+\begin_inset Formula $p$
+\end_inset
+
+ is uncertain and we learn about 
+\begin_inset Formula $p$
+\end_inset
+
+ from data.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout BeginFrame
+Regression and Prediction
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+regression function
+\series default
+
+\begin_inset Formula 
+\[
+h(\mathbf{x})=h(x_{1},...,x_{n})=E(Y|X_{1}=x_{1},...,X_{n}=x_{n})=E(Y|\mathbf{X}=\mathbf{x})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Predictor
+\series default
+: 
+\begin_inset Formula $\hat{Y}=d(\mathbf{X})$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Linear predictor
+\series default
+ 
+\begin_inset Formula $d(\mathbf{X})=a_{0}+a_{1}X_{1}+...a_{n}X_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Expected 
+\series bold
+quadratic prediction error
+\series default
+: 
+\begin_inset Formula $E\left[Y-d(\mathbf{X})\right]^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+best
+\series default
+ 
+\series bold
+predictor
+\series default
+ of 
+\begin_inset Formula $Y$
+\end_inset
+
+ [minimizes expected quadratic prediction error] is the regression function
+ 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $E(Y|\mathbf{X}=\mathbf{x})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Best 
+\series bold
+linear
+\series default
+ predictor - 
+\series bold
+least squares
+\series default
+:
+\begin_inset Formula 
+\[
+\hat{Y}=\mu_{y}+\rho\frac{\sigma_{y}}{\sigma_{x}}(X-\mu_{x})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+When 
+\begin_inset Formula $(X,Y)$
+\end_inset
+
+ is jointly normal, 
+\begin_inset Formula $E(Y|X=x)$
+\end_inset
+
+ is linear.
+ Linear is best of all.
+\end_layout
+
+\begin_layout EndFrame
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document
