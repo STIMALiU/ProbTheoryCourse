@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 477
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass beamer
@@ -38,8 +38,11 @@
  	% No background for page 2 and onwards
  % \fi
 }
+\usepackage{bbding}
+\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
-\options xcolor=svgnames
+\options handout
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -136,14 +139,14 @@ Lecture 2
 status open
 
 \begin_layout Plain Layout
-Mattias Villani
+Per Sidén
 \end_layout
 
 \end_inset
 
 
 \series bold
-Mattias Villani
+Per Sidén
 \end_layout
 
 \begin_layout Institute
@@ -190,10 +193,6 @@ Overview Lecture 2
 \end_inset
 
 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -222,10 +221,7 @@ Regression and Prediction
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -237,10 +233,6 @@ status open
 Conditional distributions
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -280,6 +272,19 @@ independent
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -300,6 +305,19 @@ p_{Y|X=x}(y)=p(Y=y|X=x)=\frac{p_{X,Y}(x,y)}{p_{X}(x)}
 \[
 p_{Y|X=x}(y)=\frac{p_{X,Y}(x,y)}{\sum_{y}p_{X,Y}(x,y)}.
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -331,10 +349,7 @@ f_{Y|X=x}(y)=\frac{f_{X,Y}(x,y)}{\int_{-\infty}^{\infty}f_{X,Y}(x,z)dz}
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -346,10 +361,6 @@ status open
 Conditional expectation
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -381,10 +392,27 @@ E(Y|X=x)=\begin{cases}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
-Note that 
+If 
+\begin_inset Formula $h(x)=E(Y|X=x)$
+\end_inset
+
+, note that 
 \begin_inset Formula $h(X)=E(Y|X)$
 \end_inset
 
@@ -393,8 +421,50 @@ Note that
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Ex.
+ 2.1 page 33.
+ 
+\begin_inset Formula $X\sim U\left(0,1\right),\, Y|X=x\sim U\left(0,x\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Law of iterated expectation
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Theorem 2.1.
  
@@ -406,6 +476,19 @@ Law of iterated expectation
 \[
 E\left[E(Y|X)\right]=E(Y)
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -434,12 +517,29 @@ outer expectation
 \end_inset
 
 .
+\begin_inset ERT
+status open
 
-\color magenta
- 
-\size scriptsize
-[Ex.
- 2.1, Page 33]
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ex 2.1 again E(Y)
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -452,6 +552,19 @@ expectation version
 \end_inset
 
  of the law of total probability.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -470,10 +583,7 @@ expectation version
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -485,10 +595,6 @@ status open
 Conditional variance
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -517,6 +623,19 @@ Var(Y|X=x)=E\left[\left(Y-E(Y|X=x)\right)^{2}|X=x\right]
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -529,6 +648,19 @@ Note that
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -537,6 +669,29 @@ Corollary 2.3.1
 \[
 Var(Y)=E\left[Var(Y|X)\right]+Var\left[E(Y|X)\right]
 \]
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Ex 2.1 again p 36
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -561,21 +716,10 @@ Note the naive version
 \end_inset
 
 .
-\size scriptsize
-\color magenta
-[Ex.
- 2.1, Page 33]
-\end_layout
-
-\begin_layout Itemize
-See the more general version in Theorem 2.3.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -587,10 +731,6 @@ status open
 Distributions with random parameters
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -606,14 +746,23 @@ Distributions with random parameters
 \end_inset
 
  is a random variable.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Example 1: 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -650,6 +799,19 @@ The number of potential bidders is uncertain,
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -664,8 +826,37 @@ The marginal distribution for
 
 \size scriptsize
 \color magenta
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\size scriptsize
+\color magenta
 [Ex.
  3.2, Page 40]
+\end_layout
+
+\end_inset
+
+
+\size default
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -675,10 +866,6 @@ The marginal distribution for
 
 \begin_layout Itemize
 Example 2:
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -711,6 +898,19 @@ Example 2:
 \end_inset
 
  is the daily variance.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -728,10 +928,7 @@ The daily variance varies from day to day according to
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -743,10 +940,6 @@ status open
 Bayesian coin tossing
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -771,6 +964,19 @@ X_{n}|P=p\sim Bin(n,p)
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -783,6 +989,19 @@ Prior distribution
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -795,6 +1014,30 @@ Posterior distribution
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+derive this with prop.
+ trick
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -811,8 +1054,50 @@ X_{n}\sim U(\{0,1,2,...,n\})
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+derive this with Bayes formula
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bayesian coin tossing
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Conditional of 
 \begin_inset Formula $X_{n+1}$
@@ -833,8 +1118,21 @@ and
 
 \begin_inset Formula 
 \[
-P(X_{n+1}=n+1|X_{n}=n,p)=p
+P\left(X_{n+1}=n+1|X_{n}=n,P=p\right)=p
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -859,6 +1157,29 @@ P(X_{n+1}=n+1|X_{n}=n)=\frac{n+1}{n+2}\rightarrow1\text{ as }n\rightarrow\infty
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Show with law of total prob.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -874,10 +1195,7 @@ Coin flips are no longer independent when
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -889,10 +1207,6 @@ status open
 Regression and Prediction
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -913,6 +1227,19 @@ h(\mathbf{x})=h(x_{1},...,x_{n})=E(Y|X_{1}=x_{1},...,X_{n}=x_{n})=E(Y|\mathbf{X}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -926,6 +1253,19 @@ Predictor
 
 .
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -938,6 +1278,19 @@ Linear predictor
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -947,6 +1300,19 @@ quadratic prediction error
 \series default
 : 
 \begin_inset Formula $E\left[Y-d(\mathbf{X})\right]^{2}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -983,6 +1349,31 @@ predictor
 \end_inset
 
 .
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1003,6 +1394,19 @@ least squares
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1015,7 +1419,7 @@ When
 \end_inset
 
  is linear.
- Linear is best of all.
+ For other distributions, this is not true in general.
 \end_layout
 
 \end_deeper

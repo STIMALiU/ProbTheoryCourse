@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass beamer
@@ -39,8 +39,9 @@
  % \fi
 }
 \usepackage{bbding}
+\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
-\options xcolor=svgnames
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -50,13 +51,13 @@
 \font_roman palatino
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -67,15 +68,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Index
 \shortcut idx
@@ -99,7 +109,7 @@
 \begin_body
 
 \begin_layout Title
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -124,24 +134,24 @@ Lecture 3
 \end_layout
 
 \begin_layout Author
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Mattias Villani
+Per Sidén
 \end_layout
 
 \end_inset
 
 
 \series bold
-Mattias Villani
+Per Sidén
 \end_layout
 
 \begin_layout Institute
 
 \series bold
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -171,14 +181,20 @@ Linköping University
 
 \end_layout
 
-\begin_layout EndFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
 
-\end_layout
-
-\begin_layout BeginFrame
+\begin_layout Plain Layout
 Overview Lecture 3
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Transforms
 \end_layout
@@ -199,18 +215,61 @@ Characteristic function
 Transforms and distributions with random parameters
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Transforms
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Finding the distribution of sum of random variables is hard.
  Convolution is messy.
-\begin_inset VSpace medskip
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Recall that for 
+\begin_inset Formula $Z=X+Y$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f_{Z}\left(z\right)=\int_{-\infty}^{\infty}f_{X}\left(x\right)f_{Y}\left(z-x\right)dx.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -223,7 +282,16 @@ uniquely
 \emph default
  describe probability distributions.
  
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -231,7 +299,16 @@ uniquely
 
 \begin_layout Itemize
 If you know the transform, you know the distribution, and vice versa.
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -250,7 +327,16 @@ If you know the transform, you know the distribution, and vice versa.
 \end_inset
 
 
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -266,17 +352,50 @@ Summation
 multiplication of transforms
 \series default
 .
- Nice!
+ Nice! 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+For 
+\begin_inset Formula $Z=X+$
+\end_inset
+
+Y
+\begin_inset Formula 
+\[
+g_{Z}\left(t\right)=g_{X}\left(t\right)g_{Y}\left(t\right)
+\]
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout EndFrame
+\end_inset
+
 
 \end_layout
 
-\begin_layout BeginFrame
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Probability generating function
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Applies to 
 \series bold
@@ -287,7 +406,16 @@ non-negative
 integer-valued
 \series default
  random variables.
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -321,7 +449,16 @@ g_{X}(t)=\mathrm{E}t^{X}=\sum_{n=0}^{\infty}t^{n}\cdot P(X=n)
 \end_inset
 
 
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -336,7 +473,16 @@ g_{X}(t)=\mathrm{E}t^{X}=\sum_{n=0}^{\infty}t^{n}\cdot P(X=n)
 \end_inset
 
 .
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -364,8 +510,17 @@ If
 .
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -398,14 +553,25 @@ g_{X_{1}+X_{2}+...+X_{n}}(t)=\prod_{k=1}^{n}g_{X_{k}}(t)
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Probability generating function, cont.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -431,7 +597,16 @@ g_{X_{1}+X_{2}+...+X_{n}}(t)=\left(g_{X}(t)\right)^{n}
 \end_inset
 
 
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -467,6 +642,19 @@ th derivative of
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -487,16 +675,22 @@ Factorial moments (if
 )
 \begin_inset Formula 
 \[
-\mathrm{E}X(X-1)\cdots(X-k+1)=g_{X}^{(k)}(1)
+\mathrm{E}\left(X(X-1)\cdots(X-k+1)\right)=g_{X}^{(k)}(1)
 \]
 
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
 \end_inset
 
 
@@ -515,14 +709,25 @@ Moments can be computed
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Probability generating function - examples
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -561,6 +766,19 @@ Bernoulli,
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 g_{X}(t)=\sum_{n=0}^{\infty}t^{n}\cdot P(X=n)=t^{0}q+t^{1}p=q+pt
@@ -586,6 +804,19 @@ PencilRight]
 
 Binomial, 
 \begin_inset Formula $X\sim Bin(n,p)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -616,11 +847,24 @@ Let
 \begin_inset Formula $X_{1},...,X_{n}\overset{iid}{\sim}Be(p)$
 \end_inset
 
- and 
+, then what is 
 \begin_inset Formula $X=X_{1}+...+X_{n}$
 \end_inset
 
-, then
+?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 g_{X}(t)=\prod_{i=1}^{n}g_{X_{i}(t)}=\prod_{i=1}^{n}(q+pt)=(q+pt)^{n}
@@ -635,14 +879,25 @@ so
 .
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Probability generating function - examples
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -661,10 +916,6 @@ Poisson prob func:
 \end_inset
 
  
-\begin_inset VSpace bigskip
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -685,10 +936,6 @@ Checkmark]
 \end_inset
 
 
-\begin_inset VSpace bigskip
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -704,20 +951,29 @@ PencilRight]
 
 \end_inset
 
-If Poisson, 
+Poisson, 
 \begin_inset Formula $X\sim Po(m)$
 \end_inset
 
-, then
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 g_{X}(t)=\sum_{k=0}^{\infty}t^{k}\frac{e^{-m}m^{k}}{k!}=e^{-m}\sum_{k=0}^{\infty}\frac{(mt)^{k}}{k!}=e^{m(t-1)}
 \]
 
-\end_inset
-
-
-\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -744,7 +1000,24 @@ If
 \begin_inset Formula $X_{2}\sim Po(m_{2})$
 \end_inset
 
-, then
+, what is 
+\begin_inset Formula $X_{1}+X_{2}?$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 g_{X_{1}+X_{2}}(t)=e^{m_{1}(t-1)}e^{m_{2}(t-1)}=e^{(m_{1}+m_{2})(t-1)}
@@ -759,20 +1032,40 @@ so
 .
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Moment generating function
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $g_{X}(t)$
 \end_inset
 
  limited to non-negative integer-valued variables.
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -813,11 +1106,21 @@ if
 \begin_inset Formula $\left|t\right|<h$
 \end_inset
 
+, for some 
+\begin_inset Formula $h>0$
+\end_inset
+
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
 \end_inset
 
 
@@ -871,6 +1174,19 @@ All moments exist
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -902,14 +1218,25 @@ Ee^{tX}=1+\sum_{n=1}^{\infty}\frac{t^{n}}{n!}EX^{n}
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Moment generating function - examples
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -925,6 +1252,19 @@ PencilRight]
 
 
 \begin_inset Formula $X\sim Be(p)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1011,6 +1351,19 @@ PencilRight]
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \psi_{X}(t)=\frac{1}{(1-at)^{p}}
@@ -1076,14 +1429,25 @@ PencilRight]
 \end_layout
 
 \end_deeper
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Moment generating function, cont.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -1116,10 +1480,16 @@ If
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
 \end_inset
 
 
@@ -1157,10 +1527,16 @@ If
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
 \end_inset
 
 
@@ -1190,6 +1566,19 @@ Moment generating function of a linear combination
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1214,6 +1603,19 @@ If
 \end_inset
 
 ?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 \psi_{X}(t)=\frac{1}{(1-dt)^{p}}
@@ -1237,18 +1639,38 @@ which is the mgf of
  Gamma family is closed under scaling.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 The characteristic function
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Moment generating function is not defined for all random variable.
  No mgf for Cauchy or LogNormal.
-\begin_inset VSpace bigskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1268,7 +1690,16 @@ function
 but complex valued
 \series default
 .
-\begin_inset VSpace bigskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1306,10 +1737,6 @@ where
 \end_inset
 
 ).
-\begin_inset VSpace bigskip
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -1326,24 +1753,65 @@ PencilRight]
 \end_inset
 
 
-\begin_inset Formula $X\sim Be(p)$
+\begin_inset Formula $X\sim U(a,b)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 , then 
-\begin_inset Formula $\varphi_{X}(t)=(q+pe^{it})$
+\begin_inset Formula 
+\[
+\varphi_{X}\left(t\right)=\frac{e^{itb}-e^{ita}}{it\left(b-a\right)}
+\]
+
 \end_inset
 
-.
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $=E\left(e^{itX}\right)=\int_{a}^{b}e^{itx}f_{X}(x)dx=\frac{1}{b-a}\left[\frac{e^{itx}}{it}\right]_{a}^{b}=$
+\end_inset
+
+
 \end_layout
 
-\begin_layout EndFrame
+\end_inset
+
 
 \end_layout
 
-\begin_layout BeginFrame
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Complex numbers
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Complex number 
 \begin_inset Formula $z=a+b\cdot i$
@@ -1434,10 +1902,25 @@ Complex exponentials:
 
 \end_layout
 
-\begin_layout BeginFrame
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 The characteristic function, cont.
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -1458,7 +1941,16 @@ If
 \end_inset
 
 .
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1509,7 +2001,16 @@ f(x)=\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{-itx}\varphi(t)dt
 \end_inset
 
 
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1535,7 +2036,16 @@ Characteristic function of a sums of independent variables
 \end_inset
 
 
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1561,7 +2071,16 @@ Moments
 \end_inset
 
 
-\begin_inset VSpace smallskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1589,14 +2108,25 @@ Linear combinations
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Transforms - distributions with random parameters
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Transforms are expected values (or 
 \begin_inset Formula $t^{X}$
@@ -1640,6 +2170,19 @@ Let
 \end_inset
 
 ? 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula $X$
 \end_inset
 
@@ -1703,9 +2246,122 @@ PencilRight]
  Prove using characteristic functions.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Transforms - sums of random number of random variables
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[Th]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $S_{n}=X_{1}+X_{2}+...+X_{n}$
+\end_inset
+
+ be a sum of i.i.d variables and 
+\begin_inset Formula $N$
+\end_inset
+
+ be a non-negative integer valued random variable.
+ Then
+\begin_inset Formula 
+\begin{eqnarray*}
+g_{S_{N}}\left(t\right) & = & g_{N}\left(g_{X}\left(t\right)\right)\\
+\psi_{S_{N}}\left(t\right) & = & g_{N}\left(\psi_{X}\left(t\right)\right).\\
+\varphi_{S_{N}}\left(t\right) & = & g_{N}\left(\varphi_{X}\left(t\right)\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X_{1},X_{2},\ldots\sim Exp(1)$
+\end_inset
+
+ (i.i.d) and 
+\begin_inset Formula $N\sim Fs\left(p\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S_{N}$
+\end_inset
+
+?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+\psi_{S_{N}}\left(t\right) & = & g_{N}\left(\psi_{X}\left(t\right)\right)=\frac{1}{1-\frac{t}{p}}\\
+ &  & \Rightarrow S_{N}\sim Exp\left(1/p\right)
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document

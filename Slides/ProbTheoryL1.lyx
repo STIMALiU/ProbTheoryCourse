@@ -1,5 +1,5 @@
-#LyX 2.2 created this file. For more info see http://www.lyx.org/
-\lyxformat 477
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass beamer
@@ -38,8 +38,9 @@
  	% No background for page 2 and onwards
  % \fi
 }
+\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
-\options xcolor=svgnames
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -136,14 +137,14 @@ Lecture 1
 status open
 
 \begin_layout Plain Layout
-Mattias Villani
+Per Sidén
 \end_layout
 
 \end_inset
 
 
 \series bold
-Mattias Villani
+Per Sidén
 \end_layout
 
 \begin_layout Institute
@@ -160,7 +161,7 @@ Statistics, LiU
 
 \end_inset
 
-Division of Statistics
+Division of Statistics and Machine Learning
 \begin_inset Newline newline
 \end_inset
 
@@ -190,10 +191,6 @@ Overview Lecture 1
 \end_inset
 
 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -215,11 +212,14 @@ Introduction and a recap of some background
 Functions of random variables
 \end_layout
 
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
+\begin_layout Itemize
 
+\series bold
+Multivariate random variables
+\end_layout
+
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
@@ -234,10 +234,6 @@ Course Outline
 \end_inset
 
 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -247,7 +243,7 @@ Course Outline
 Lectures
 \series default
 : theory interleaved with illustrative solved examples.
- Responsible: Mattias.
+ Responsible: Per.
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -260,11 +256,7 @@ Lectures
 Exercises/Seminars
 \series default
 : problem solving sessions + open discussions.
- Responsible: Per Sidén and 
-\series bold
-You
-\series default
-.
+ Responsible: Per and You.
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -278,13 +270,168 @@ Exam
 \series default
 : written exam with formula sheet, but no book or notes.
  Responsible: You!
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+Course homepage
+\series default
+: https://www.ida.liu.se/~732A40/ (select english)
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Course literature
+\end_layout
+
 \end_inset
 
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Gut, A.
+ 
+\shape italic
+An intermediate course in probability
+\shape default
+.
+ 2nd ed.
+ Springer-Verlag, New York, 2009.
+ ISBN 978-1-4419-0161-3
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chapter 1: Multivariate random variables
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chapter 2: Conditioning
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chapter 3: Transforms
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chapter 4: Order statistics
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chapter 5: The multivariate normal distribution
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Chapter 6: Convergence
+\end_layout
+
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
@@ -296,10 +443,6 @@ status open
 Random variables
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -357,10 +500,6 @@ multivariate random vector
 
 \begin_layout Itemize
 Examples:
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -392,24 +531,9 @@ Roll two fair dice.
 =sum of the two dice.
 \end_layout
 
-\begin_layout Itemize
-\begin_inset Formula $\Omega$
-\end_inset
-
- the set of all possible states of the economy (whatever that means!).
- 
-\begin_inset Formula $X(\omega)$
-\end_inset
-
- next quarter's unemployment in a given region.
-\end_layout
-
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -424,10 +548,6 @@ Sample space of two dice example
 \end_inset
 
 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -435,7 +555,7 @@ Sample space of two dice example
 \align center
 \begin_inset Graphics
 	filename twoDice.png
-	scale 30
+	scale 26
 
 \end_inset
 
@@ -443,10 +563,7 @@ Sample space of two dice example
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -458,10 +575,6 @@ status open
 The distribution of a random variable
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -534,6 +647,31 @@ where
 \end_inset
 
 .
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -557,31 +695,8 @@ Continuous
 random variables can take every value in an interval.
 \end_layout
 
-\begin_layout Itemize
-The 
-\series bold
-probability mass function
-\series default
-,
-\series bold
- pmf
-\series default
-, is the function 
-\begin_inset Formula $f$
-\end_inset
-
-(
-\begin_inset Formula $x)=\mathrm{Pr}(X=x)$
-\end_inset
-
-.
-\end_layout
-
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -590,24 +705,89 @@ probability mass function
 status open
 
 \begin_layout Plain Layout
-Random variable - sum of two dice
+Discrete random variable
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
 \end_layout
 
 \begin_deeper
-\begin_layout Standard
-\align center
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{columns} 
+\end_layout
+
+\begin_layout Plain Layout
+
+	
+\backslash
+column{0.4
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\series bold
+probability function
+\series default
+ (p.f), is the function
+\begin_inset Formula 
+\[
+p(x)=\mathrm{Pr}(X=x)
+\]
+
+\end_inset
+
+
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+column{0.4
+\backslash
+textwidth}
+\end_layout
+
+\end_inset
+
+
 \begin_inset Graphics
 	filename sumOfTwoDice.png
-	scale 22
+	scale 20
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{columns}
+\end_layout
 
 \end_inset
 
@@ -615,14 +795,7 @@ Random variable - sum of two dice
 \end_layout
 
 \end_deeper
-\begin_layout Frame
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -631,13 +804,9 @@ Random variable - sum of two dice
 status open
 
 \begin_layout Plain Layout
-Uniform, Bernoulli och Poisson
+Uniform, Bernoulli and Poisson
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -661,7 +830,7 @@ discrete
 .
 \begin_inset Formula 
 \[
-f(x)=\begin{cases}
+p(x)=\begin{cases}
 \frac{1}{b-a+1} & \text{for }x=a,a+1...,b\\
 0 & \text{otherwise}
 \end{cases}
@@ -670,14 +839,23 @@ f(x)=\begin{cases}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace bigskip
 \end_inset
 
 
-\begin_inset Separator parbreak
+\end_layout
+
+\begin_layout Separator
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -706,14 +884,23 @@ distribution
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace bigskip
 \end_inset
 
 
-\begin_inset Separator parbreak
+\end_layout
+
+\begin_layout Separator
+\begin_inset VSpace bigskip
 \end_inset
 
 
@@ -731,19 +918,16 @@ Poisson distribution
 
 \begin_inset Formula 
 \[
-f(x)=\frac{\exp(-\lambda)\cdot\lambda^{x}}{x!}\quad\text{ for }x=0,1,2,...
+p(x)=\frac{\exp(-\lambda)\cdot\lambda^{x}}{x!}\quad\text{ for }x=0,1,2,...
 \]
 
 \end_inset
 
- 
+
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -755,10 +939,6 @@ status open
 The Binomial distribution
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -802,12 +982,8 @@ X\sim Bin(n,p)
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Separator
 \begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -829,12 +1005,8 @@ P(X=x)={n \choose x}p^{x}(1-p)^{n-x},\text{ for }\mbox{}x=0,1,...,n.
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Separator
 \begin_inset VSpace bigskip
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -857,10 +1029,7 @@ The binomial coefficient
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -872,10 +1041,6 @@ status open
 Probability density functions
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -901,10 +1066,6 @@ pdf
 \series default
 ) 
 \begin_inset Formula $f(x)$
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -945,7 +1106,7 @@ pdf
 
 \begin_inset Graphics
 	filename pdf.png
-	scale 30
+	scale 35
 
 \end_inset
 
@@ -961,6 +1122,19 @@ pdf
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -970,7 +1144,7 @@ A pdf is like a histogram with tiny bin widths.
 \end_layout
 
 \begin_layout Itemize
-Continuous distibutions assign probability zero to individual values, but
+Continuous distributions assign probability zero to individual values, but
  
 \begin_inset Formula 
 \[
@@ -983,10 +1157,7 @@ Continuous distibutions assign probability zero to individual values, but
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -998,10 +1169,6 @@ status open
 Densities - Some examples
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -1025,6 +1192,19 @@ f(x)=\begin{cases}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1040,6 +1220,19 @@ f(x)=\begin{cases}
 0 & \text{ otherwise}
 \end{cases}
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -1067,10 +1260,7 @@ f(x)=\frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left(-\frac{1}{2\sigma^{2}}\left(x-\mu\
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -1079,13 +1269,9 @@ f(x)=\frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left(-\frac{1}{2\sigma^{2}}\left(x-\mu\
 status open
 
 \begin_layout Plain Layout
-Important facts about densities
+Expected values, moments
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -1093,35 +1279,77 @@ Important facts about densities
 
 \begin_deeper
 \begin_layout Itemize
-A 
+The 
 \series bold
-density is not a probability
+expected value
 \series default
- and can be greater than one, or even unbounded.
- 
-\begin_inset VSpace bigskip
+ of 
+\begin_inset Formula $X$
+\end_inset
+
+ is
+\begin_inset Formula 
+\[
+E\left(X\right)=\begin{cases}
+\sum_{k=i}^{\infty}x_{k}\cdot p(x_{k}) & ,\, X\, discrete\\
+\int_{-\infty}^{\infty}x\cdot f(x) & ,\, X\, continuous
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-A 
+Example: 
+\begin_inset Formula $E\left(X\right)$
+\end_inset
+
+ when 
+\begin_inset Formula $X\sim Uniform(a,b)$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The 
+\begin_inset Formula $n$
+\end_inset
+
+th 
 \series bold
-density is not unique
+moment 
 \series default
-.
- Since 
-\begin_inset Formula $\mathrm{Pr}(X=x)=0$
-\end_inset
-
- for every 
-\begin_inset Formula $x$
-\end_inset
-
-, a density can be changed at a finite number of poins without affecting
- the probabilities from it.
-\begin_inset VSpace bigskip
+is defined as 
+\begin_inset Formula $E\left(X^{n}\right)$
 \end_inset
 
 
@@ -1130,29 +1358,21 @@ density is not unique
 \begin_layout Itemize
 The 
 \series bold
-normalization constant of a density can always be recovered
+variance
 \series default
- using 
-\begin_inset Formula $\int_{-\infty}^{\infty}f(x)=1$
+ of 
+\begin_inset Formula $X$
 \end_inset
 
-.
- Example: Triangle density: it is enough to know that 
-\begin_inset Formula $f(x)=c\cdot x$
+ is 
+\begin_inset Formula $Var\left(X\right)=E(X-EX)^{2}=E\left(X^{2}\right)-\left(EX\right)^{2}$
 \end_inset
 
-, for some constant 
-\begin_inset Formula $c>0$
-\end_inset
 
-.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -1167,7 +1387,13 @@ The Cumulative distribution function
 \end_inset
 
 
-\begin_inset Separator parbreak
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Here: draw a comparison of pdf and cdf
+\end_layout
+
 \end_inset
 
 
@@ -1204,6 +1430,19 @@ F(x)=\mathrm{Pr}(X\leq x)\text{ for }-\infty\leq x\leq\infty
 
 \begin_layout Itemize
 Same definition for discrete and continuous variables.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1236,6 +1475,19 @@ Limits at
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1263,192 +1515,7 @@ and conversely
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_layout Frame
-\begin_inset Argument 4
-status open
-
-\begin_layout Plain Layout
-R commands for distributions etc
-\end_layout
-
-\end_inset
-
-
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Example 1: 
-\series bold
-Normal distribution
-\series default
- with mean zero and unit variance:
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-dnorm(0)
-\series default
- gives the pdf in the point 
-\begin_inset Formula $x=0$
-\end_inset
-
- (answer: 0.3989)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-pnorm(0)
-\series default
- gives the cdf in the point 
-\begin_inset Formula $x=0$
-\end_inset
-
- (answer: 0.5)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-qnorm(0.5)
-\series default
- gives the 
-\begin_inset Formula $50$
-\end_inset
-
--quantile (answer: 0).
- 
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-rnorm(10)
-\series default
- gives 10 random draws
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Example 2: Exponential distribution with mean one
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-dexp(0.5)
-\series default
- gives the pdf in the point 
-\begin_inset Formula $x=0.5$
-\end_inset
-
- (answer: 0.6065)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-pexp(0.5)
-\series default
- gives the cdf in the point 
-\begin_inset Formula $x=0.5$
-\end_inset
-
- (answer: 0.3934)
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-qexp(0.9)
-\series default
- gives the 
-\begin_inset Formula $90$
-\end_inset
-
--quantile (answer: 2.3026).
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-rexp(10)
-\series default
- gives 10 random draws
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Example 3.
- Plotting the standard normal pdf in R:
-\begin_inset Separator parbreak
-\end_inset
-
-
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-
-\series bold
-x <- seq(-4,4,length=10000)
-\series default
- # setting up a vector x with a 
-\series bold
-grid
-\series default
- of 10000 values between -4 and 4
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-plot(x,dnorm(x),type="l")
-\series default
- # plotting the standard normal pdf as a line (type=
-\begin_inset Quotes erd
-\end_inset
-
-l
-\begin_inset Quotes erd
-\end_inset
-
-)
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-See also http://cran.r-project.org/web/views/Distributions.html
-\end_layout
-
-\end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -1460,10 +1527,6 @@ status open
 Functions of random variables
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -1484,6 +1547,19 @@ Quite common situation: You know the distribution of
 \end_inset
 
  is some function.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1524,6 +1600,19 @@ Example 4:
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1539,7 +1628,7 @@ Example 4:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $f_{X}(x)$
+\begin_inset Formula $p_{X}(x)$
 \end_inset
 
  is p.f.
@@ -1549,7 +1638,7 @@ Example 4:
 
 .
  
-\begin_inset Formula $f_{Y}(y)$
+\begin_inset Formula $p_{Y}(y)$
 \end_inset
 
  is p.f.
@@ -1560,7 +1649,7 @@ Example 4:
 : 
 \begin_inset Formula 
 \[
-\mathrm{f_{Y}(y)=Pr}(Y=y)=\mathrm{Pr}\left[g(X)=y\right]=\sum_{x:g(x)=y}f_{X}(x)
+\mathrm{\mathit{p}_{Y}(y)=Pr}(Y=y)=\mathrm{Pr}\left[g(X)=y\right]=\sum_{x:g(x)=y}p_{X}(x)
 \]
 
 \end_inset
@@ -1569,10 +1658,7 @@ Example 4:
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -1584,10 +1670,6 @@ status open
 Function of a continuous random variable
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -1609,6 +1691,19 @@ Suppose that
 \[
 F_{Y}(y)=\mathrm{Pr}(Y\leq y)=\mathrm{Pr}\left[g(X)\leq y\right]=\int_{x:g(x)\leq y}f_{X}(x)dx
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -1646,6 +1741,19 @@ f_{Y}(y)=f_{X}(h(y))\cdot\frac{\partial h(y)}{\partial y}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1673,10 +1781,7 @@ where
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -1691,10 +1796,6 @@ Examples: functions of a random variable
 \end_inset
 
 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -1705,6 +1806,18 @@ Example 1.
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
  
 \begin_inset Formula 
 \[
@@ -1737,6 +1850,19 @@ log-normal
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \[
 f_{Y}(y)=\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{1}{2\sigma^{2}}\left(\ln y-\mu\right)^{2}\right)\cdot\frac{1}{y}\text{ for }y>0.
@@ -1768,6 +1894,19 @@ Example 3.
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
 f_{Y}(y) & =\frac{1}{y/a}\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{1}{2\sigma^{2}}\left(\ln\frac{y}{a}-\mu\right)^{2}\right)\frac{1}{a}\cdot\\
@@ -1784,10 +1923,7 @@ which means that
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -1799,10 +1935,6 @@ status open
 Examples: functions of a random variable
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -1830,6 +1962,19 @@ Example 4.
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
 f_{Y}(y) & =\frac{1}{y^{1/a}}\frac{1}{\sqrt{2\pi}\sigma}\exp\left(-\frac{1}{2\sigma^{2}}\left(\ln y^{1/a}-\mu\right)^{2}\right)\frac{1}{a}y^{1/a-1}\cdot\\
@@ -1846,10 +1991,7 @@ which means that
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -1861,10 +2003,6 @@ status open
 Bivariate distributions
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -1905,10 +2043,6 @@ distribution
 
 \begin_layout Itemize
 Example 1: 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -1937,15 +2071,24 @@ Example 1:
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
 Example 2: 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -1973,6 +2116,19 @@ monthly return to Stockholm index.
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -2017,10 +2173,7 @@ such that
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2032,10 +2185,6 @@ status open
 Continuous joint distributions
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -2064,11 +2213,31 @@ where
 joint density
 \series default
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Univariate distributions: probability is area under density.
  
+\begin_inset Graphics
+	filename pdf.png
+	scale 25
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2079,16 +2248,8 @@ Bivariate distributions: probability is volume under density.
 
 
 \begin_inset Graphics
-	filename pdf.png
-	scale 30
-
-\end_inset
-
-
-\begin_inset Graphics
-	filename /home/mv/Dropbox/Teaching/TheoryStatI2011/Pics/cake.JPG
-	lyxscale 10
-	scale 5
+	filename biv_norm1.png
+	scale 25
 
 \end_inset
 
@@ -2105,10 +2266,7 @@ Be careful about the regions of integration.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2123,7 +2281,13 @@ Example
 \end_inset
 
 
-\begin_inset Separator parbreak
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Can make calculations to verify that the integral over the volume is 1
+\end_layout
+
 \end_inset
 
 
@@ -2141,7 +2305,7 @@ f_{X,Y}(x,y)=\frac{3}{2}y^{2}\text{ for}\text{ }0\leq x\leq2\text{ and }0\leq y\
 
 
 \begin_inset Graphics
-	filename /home/mv/Dropbox/Teaching/TheoryStatI2011/Pics/Ex3_4_4.png
+	filename fXY32y2.png
 	lyxscale 30
 	scale 30
 	clip
@@ -2152,10 +2316,7 @@ f_{X,Y}(x,y)=\frac{3}{2}y^{2}\text{ for}\text{ }0\leq x\leq2\text{ and }0\leq y\
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2167,10 +2328,6 @@ status open
 Bivariate normal distribution
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -2215,9 +2372,9 @@ Five parameters:
 \begin_layout Standard
 \align center
 \begin_inset Graphics
-	filename /home/mv/Dropbox/Teaching/TheoryStatI2011/Pics/MultivariateNormalPDF.png
+	filename five parameters.png
 	lyxscale 20
-	scale 40
+	scale 25
 	clip
 
 \end_inset
@@ -2226,10 +2383,7 @@ Five parameters:
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2244,10 +2398,6 @@ Bivariate c.d.f.
 \end_inset
 
 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -2257,6 +2407,19 @@ Joint cumulative distribution function (joint c.d.f.):
 \[
 F_{X,Y}(x,y)=\mathrm{Pr}(X\leq x,Y\leq y)
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -2277,14 +2440,23 @@ F_{X,Y}(b,d)-F_{X,Y}(a,d)-F_{X,Y}(b,c)+F_{X,Y}(a,c)
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Properties of the joint c.d.f.
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -2316,10 +2488,7 @@ Marginal of
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2334,10 +2503,6 @@ Marginal distributions
 \end_inset
 
 
-\begin_inset Separator parbreak
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
@@ -2349,6 +2514,19 @@ Marginal p.f.
 f_{X}(x) & =\sum_{All\text{ }y}f_{X,Y}(x,y)\text{ [Discrete case]}\\
 f_{X}(x) & =\int_{-\infty}^{\infty}f_{X,Y}(x,y)dy\text{ [Continuous case]}
 \end{align*}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -2372,10 +2550,7 @@ A marginal distribution for
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2387,10 +2562,6 @@ status open
 Independent variables
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -2427,6 +2598,19 @@ for all sets of real numbers
 \end_inset
 
  are events).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2479,7 +2663,7 @@ all
 \begin_inset Formula $X>2$
 \end_inset
 
-) has no effect on the probabilties for different values of 
+) has no effect on the probabilities for different values of 
 \begin_inset Formula $Y$
 \end_inset
 
@@ -2487,10 +2671,7 @@ all
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2502,10 +2683,6 @@ status open
 Multivariate distributions
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -2531,6 +2708,19 @@ f(x_{1},x_{2},...,x_{n})
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -2543,6 +2733,19 @@ Marginal distribution of
 \[
 f_{1}(x_{1})=\int_{x_{2}}\cdots\int_{x_{n}}f(x_{1},x_{2},...,x_{n})dx_{2}\cdots dx_{n}
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -2570,10 +2773,7 @@ and so on.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-\begin_inset Separator parbreak
-\end_inset
-
+\begin_layout Separator
 
 \end_layout
 
@@ -2585,10 +2785,6 @@ status open
 Functions of random vectors
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator parbreak
 \end_inset
 
 
@@ -2660,7 +2856,15 @@ Assume
 \end_layout
 
 \begin_layout Theorem
-The density of Y is 
+(
+\begin_inset Quotes eld
+\end_inset
+
+The transformation theorem
+\begin_inset Quotes erd
+\end_inset
+
+) The density of Y is 
 \begin_inset Formula 
 \[
 f_{\mathbf{Y}}(\mathbf{y})=f_{\mathbf{X}}\left[h_{1}(\mathbf{y}),h_{2}(\mathbf{y}),...,h_{n}(\mathbf{y})\right]\cdot\left|\mathbf{J}\right|
@@ -2680,7 +2884,7 @@ where
 \end_layout
 
 \end_deeper
-\begin_layout Standard
+\begin_layout Separator
 
 \end_layout
 

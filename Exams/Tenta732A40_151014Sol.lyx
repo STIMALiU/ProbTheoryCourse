@@ -105,7 +105,7 @@ LINKÖPINGS UNIVERSITET
 \begin_inset Text
 
 \begin_layout Plain Layout
-2013-10-24
+2015-10-14
 \end_layout
 
 \end_inset
@@ -178,7 +178,7 @@ Avdelningen för statistik
 \begin_inset Text
 
 \begin_layout Plain Layout
-Mattias Villani
+Per Sidén
 \end_layout
 
 \end_inset
@@ -249,7 +249,7 @@ Mattias Villani
 \noindent
 \align left
 \begin_inset Tabular
-<lyxtabular version="3" rows="24" columns="2">
+<lyxtabular version="3" rows="23" columns="2">
 <features rotate="0" tabularvalignment="middle">
 <column alignment="left" valignment="top">
 <column alignment="left" valignment="top">
@@ -447,7 +447,7 @@ Table with distributions from Appendix B in the course book (distributed
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" usebox="none">
+<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -461,6 +461,28 @@ Examinator:
 
 \begin_layout Plain Layout
 Mattias Villani.
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="left" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Assisting teacher:
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Per Sidén, phone 
+\shape italic
+0704-977175
 \end_layout
 
 \end_inset
@@ -758,56 +780,11 @@ F=0-7 points
 
 \begin_layout Plain Layout
 
-\series bold
-- Remember that you may get points from explaining how you would solve the
- problem,
 \end_layout
 
 \end_inset
 </cell>
 <cell multicolumn="2" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell multicolumn="1" alignment="left" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\series bold
-even if you don't fully solve it.
-\end_layout
-
-\end_inset
-</cell>
-<cell multicolumn="2" alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -872,7 +849,7 @@ The random variables
 \begin_inset Formula 
 \[
 f_{X,Y}(x,y)=\begin{cases}
-\exp\left[-\left(x+\frac{y}{x}\right)\right] & \text{if }0\leq x\leq\infty\text{ and }0\leq y\leq\infty\\
+ax^{2}y & \text{if }0<x<y<1\\
 0 & \mbox{otherwise}
 \end{cases}
 \]
@@ -884,17 +861,20 @@ f_{X,Y}(x,y)=\begin{cases}
 
 \begin_deeper
 \begin_layout Enumerate
-Compute the marginal density function for 
+Are 
 \begin_inset Formula $X$
 \end_inset
 
-.
- Does it belong to any of the known distributions?
-\begin_inset space \hspace{}
-\length 9.05cm
+ and 
+\begin_inset Formula $Y$
 \end_inset
 
-1.5p.
+ independent?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
 \end_layout
 
 \begin_deeper
@@ -924,84 +904,128 @@ status open
 
 \end_inset
 
-The marginal density of 
-\begin_inset Formula $X$
-\end_inset
+No, since the definition space is not rectangular.
+\end_layout
 
- is
-\begin_inset Formula 
-\[
-f_{X}(x)=\int_{0}^{\infty}f_{X,Y}(x,y)dy=\exp\left(-x\right)\int_{0}^{\infty}\exp\left(-\frac{y}{x}\right)dy
-\]
-
-\end_inset
-
-where 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula 
-\[
-\int_{0}^{\infty}\exp\left(-\frac{y}{x}\right)dy=\left[\exp\left(-\frac{y}{x}\right)(-x)\right]_{0}^{\infty}=\left[0-1\cdot(-x)\right]=x.
-\]
-
-\end_inset
-
-So 
-\begin_inset Formula 
-\[
-f_{X}(x)=x\cdot\exp\left(-x\right)
-\]
-
-\end_inset
-
-for 
-\begin_inset Formula $0\leq x\leq\infty$
+\end_deeper
+\begin_layout Enumerate
+Determine the constant 
+\begin_inset Formula $a$
 \end_inset
 
 .
- This can be recognized as a 
-\begin_inset Formula $X\sim\Gamma(2,1)$
+\begin_inset space \hspace{}
+\length 1cm
 \end_inset
 
- density.
+1p.
+\end_layout
 
-\family default
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
 \series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- 
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+1 & = & \intop_{x=0}^{1}\intop_{y=x}^{1}ax^{2}ydydx=\intop_{x=0}^{1}ax^{2}\left[y^{2}/2\right]_{x}^{1}dx=\\
+ & = & \frac{a}{2}\intop_{x=0}^{1}x^{2}\left(1-x^{2}\right)dx=\frac{a}{2}\left[x^{3}/3-x^{5}/5\right]_{0}^{1}=\frac{a}{15}\\
+\Rightarrow a & = & 15
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Compute the marginal density of 
+\begin_inset Formula $Y$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{Y}(y) & = & \intop_{x=0}^{y}15x^{2}ydx=15y\left[x^{3}/3\right]_{0}^{y}=\\
+ & = & 5y^{4},\,0<y<1
+\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
 Compute the conditional density of 
-\begin_inset Formula $Y|X=x$
+\begin_inset Formula $X|Y=y$
 \end_inset
 
 .
- Does it belong to any of the known distributions?
 \begin_inset space \hspace{}
-\length 6.5cm
+\length 1cm
 \end_inset
 
-1.5p.
+1p.
 \end_layout
 
 \begin_deeper
@@ -1031,20 +1055,12 @@ status open
 
 \end_inset
 
-The conditional density of 
-\begin_inset Formula $Y|X=x$
-\end_inset
 
- is
 \begin_inset Formula 
 \[
-f_{Y|X=x}(y)=\frac{f_{X,Y}(x,y)}{f_{X}(x)}=\frac{\exp\left[-\left(x+\frac{y}{x}\right)\right]}{x\cdot\exp\left(-x\right)}=\frac{1}{x}\exp\left(-\frac{y}{x}\right),
+f_{X|Y=y}(x)=\frac{f_{X,Y}\left(x,y\right)}{f_{Y}\left(y\right)}=\frac{15x^{2}y}{5y^{4}}=\frac{3x^{2}}{y^{3}},\,0<x<y
 \]
 
-\end_inset
-
-which means that 
-\begin_inset Formula $Y|X=x\sim Exp(x).$
 \end_inset
 
 
@@ -1053,15 +1069,15 @@ which means that
 \end_deeper
 \begin_layout Enumerate
 Compute 
-\begin_inset Formula $Cov(X,Y)$
+\begin_inset Formula $E\left[\exp\left\{ X^{3}\right\} |Y=y\right].$
 \end_inset
 
 
 \begin_inset space \hspace{}
-\length 2cm
+\length 1cm
 \end_inset
 
-2p.
+1p.
 \end_layout
 
 \begin_deeper
@@ -1091,76 +1107,10 @@ status open
 
 \end_inset
 
-We know that 
+
 \begin_inset Formula 
 \[
-Cov(X,Y)=E(XY)-E(X)\cdot E(Y)
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula $E(X)=2\cdot1=2$
-\end_inset
-
- (since
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
- 
-\begin_inset Formula $X\sim\Gamma(2,1)$
-\end_inset
-
-).
- To compute 
-\begin_inset Formula $E(Y)$
-\end_inset
-
- we use the law of iterated expectation
-\begin_inset Formula 
-\[
-E(Y)=E\left[E(Y|X)\right]=E\left(X\right)=2
-\]
-
-\end_inset
-
-where we have used that 
-\begin_inset Formula $Y|X=x\sim Exp(x)$
-\end_inset
-
-.
- Now
-\begin_inset Formula 
-\[
-E(XY)=E\left[E(XY|X)\right]=E\left[X\cdot E(Y|X)\right]=E\left[X\cdot X\right]=E(X^{2})=V(X)+\left[E(X)\right]^{2}=2\cdot1^{2}+2^{2}=6.
-\]
-
-\end_inset
-
-
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\strikeout default
-\uuline default
-\uwave default
-\noun default
-\color inherit
- Hence
-\begin_inset Formula 
-\[
-Cov(X,Y)=E(XY)-E(X)\cdot E(Y)=6-2\cdot2=2.
+E\left[\exp\left\{ X^{3}\right\} |Y=y\right]=\intop_{0}^{y}\exp\left\{ x^{3}\right\} \frac{3x^{2}}{y^{3}}dx=\left[\frac{\exp\left\{ x^{3}\right\} }{y^{3}}\right]_{0}^{y}=\frac{\exp\left\{ y^{3}\right\} -1}{y^{3}}
 \]
 
 \end_inset
@@ -1172,432 +1122,45 @@ Cov(X,Y)=E(XY)-E(X)\cdot E(Y)=6-2\cdot2=2.
 \end_deeper
 \begin_layout Enumerate
 Let 
-\begin_inset Formula $Y|(\Lambda=\lambda)\sim Po(\lambda)$
+\begin_inset Formula $N,X_{1},X_{2},X_{3},\ldots$
+\end_inset
+
+ be independent random variables such that 
+\begin_inset Formula $N\sim Fs\left(p\right)$
 \end_inset
 
  and 
-\begin_inset Formula $\Lambda\sim Exp(a)$
+\begin_inset Formula $X_{k}\sim L\left(a\right)$
+\end_inset
+
+ for all 
+\begin_inset Formula $k$
 \end_inset
 
 .
+ Define
+\begin_inset Formula 
+\[
+S_{N}=\sum_{k=1}^{N}X_{k}.
+\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
 Calculate the expected value and variance of 
-\begin_inset Formula $Y$
+\begin_inset Formula $S_{N}$
 \end_inset
 
 .
-\begin_inset space \hspace{}
-\length 3.7cm
-\end_inset
-
-2p.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-[
-\end_layout
-
-\end_inset
-
-
-\series bold
-Solution
-\series default
-:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-]
-\end_layout
-
-\end_inset
-
-By the law of iterated expectation we have
-\begin_inset Formula 
-\[
-E\left[E(Y|\Lambda)\right]=E\left(\Lambda\right)=a
-\]
-
-\end_inset
-
-and by the law of total variance
-\begin_inset Formula 
-\[
-V(Y)=E\left[V(Y|\Lambda)\right]+V\left[E(Y|\Lambda)\right]=E\left(\Lambda\right)+V\left(\Lambda\right)=a+a^{2}=a(1+a).
-\]
-
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Calculate the moment generating function Y.
-\begin_inset space \hspace{}
-\length 4cm
-\end_inset
-
-2p.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-[
-\end_layout
-
-\end_inset
-
-
-\series bold
-Solution
-\series default
-:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-]
-\end_layout
-
-\end_inset
-
-The moment generating function of 
-\begin_inset Formula $Y$
-\end_inset
-
- is most easily computed by the law of iterated expectation as follows
-\begin_inset Formula 
-\[
-\psi_{Y}(t)=E\left(e^{tY}\right)=E\left[E\left(e^{tY}|\Lambda=\lambda\right)\right]=E\left[e^{\lambda(e^{t}-1)}\right]=\psi_{\Lambda}(e^{t}-1)
-\]
-
-\end_inset
-
-where 
-\begin_inset Formula 
-\[
-\psi_{\Lambda}(t)=\frac{1}{1-at}
-\]
-
-\end_inset
-
- is the moment generating function for the 
-\begin_inset Formula $Exp(a)$
-\end_inset
-
- distribution, which exists if 
-\begin_inset Formula $t<1/a$
-\end_inset
-
-.
- Hence
-\begin_inset Formula 
-\[
-\psi_{Y}(t)=\psi_{\Lambda}(e^{t}-1)=\frac{1}{1-a(e^{t}-1)},
-\]
-
-\end_inset
-
-which exists if 
-\begin_inset Formula $e^{t}-1<1/a$
-\end_inset
-
-, that is if 
-\begin_inset Formula $e^{t}<1+\frac{1}{a}$
-\end_inset
-
- or 
-\begin_inset Formula $t<\ln(1+\frac{1}{a})$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Calculate the moment generating function of 
-\begin_inset Formula $Z=nY$
-\end_inset
-
-, where 
-\begin_inset Formula $n$
-\end_inset
-
- is a positive integer.
-\begin_inset space \hspace{}
-\length 0.5cm
-\end_inset
-
-1p.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-[
-\end_layout
-
-\end_inset
-
-
-\series bold
-Solution
-\series default
-:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-]
-\end_layout
-
-\end_inset
-
-The moment generating function of 
-\begin_inset Formula $Z=nY$
-\end_inset
-
- is by definition
-\begin_inset Formula 
-\[
-E(e^{tZ})=E\left(e^{(tn)Y}\right)=\psi_{Y}(tn)=\frac{1}{1-a(e^{tn}-1)}.
-\]
-
-\end_inset
-
-
-\begin_inset Newpage pagebreak
-\end_inset
-
-
-\end_layout
-
-\end_deeper
-\end_deeper
-\begin_layout Enumerate
-Let 
-\begin_inset Formula $X_{k}\sim Exp(a),\; k=1,2,...$
-\end_inset
-
- be independent random variables.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-Derive the density of 
-\begin_inset Formula $Z_{n}=\min(X_{1},X_{2},...,X_{n}$
-\end_inset
-
-).
- [for full points it is not enough to just write down the formula, you have
- to derive it.]
-\begin_inset space \hspace{}
-\length 6cm
-\end_inset
-
-2p.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-[
-\end_layout
-
-\end_inset
-
-
-\series bold
-Solution
-\series default
-:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-]
-\end_layout
-
-\end_inset
-
-The distribution function of 
-\begin_inset Formula $Z_{n}$
-\end_inset
-
- is 
-\begin_inset Formula 
-\[
-F_{Z_{n}}(z)=P(Z_{n}\leq z)=1-P(Z_{n}>z)=1-P(X_{1}>z,X_{2}>z,...,X_{n}>z)
-\]
-
-\end_inset
-
-since 
-\begin_inset Formula $Z_{n}$
-\end_inset
-
- is the minimum and 
-\begin_inset Formula $Z_{n}>z$
-\end_inset
-
- is therefore the same as all 
-\begin_inset Formula $X_{1},...,X_{n}$
-\end_inset
-
- being larger than 
-\begin_inset Formula $z$
-\end_inset
-
-.
- Now, because of independence and that all 
-\begin_inset Formula $X_{k}$
-\end_inset
-
- have same distribution, we have
-\begin_inset Formula 
-\[
-F_{Z_{n}}(z)=1-\left(1-F_{X}(z)\right)^{n}=1-\left(1-\left[1-\exp(-\frac{z}{a})\right]\right)^{n}=1-\exp\left(-\frac{nz}{a}\right)
-\]
-
-\end_inset
-
-and the density is therefore
-\begin_inset Formula 
-\[
-f_{Z}(z)=\frac{1}{(a/n)}\exp\exp\left(-\frac{z}{a/n}\right)
-\]
-
-\end_inset
-
-which shows that 
-\begin_inset Formula $Z\sim Exp(\frac{a}{n})$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Derive the distribution of 
-\begin_inset Formula $Y_{n}=\sum_{k=1}^{n}X_{k}$
-\end_inset
-
- for 
-\begin_inset Formula $n=1,2,...$
-\end_inset
-
- 
-\begin_inset space \hspace{}
-\length 2.6cm
-\end_inset
-
-1p.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-[
-\end_layout
-
-\end_inset
-
-
-\series bold
-Solution
-\series default
-:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-]
-\end_layout
-
-\end_inset
-
-Since the 
-\begin_inset Formula $X_{k}$
-\end_inset
-
- are independent and identically distributed we know that 
-\begin_inset Formula 
-\[
-\psi_{Y_{n}}(t)=\left(\frac{1}{1-at}\right)^{n}=\frac{1}{(1-at)^{n}}\sim\Gamma\left(n,a\right)
-\]
-
-\end_inset
-
-for 
-\begin_inset Formula $t<1$
-\end_inset
-
-.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Let again 
-\begin_inset Formula $Y_{n}=\sum_{k=1}^{n}X_{k}$
-\end_inset
-
- for 
-\begin_inset Formula $n=1,2,...$
-\end_inset
-
-.
- Find 
-\begin_inset Formula $a$
-\end_inset
-
- such that 
-\begin_inset Formula $Y_{n}\overset{p}{\rightarrow}1$
-\end_inset
-
- as 
-\begin_inset Formula $n\rightarrow\infty$
-\end_inset
-
-.
- 
 \begin_inset space \hspace{}
 \length 1cm
 \end_inset
 
-2p.
+1.5p.
 \end_layout
 
 \begin_deeper
@@ -1627,57 +1190,167 @@ status open
 
 \end_inset
 
-The expected value of 
-\begin_inset Formula $Y_{n}\sim\Gamma(n,a)$
-\end_inset
 
- is 
-\begin_inset Formula $na$
-\end_inset
+\begin_inset Formula 
+\[
+E\left[S_{N}|N=n\right]=E\left[\sum_{k=1}^{n}X_{k}\right]=n\cdot0=0
+\]
 
- and the variance is 
-\begin_inset Formula $na^{2}$
-\end_inset
-
-.
- For 
-\begin_inset Formula $a=1/n$
-\end_inset
-
- we therefore have 
-\begin_inset Formula $E(Y_{n})=1$
-\end_inset
-
- and 
-\begin_inset Formula $V(Y_{n})=1/n$
-\end_inset
-
-.
- We need to prove that for any 
-\begin_inset Formula $\varepsilon>0$
 \end_inset
 
 
 \begin_inset Formula 
 \[
-P\left(\left|Y_{n}-1\right|>\varepsilon\right)\rightarrow0\quad\text{ as }n\rightarrow\infty.
+E\left[S_{N}\right]=E\left[E\left(S_{N}|N\right)\right]=E\left[0\right]=0
 \]
 
 \end_inset
 
-We can use Chebyshev's inequality 
+
 \begin_inset Formula 
 \[
-P\left(\left|Y_{n}-1\right|>\varepsilon\right)\leq\frac{\sigma^{2}}{\varepsilon^{2}}=\frac{1/n}{\varepsilon^{2}}=\frac{1}{n\varepsilon^{2}}\rightarrow0
+Var\left[S_{N}|N=n\right]=Var\left[\sum_{k=1}^{n}X_{k}\right]=n\cdot2a^{2}
 \]
 
 \end_inset
 
-as 
-\begin_inset Formula $n\rightarrow\infty$
+
+\begin_inset Formula 
+\begin{eqnarray*}
+Var\left[S_{N}\right] & = & E\left[Var\left(S_{N}|N\right)\right]+Var\left[E\left(S_{N}|N\right)\right]=\\
+ & = & E\left[N\cdot2a^{2}\right]=\frac{2a^{2}}{p}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Calculate the characteristic function for 
+\begin_inset Formula $S_{N}$
 \end_inset
 
 .
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2.5p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+First note that 
+\begin_inset Formula 
+\[
+\varphi_{S_{N}|N=n}\left(t\right)=\left(\varphi_{X_{k}}\left(t\right)\right)^{n}=\frac{1}{\left(1+a^{2}t^{2}\right)^{n}}
+\]
+
+\end_inset
+
+and that
+\begin_inset Formula 
+\begin{eqnarray*}
+g_{N}\left(t\right) & = & E\left[t^{N}\right]=\sum_{k=1}^{\infty}t^{k}pq^{k-1}=pt\sum_{j=0}^{\infty}\left(tq\right)^{j}=\\
+ & = & \frac{pt}{1-qt},\, with\, q=1-p.
+\end{eqnarray*}
+
+\end_inset
+
+Now
+\begin_inset Formula 
+\begin{eqnarray*}
+\varphi_{S_{N}}\left(t\right) & = & E\left[e^{itS_{N}}\right]=E\left[E\left(e^{itS_{N}}|N\right)\right]=E\left[\varphi_{S_{N}|N=n}\left(t\right)\right]\\
+ & = & E\left[\left(\frac{1}{1+a^{2}t^{2}}\right)^{N}\right]=g_{N}\left(\frac{1}{1+a^{2}t^{2}}\right)=\frac{p\frac{1}{1+a^{2}t^{2}}}{1-q\frac{1}{1+a^{2}t^{2}}}\\
+ & = & \frac{p}{1+a^{2}t^{2}-q}=\frac{p}{p+a^{2}t^{2}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Show that 
+\begin_inset Formula $\sqrt{p}S_{N}\sim L\left(a\right)$
+\end_inset
+
+.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varphi_{\sqrt{p}S_{N}}\left(t\right)=E\left[e^{it\sqrt{p}S_{N}}\right]=\varphi_{S_{N}}\left(t\sqrt{p}\right)=\frac{p}{p+a^{2}\left(t\sqrt{p}\right)^{2}}=\frac{1}{1+a^{2}t^{2}}.
+\]
+
+\end_inset
+
+Thus 
+\begin_inset Formula $\sqrt{p}S_{N}\sim L\left(a\right)$
+\end_inset
+
+ by theorem 3.4.2.
 \end_layout
 
 \end_deeper
@@ -1692,17 +1365,17 @@ Let
 \end_inset
 
  follow a multivariate normal distribution with mean vector 
-\begin_inset Formula $\mu=(0,1,2)'$
+\begin_inset Formula $\mu=(0,0,2)'$
 \end_inset
 
  and covariance matrix
 \begin_inset Formula 
 \[
 \Lambda=\left(\begin{array}{ccc}
-1 & 0 & 1\\
-0 & 2 & 1\\
-1 & 1 & 4
-\end{array}\right)
+2 & 0 & -2\\
+0 & 4 & 1\\
+-2 & 1 & 6
+\end{array}\right).
 \]
 
 \end_inset
@@ -1713,7 +1386,7 @@ Let
 \begin_deeper
 \begin_layout Enumerate
 What is the bivariate distribution of 
-\begin_inset Formula $X_{1}$
+\begin_inset Formula $X_{2}$
 \end_inset
 
  and 
@@ -1755,27 +1428,18 @@ status open
 
 \end_inset
 
-Since the distribution is normal, the distribution is obtained by just picking
- out the relevant elements of 
-\begin_inset Formula $\mu$
-\end_inset
 
- and 
-\begin_inset Formula $\Lambda$
-\end_inset
-
-:
 \begin_inset Formula 
 \[
 \left(\begin{array}{c}
-X_{1}\\
+X_{2}\\
 X_{3}
 \end{array}\right)\sim N\left(\left(\begin{array}{c}
 0\\
 2
 \end{array}\right),\left(\begin{array}{cc}
-1 & 1\\
-1 & 4
+4 & 1\\
+1 & 6
 \end{array}\right)\right)
 \]
 
@@ -1786,20 +1450,24 @@ X_{3}
 
 \end_deeper
 \begin_layout Enumerate
-Compute the correlation between 
+What is the conditional distribution of 
 \begin_inset Formula $X_{1}$
 \end_inset
 
- and 
-\begin_inset Formula $X_{3}$
+ given 
+\begin_inset Formula $X_{1}+X_{2}-X_{3}=c$
 \end_inset
 
-.
+ for some constant 
+\begin_inset Formula $c$
+\end_inset
+
+?
 \begin_inset space \hspace{}
 \length 4.5cm
 \end_inset
 
- 1p.
+ 2p.
 \end_layout
 
 \begin_deeper
@@ -1829,92 +1497,50 @@ status open
 
 \end_inset
 
-From 
-\begin_inset Formula $\Lambda$
+Let 
+\begin_inset Formula $Z=\left(Z_{1},Z_{2}\right)^{\prime}=BX$
 \end_inset
 
- we see that 
-\begin_inset Formula $Cov(X_{1},X_{3})=1$
+ with
+\begin_inset Formula 
+\[
+B=\left(\begin{array}{ccc}
+1 & 0 & 0\\
+1 & 1 & -1
+\end{array}\right).
+\]
+
 \end_inset
 
-.
- We know that 
-\begin_inset Formula $\rho_{X_{1},X_{3}}=\frac{Cov(X_{1},X_{3})}{\sigma_{X_{1}}\sigma_{X_{3}}}=\frac{1}{\sqrt{1}\sqrt{4}}=\frac{1}{2}$
+Then
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+Z_{1}\\
+Z_{2}
+\end{array}\right)\sim N\left(B\mu,B\Lambda B^{\prime}\right)
+\]
+
 \end_inset
 
-.
-\end_layout
-
-\end_deeper
-\begin_layout Enumerate
-Compute 
-\begin_inset Formula $Var(c_{1}\cdot X_{1}+c_{2}\cdot X_{2})$
-\end_inset
-
- where 
-\begin_inset Formula $c_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $c_{2}$
-\end_inset
-
- are constants.
-\begin_inset space \hspace{}
-\length 2cm
-\end_inset
-
- 1p.
-\end_layout
-
-\begin_deeper
-\begin_layout Enumerate
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-[
-\end_layout
+that is
+\begin_inset Formula 
+\[
+\left(\begin{array}{c}
+Z_{1}\\
+Z_{2}
+\end{array}\right)\sim N\left(\left(\begin{array}{c}
+0\\
+-2
+\end{array}\right),\left(\begin{array}{cc}
+2 & 4\\
+4 & 14
+\end{array}\right)\right).
+\]
 
 \end_inset
 
 
-\series bold
-Solution
-\series default
-:
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-]
-\end_layout
-
-\end_inset
-
-From 
-\begin_inset Formula $\Lambda$
-\end_inset
-
- we see that 
-\begin_inset Formula $Cov(X_{1},X_{2})=0$
-\end_inset
-
- so 
-\begin_inset Formula $\rho_{X_{1},X_{2}=0}$
-\end_inset
-
- and, because the variables are normal, this means that 
-\begin_inset Formula $X_{1}$
-\end_inset
-
- and 
-\begin_inset Formula $X_{2}$
-\end_inset
-
- are independent
 \family roman
 \series medium
 \shape up
@@ -1926,13 +1552,37 @@ From
 \uwave off
 \noun off
 \color none
-.
- We therefore have
+Now, 
 \begin_inset Formula 
 \[
-Var(c_{1}\cdot X_{1}+c_{2}\cdot X_{2})=c_{1}^{2}Var(X_{1})+c_{2}^{2}Var(X_{2})=c_{1}^{2}+2c_{2}^{2}.
+X_{1}|(X_{1}+X_{2}+X_{3}=c)=Z_{1}|(Z_{2}=c)\sim N\left[\mu_{1}+\rho_{12}\frac{\sigma_{1}}{\sigma_{2}}(c-\mu_{2}),\sigma_{1}^{2}(1-\rho_{12}^{2})\right]
 \]
 
+\end_inset
+
+where the indicies are with respect to the random vector 
+\begin_inset Formula $Z$
+\end_inset
+
+.
+ Filling in the right values, we obtain
+\begin_inset Formula 
+\[
+Z_{1}|(Z_{2}=c)\sim N\left[0+\frac{2}{7}(c+2),2(1-\frac{4}{7})\right]=N\left[\frac{2c+4}{7},\frac{6}{7}\right]
+\]
+
+\end_inset
+
+since 
+\begin_inset Formula $\rho_{12}=\frac{Cov(Z_{1},Z_{2})}{\sigma_{1}\sigma_{2}}=\frac{4}{\sqrt{2}\sqrt{14}}=\frac{2}{\sqrt{7}}$
+\end_inset
+
+, so 
+\begin_inset Formula $\rho_{12}^{2}=\frac{4}{7}$
+\end_inset
+
+ and 
+\begin_inset Formula $\rho_{12}\frac{\sigma_{1}}{\sigma_{2}}=\frac{4}{\sqrt{2}\sqrt{14}}\frac{\sqrt{2}}{\sqrt{14}}=\frac{2}{7}.$
 \end_inset
 
 
@@ -1940,19 +1590,24 @@ Var(c_{1}\cdot X_{1}+c_{2}\cdot X_{2})=c_{1}^{2}Var(X_{1})+c_{2}^{2}Var(X_{2})=c
 
 \end_deeper
 \begin_layout Enumerate
-What is the conditional distribution of 
-\begin_inset Formula $X_{1}+X_{2}+X_{3}$
+Define 
+\begin_inset Formula $Y_{1}=\frac{1}{X_{1}}$
+\end_inset
+
+ .
+ Derive the conditional probability density function of 
+\begin_inset Formula $Y_{1}$
 \end_inset
 
  given 
-\begin_inset Formula $X_{1}-X_{3}=c$
+\begin_inset Formula $X_{1}+X_{2}-X_{3}=c$
 \end_inset
 
  for some constant 
 \begin_inset Formula $c$
 \end_inset
 
-? 
+.
 \begin_inset space \hspace{}
 \length 1cm
 \end_inset
@@ -1987,126 +1642,38 @@ status open
 
 \end_inset
 
-Let us first derive joint distribution of 
-\begin_inset Formula $Y_{1}=X_{1}+X_{2}+X_{3}$
+From b) we have
+\begin_inset Formula 
+\[
+f_{X_{1}|X_{1}+X_{2}+X_{3}=c}(x)=\frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left\{ -\frac{1}{2}\frac{\left(x-\mu\right)^{2}}{\sigma^{2}}\right\} 
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $\mu=\frac{2c+4}{7}$
 \end_inset
 
  and 
-\begin_inset Formula $Y_{2}=X_{1}-X_{2}$
+\begin_inset Formula $\sigma^{2}=\frac{6}{7}$
 \end_inset
 
-.
- Since these are linear transformations and 
-\begin_inset Formula $X_{1}$
-\end_inset
-
-, 
-\begin_inset Formula $X_{2}$
-\end_inset
-
- and 
-\begin_inset Formula $X_{3}$
-\end_inset
-
- are jointly normal, we have 
+ here.
+ Using the transformation theorem and that 
 \begin_inset Formula 
 \[
-Y=\left(\begin{array}{c}
-Y_{1}\\
-Y_{2}
-\end{array}\right)=BX
+\left|J\right|=\left|\frac{dx}{dy}\right|=\left|-\frac{1}{y^{2}}\right|=\frac{1}{y^{2}}
 \]
 
 \end_inset
 
-where
+we have
 \begin_inset Formula 
-\[
-X=\left(\begin{array}{c}
-X_{1}\\
-X_{2}\\
-X_{3}
-\end{array}\right)
-\]
+\begin{eqnarray*}
+f_{Y_{1}|X_{1}+X_{2}+X_{3}=c}\left(y\right) & = & \frac{1}{\sqrt{2\pi\sigma^{2}}}\exp\left\{ -\frac{1}{2}\frac{\left(\frac{1}{y}-\mu\right)^{2}}{\sigma^{2}}\right\} \frac{1}{y^{2}}\\
+ & = & \frac{1}{\sqrt{2\pi\frac{6}{7}}}\exp\left\{ -\frac{1}{2}\frac{\left(\frac{1}{y}-\frac{2c+4}{7}\right)^{2}}{\frac{6}{7}}\right\} \frac{1}{y^{2}}.
+\end{eqnarray*}
 
-\end_inset
-
- and 
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\strikeout off
-\uuline off
-\uwave off
-\noun off
-\color none
-
-\begin_inset Formula 
-\[
-B=\left(\begin{array}{ccc}
-1 & 1 & 1\\
-1 & 0 & -1
-\end{array}\right)
-\]
-
-\end_inset
-
-We then know that
-\begin_inset Formula 
-\[
-Y\sim N\left(B\mu,B\Lambda B'\right)
-\]
-
-\end_inset
-
-that is
-\begin_inset Formula 
-\[
-Y\sim N\left(\left(\begin{array}{c}
-3\\
--2
-\end{array}\right),\left(\begin{array}{cc}
-11 & -4\\
--4 & 3
-\end{array}\right)\right)
-\]
-
-\end_inset
-
-Now, 
-\begin_inset Formula 
-\[
-Y_{1}|(Y_{2}=c)\sim N\left[\mu_{1}+\rho_{12}\frac{\sigma_{1}}{\sigma_{2}}(c-\mu_{2}),\sigma_{1}^{2}(1-\rho_{12}^{2})\right]
-\]
-
-\end_inset
-
-where the indicies are with respect to the random vector 
-\begin_inset Formula $Y$
-\end_inset
-
-.
- Filling in the right values, we obtain
-\begin_inset Formula 
-\[
-Y_{1}|(Y_{2}=c)\sim N\left[3-\frac{4}{3}(c+2),11(1-\frac{16}{11\cdot3})\right]=N\left[\frac{1-4c}{3},\frac{17}{3}\right]
-\]
-
-\end_inset
-
-since 
-\begin_inset Formula $\rho_{12}=\frac{Cov(Y_{1},Y_{2})}{\sigma_{1}\sigma_{2}}=\frac{-4}{\sqrt{11}\sqrt{3}}$
-\end_inset
-
-, so 
-\begin_inset Formula $\rho_{12}^{2}=\frac{16}{11\cdot3}$
-\end_inset
-
- and 
-\begin_inset Formula $\rho_{12}\frac{\sigma_{1}}{\sigma_{2}}=\frac{-4}{\sqrt{11}\sqrt{3}}\frac{\sqrt{11}}{\sqrt{3}}=-\frac{4}{3}.$
 \end_inset
 
 
@@ -2114,27 +1681,253 @@ since
 
 \end_deeper
 \end_deeper
-\begin_layout Standard
-\begin_inset VSpace bigskip
+\begin_layout Enumerate
+Assume that a car insurance company has received 
+\begin_inset Formula $n$
+\end_inset
+
+ incoming claims (requests for payment) in a given year.
+ Assume that the size of each claim can be modeled as independent with a
+ Gamma distribution with mean 
+\begin_inset Formula $3\theta$
+\end_inset
+
+ and variance 
+\begin_inset Formula $3\theta^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Derive the probability density function of the size of the largest claim
+ this year.
+ 
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+2p.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+Let 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ be the size of claim 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ Then
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{X_{k}}\left(x\right) & = & \frac{1}{\Gamma\left(3\right)}x^{2}\frac{1}{\theta^{3}}e^{-x/\theta}=\frac{1}{2\theta^{3}}x^{2}e^{-x/\theta},\, x>0\\
+F_{X_{k}}\left(x\right) & = & \int_{0}^{x}\frac{1}{2\theta^{3}}z^{2}e^{-z/\theta}dz=\left[\begin{array}{c}
+IT55\\
+a=-1/\theta
+\end{array}\right]\\
+ & = & \frac{1}{2\theta^{3}}\left[\left(-\theta z^{2}-2\theta^{2}z-2\theta^{3}\right)e^{-z/\theta}\right]_{0}^{x}=\frac{1}{2\theta^{3}}\left(\left(-\theta x^{2}-2\theta^{2}x-2\theta^{3}\right)e^{-x/\theta}+2\theta^{3}\right)\\
+ & = & 1-\frac{x^{2}+2\theta x+2\theta^{2}}{2\theta^{2}}e^{-x/\theta},\, x>0
+\end{eqnarray*}
+
+\end_inset
+
+Now let 
+\begin_inset Formula $X_{\left(n\right)}=\max\left\{ X_{1},\ldots,X_{n}\right\} $
+\end_inset
+
+ and we have 
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{X_{\left(n\right)}}\left(x\right) & = & n\left(F_{X_{k}}\left(x\right)\right)^{n-1}f_{X_{k}}\left(x\right)\\
+ & = & n\left(1-\frac{x^{2}+2\theta x+2\theta^{2}}{2\theta^{2}}e^{-x/\theta}\right)^{n-1}\frac{1}{2\theta^{3}}x^{2}e^{-x/\theta},\, x>0.
+\end{eqnarray*}
+
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Good luck!
+\end_deeper
+\begin_layout Enumerate
+What is the distribution of the sum of all claims this year?
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
 \end_layout
 
-\begin_layout Standard
-\begin_inset VSpace smallskip
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+The characteristic function for 
+\begin_inset Formula $X_{k}$
+\end_inset
+
+ is 
+\begin_inset Formula 
+\[
+\varphi_{X_{k}}\left(t\right)=\frac{1}{\left(1-\theta it\right)^{3}}.
+\]
+
+\end_inset
+
+Let 
+\begin_inset Formula $Y_{n}=\sum_{k=1}^{n}X_{k}$
+\end_inset
+
+, then 
+\begin_inset Formula 
+\[
+\varphi_{Y_{n}}\left(t\right)=\left(\frac{1}{\left(1-\theta it\right)^{3}}\right)^{n}=\frac{1}{\left(1-\theta it\right)^{3n}}.
+\]
+
+\end_inset
+
+So, 
+\begin_inset Formula $Y_{n}\sim\Gamma\left(3n,\theta\right).$
 \end_inset
 
 
 \end_layout
 
-\begin_layout Standard
-Mattias
+\end_deeper
+\begin_layout Enumerate
+Now, let 
+\begin_inset Formula $n\rightarrow\infty$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{n}$
+\end_inset
+
+ be the sum of all claims this year.
+ Show that 
+\begin_inset Formula 
+\[
+\frac{Y_{n}-3n\theta}{\sqrt{n}}
+\]
+
+\end_inset
+
+converges in distribution and find the limiting distribution.
+\begin_inset space \hspace{}
+\length 1cm
+\end_inset
+
+1.5p.
 \end_layout
 
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\end_layout
+
+\end_inset
+
+
+\series bold
+Solution
+\series default
+:
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+]
+\end_layout
+
+\end_inset
+
+The central limit theorem states that
+\begin_inset Formula 
+\[
+\frac{Y_{n}-n\mu}{\sigma\sqrt{n}}\xrightarrow{d}N\left(0,1\right),
+\]
+
+\end_inset
+
+with 
+\begin_inset Formula $\mu=3\theta$
+\end_inset
+
+ and 
+\begin_inset Formula $\sigma=\sqrt{3}\theta$
+\end_inset
+
+.
+ Thus
+\begin_inset Formula 
+\[
+\frac{Y_{n}-3n\theta}{\sqrt{n}}=\frac{Y_{n}-3n\theta}{\sqrt{3}\theta\sqrt{n}}\sqrt{3}\theta\xrightarrow{d}N\left(0,3\theta\right),\, n\rightarrow\infty.
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
 \end_body
 \end_document

@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass beamer
@@ -39,8 +39,9 @@
  % \fi
 }
 \usepackage{bbding}
+\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
-\options xcolor=svgnames
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -50,13 +51,13 @@
 \font_roman palatino
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -67,15 +68,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Index
 \shortcut idx
@@ -99,7 +109,7 @@
 \begin_body
 
 \begin_layout Title
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -124,24 +134,24 @@ Lecture 5
 \end_layout
 
 \begin_layout Author
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Mattias Villani
+Per Sidén
 \end_layout
 
 \end_inset
 
 
 \series bold
-Mattias Villani
+Per Sidén
 \end_layout
 
 \begin_layout Institute
 
 \series bold
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -171,14 +181,20 @@ Linköping University
 
 \end_layout
 
-\begin_layout EndFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
 
-\end_layout
-
-\begin_layout BeginFrame
+\begin_layout Plain Layout
 Overview Lecture 5
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Linear algebra recap
 \end_layout
@@ -187,14 +203,25 @@ Linear algebra recap
 Multivariate normal distribution
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Linear algebra recap
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -225,6 +252,19 @@ where
 \end_inset
 
  is an orthogonal matrix.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -255,6 +295,19 @@ Orthogonal matrix
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -282,14 +335,25 @@ th largest eigenvalue.
 .
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Quadratic forms and positive-definiteness
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -342,6 +406,19 @@ positive-semidefinite
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -374,14 +451,25 @@ positive-semidefinite
  are non-negative.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Matrix square root
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 If 
 \begin_inset Formula $D=diag(\lambda_{1},...,\lambda_{n})$
@@ -408,6 +496,19 @@ and we can write
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -440,6 +541,19 @@ where
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -470,14 +584,25 @@ which is denoted by
 .
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Covariance matrix
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Mean vector
 \begin_inset Formula 
@@ -492,14 +617,40 @@ EX_{n}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 Covariance matrix
 \begin_inset Formula 
 \begin{align*}
-\Lambda=Cov(\mathbf{X}) & =E(\mathbf{X}-\mu)(\mathbf{X}-\mu)'=
+\Lambda=Cov(\mathbf{X}) & =E(\mathbf{X}-\mu)(\mathbf{X}-\mu)'
 \end{align*}
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -516,15 +667,36 @@ Covariance matrix
 \noun off
 \color none
 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
 \begin_inset Formula 
 \[
-\left(\begin{array}{cccc}
+=\left(\begin{array}{cccc}
 E(X_{1}-\mu_{1})^{2} & E(X_{1}-\mu_{1})(X_{2}-\mu_{2}) & \cdots & E(X_{1}-\mu_{1})(X_{n}-\mu_{n})\\
 E(X_{2}-\mu_{2})(X_{1}-\mu_{1}) & E(X_{2}-\mu_{2})^{2} & \cdots\\
  &  & \ddots\\
 E(X_{n}-\mu_{n})(X_{1}-\mu_{1}) & E(X_{n}-\mu_{n})(X_{2}-\mu_{2}) & \cdots & E(X_{n}-\mu_{n})^{2}
 \end{array}\right)
 \]
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -554,14 +726,25 @@ Every covariance matrix is positive semidefinite.
  
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Linear transformations
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Recall that if 
 \begin_inset Formula $Y=aX+b$
@@ -585,7 +768,16 @@ Var(Y) & =a^{2}\sigma^{2}
 \end_inset
 
 
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -657,6 +849,19 @@ Cov(\mathbf{Y}) & =\mathbf{B}\Lambda\mathbf{B}'
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -679,7 +884,7 @@ Let
 \end_inset
 
 .
- Then NOTE TO SELF: univariate first!
+ Then 
 \begin_inset Formula 
 \[
 \mathbf{Y}=\mu+\Lambda^{1/2}\mathbf{X}\sim N(\mu,\Lambda)
@@ -690,14 +895,25 @@ Let
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Multivariate normal distribution
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Multivariate normal 
 \begin_inset Formula $\mathbf{X}\sim N(\mu,\Lambda)$
@@ -712,7 +928,16 @@ Multivariate normal
 \end_inset
 
  random vector.
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -740,7 +965,16 @@ Three equivalent definitions:
 \end_inset
 
 .
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -759,7 +993,16 @@ Three equivalent definitions:
 \end_inset
 
 
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -774,6 +1017,19 @@ Three equivalent definitions:
 \[
 f_{\mathbf{X}}(\mathbf{x})=\left(\frac{1}{2\pi}\right)^{n/2}\frac{1}{\sqrt{\det\Lambda}}\exp\left\{ -\frac{1}{2}(\mathbf{x}-\mu)'\Lambda^{-1}(\mathbf{x}-\mu)\right\} 
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -808,14 +1064,25 @@ where
  is the correlation coefficient.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Properties of the normal distribution
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \family roman
@@ -913,6 +1180,31 @@ Linear combinations:
 \end_inset
 
 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -939,6 +1231,19 @@ The components of
 \[
 Y_{i}\sim N(\mu_{i},\Lambda_{ii})
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -1019,20 +1324,44 @@ where
 .
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Marginal normal may not be jointly normal
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 We know that 
 \begin_inset Formula $\mathbf{X}\sim N(\mu,\Lambda)$
 \end_inset
 
  implies that all marginals are normal.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1057,11 +1386,16 @@ The converse does not hold.
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Conditional distributions from 
 \begin_inset Formula $N(\mu,\Lambda)$
 \end_inset
@@ -1069,6 +1403,12 @@ Conditional distributions from
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Let 
 \begin_inset Formula $\left(\begin{array}{c}
@@ -1104,6 +1444,19 @@ Y|X=x\sim N\left[\mu_{y}+\rho\frac{\sigma_{y}}{\sigma_{x}}(x-\mu_{x}),\:\sigma_{
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1124,6 +1477,19 @@ linear
 \end_inset
 
 residual variance.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1190,20 +1556,44 @@ Let
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Independence and normality
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Correlation measures 
 \series bold
 linear
 \series default
  association (dependence).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1212,6 +1602,19 @@ In general:
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1220,6 +1623,19 @@ In the normal distribution:
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1241,6 +1657,19 @@ Remember that:
 
 the linear predictor is optimal.
  
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1258,21 +1687,41 @@ the linear predictor is optimal.
  are independent.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Principal components
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Let 
 \begin_inset Formula $\mathbf{C}\Lambda\mathbf{C}'=\mathbf{D}=diag(\lambda_{1},...,\lambda_{n})$
 \end_inset
 
 .
-\begin_inset VSpace bigskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1327,9 +1776,6 @@ so that the components of
 
 \end_layout
 
-\begin_layout EndFrame
-
-\end_layout
-
+\end_deeper
 \end_body
 \end_document

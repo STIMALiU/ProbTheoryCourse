@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass beamer
@@ -39,8 +39,10 @@
  % \fi
 }
 \usepackage{bbding}
+\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
-\options xcolor=svgnames
+\options handout
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -50,13 +52,13 @@
 \font_roman palatino
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -67,15 +69,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Index
 \shortcut idx
@@ -99,7 +110,7 @@
 \begin_body
 
 \begin_layout Title
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -124,24 +135,24 @@ Lecture 6
 \end_layout
 
 \begin_layout Author
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Mattias Villani
+Per Sidén
 \end_layout
 
 \end_inset
 
 
 \series bold
-Mattias Villani
+Per Sidén
 \end_layout
 
 \begin_layout Institute
 
 \series bold
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -171,14 +182,20 @@ Linköping University
 
 \end_layout
 
-\begin_layout EndFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
 
-\end_layout
-
-\begin_layout BeginFrame
+\begin_layout Plain Layout
 Overview Lecture 6
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Modes of convergence
 \end_layout
@@ -229,14 +246,25 @@ Central limit theorem
 Convergence of sums, differences and products.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Introduction
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 We are often interested in the 
 \series bold
@@ -309,7 +337,7 @@ central limit theorem
 
 \end_deeper
 \begin_layout Itemize
-The usual limit theorems from mathematics will not do.
+The usual limit theorems from calculus will not do.
  Need to consider that 
 \begin_inset Formula $X_{n}$
 \end_inset
@@ -321,14 +349,25 @@ random
  variable.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Markov and Chebyshev's inequalities
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -444,14 +483,25 @@ Pr\left(\left|Y-m\right|\geq\varepsilon\right)\leq\frac{\sigma^{2}}{\varepsilon^
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Almost sure convergence
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset Formula $X_{1},...X_{n}$
 \end_inset
@@ -542,11 +592,34 @@ For a given
 \begin_inset Formula $(n=1,2,...)$
 \end_inset
 
- and 
+
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ and
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
 \begin_inset Formula $X(\omega)$
 \end_inset
 
- are real numbers (not random variables).
  
 \family default
 \series default
@@ -559,15 +632,11 @@ For a given
 \uwave default
 \noun default
 \color inherit
-
-\begin_inset VSpace medskip
-\end_inset
-
-
+are real numbers (not random variables).
 \end_layout
 
 \begin_layout Itemize
-
+Almost sure convergence: check if the sequence of real numbers
 \family roman
 \series medium
 \shape up
@@ -579,23 +648,11 @@ For a given
 \uwave off
 \noun off
 \color none
-Almost sure convergence: check if the sequence of real numbers 
+ 
 \begin_inset Formula $X_{n}(\omega)$
 \end_inset
 
- converges to the real number 
-\begin_inset Formula $X(\omega)$
-\end_inset
-
- for all 
-\begin_inset Formula $\omega$
-\end_inset
-
-, except those 
-\begin_inset Formula $\omega$
-\end_inset
-
- that have probability zero.
+ 
 \family default
 \series default
 \shape default
@@ -607,44 +664,112 @@ Almost sure convergence: check if the sequence of real numbers
 \uwave default
 \noun default
 \color inherit
-
-\begin_inset VSpace medskip
+converges to the real number
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $X(\omega)$
 \end_inset
 
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+for all
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ 
+\begin_inset Formula $\omega$
+\end_inset
+
+, 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+except those 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\uuline off
+\uwave off
+\noun off
+\color none
+
+\begin_inset Formula $\omega$
+\end_inset
+
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+that have probability zero.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout Itemize
-Example: roll two dice (
-\begin_inset Formula $\Omega=\{(1,1),(1,2),...,(6,6)\}$
-\end_inset
+\begin_layout Frame
+\begin_inset Argument 4
+status open
 
-).
- Let 
-\begin_inset Formula $Y_{n}(\omega)$
-\end_inset
-
- be the sum of the two dice in the 
-\begin_inset Formula $n$
-\end_inset
-
-th roll.
- Let 
-\begin_inset Formula $X_{n}(\omega)=\frac{1}{n}\sum_{i=1}^{n}Y_{i}$
-\end_inset
-
-.
- [Show simulation in R.]
-\end_layout
-
-\begin_layout EndFrame
-
-\end_layout
-
-\begin_layout BeginFrame
+\begin_layout Plain Layout
 Convergence in probability
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -756,14 +881,25 @@ Pr\left(\left|X_{n}-1/2\right|\geq\varepsilon\right)\leq\frac{1}{4(2n+1)\varepsi
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Convergence in r-mean
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -879,14 +1015,25 @@ as
 .
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Convergence in distribution
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -935,6 +1082,19 @@ Denoted by
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -990,16 +1150,27 @@ as
  
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 More on convergence
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
-Theorem 6.1.2 tells us that if 
+Uniqueness: Theorem 6.2.1 tells us that if 
 \begin_inset Formula $X_{n}\rightarrow X$
 \end_inset
 
@@ -1016,7 +1187,16 @@ Theorem 6.1.2 tells us that if
 \end_inset
 
  for convergence in distribution).
-\begin_inset VSpace bigskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1055,14 +1235,25 @@ So
 .
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Convergence via transforms
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Let 
 \begin_inset Formula $X,X_{1},X_{2},...$
@@ -1086,7 +1277,16 @@ Let
 \end_inset
 
 ? 
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1124,10 +1324,6 @@ X_{n}\overset{d}{\rightarrow}X\;\text{\text{as \ensuremath{n\rightarrow\infty}}}
 \end_inset
 
 
-\begin_inset VSpace medskip
-\end_inset
-
-
 \end_layout
 
 \begin_layout Itemize
@@ -1151,7 +1347,16 @@ The converse also holds.
 \end_inset
 
 .
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -1162,14 +1367,25 @@ Similar theorems hold for the generating function and moment generating
  function (Th 6.4.1-6.4.3).
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Law of large numbers - some preliminaries
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Let 
 \begin_inset Formula $X_{1},..,X_{n}$
@@ -1218,14 +1434,25 @@ Var(\bar{X}_{n})=\frac{1}{n^{2}}\sum_{i=1}^{n}Var(X_{i})=\frac{\sigma^{2}}{n}.
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Law of large numbers
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 
 \series bold
@@ -1254,6 +1481,19 @@ Law of large numbers
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1272,6 +1512,19 @@ Pr\left(\left|\bar{X}_{n}-\mu\right|>\varepsilon\right)\leq\frac{\sigma^{2}/n}{\
 This version of the law of large numbers requires a population variance
  which is finite.
  Theorem 6.5.1 gives a version where only the mean needs to be finite.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1280,6 +1533,19 @@ The strong law of large numbers proves that
 \end_inset
 
  if the mean is finite.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1301,17 +1567,28 @@ The assumption of a finite mean is important.
 \end_inset
 
 .
- The law of large numbers does not hold since the Cauchy does not exist.
+ The law of large numbers does not hold.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Central limit theorem
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -1345,6 +1622,19 @@ Let
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -1353,6 +1643,19 @@ Proof by showing that
 \[
 \varphi_{\frac{\bar{X}_{n}-\mu}{\sigma/\sqrt{n}}}(t)\rightarrow\varphi_{N(0,1)}(t)=e^{-t^{2}/2}.
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -1376,26 +1679,33 @@ then as
 \begin_inset Formula 
 \begin{align*}
 F_{n}(x) & \overset{p}{\rightarrow}F(x)\\
-\sqrt{n}\left(F_{n}(x)-F(x)\right) & \overset{d}{\rightarrow}N\left(0,\sigma^{2}(x)\right)
+\sqrt{n}\left(F_{n}(x)-F(x)\right) & \overset{d}{\rightarrow}N\left(0,\sigma^{2}(x)\right),\,\sigma^{2}(x)=F(x)\left[1-F(x)\right].
 \end{align*}
 
 \end_inset
 
-where 
-\begin_inset Formula $\sigma^{2}(x)=F(x)\left[1-F(x)\right]$
-\end_inset
-
-.
-\end_layout
-
-\begin_layout EndFrame
 
 \end_layout
 
-\begin_layout BeginFrame
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Convergence of sums of sequences of RVs
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -1528,14 +1838,25 @@ Let
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Convergence of functions of convergent RVs
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -1683,9 +2004,6 @@ T_{n}=\frac{Z_{n}}{\sqrt{\frac{V_{n}}{n}}}\overset{d}{\sim}N(0,1)\;\text{ as }n\
 
 \end_layout
 
-\begin_layout EndFrame
-
-\end_layout
-
+\end_deeper
 \end_body
 \end_document

@@ -1,5 +1,5 @@
-#LyX 2.0 created this file. For more info see http://www.lyx.org/
-\lyxformat 413
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
 \begin_document
 \begin_header
 \textclass beamer
@@ -39,8 +39,9 @@
  % \fi
 }
 \usepackage{bbding}
+\usepackage{handoutWithNotes}
+%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
-\options xcolor=svgnames
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -50,13 +51,13 @@
 \font_roman palatino
 \font_sans default
 \font_typewriter default
+\font_math auto
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
-
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -67,15 +68,24 @@
 \use_hyperref false
 \papersize default
 \use_geometry true
-\use_amsmath 1
-\use_esint 0
-\use_mhchem 1
-\use_mathdots 1
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
 \cite_engine basic
+\cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
 \suppress_date false
+\justification true
 \use_refstyle 0
 \index Index
 \shortcut idx
@@ -99,7 +109,7 @@
 \begin_body
 
 \begin_layout Title
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -124,24 +134,24 @@ Lecture 4
 \end_layout
 
 \begin_layout Author
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-Mattias Villani
+Per Sidén
 \end_layout
 
 \end_inset
 
 
 \series bold
-Mattias Villani
+Per Sidén
 \end_layout
 
 \begin_layout Institute
 
 \series bold
-\begin_inset Argument
+\begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
@@ -171,30 +181,55 @@ Linköping University
 
 \end_layout
 
-\begin_layout EndFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
 
-\end_layout
-
-\begin_layout BeginFrame
+\begin_layout Plain Layout
 Overview Lecture 4
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Order statistics
 \end_layout
 
 \begin_layout Itemize
-Probability in data mining
+Distribution of max and min
 \end_layout
 
-\begin_layout EndFrame
+\begin_layout Itemize
+Marginal distribution of order statistics
+\end_layout
+
+\begin_layout Itemize
+Joint distribution of order statistics
+\end_layout
+
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Order statistics
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 Finding the distribution of 
 \series bold
@@ -216,21 +251,22 @@ extremes
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
-\begin_layout Itemize
-
-\series bold
-Median
-\series default
-: 
-\begin_inset Formula $Pr(X\leq m)=1/2$
-\end_inset
-
-.
-\end_layout
-
 \begin_layout Itemize
 
 \series bold
@@ -241,7 +277,33 @@ Range
 \end_inset
 
 .
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Applications in extreme value theory
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -275,6 +337,19 @@ X_{(k)}=\text{the }k\mbox{\text{th} smallest of }X_{1},X_{2},...,X_{n}
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset VSpace medskip
 \end_inset
 
@@ -297,6 +372,19 @@ The order statistics:
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -311,14 +399,25 @@ Even if the original sample
  are not clearly not.
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Distribution of the maximum
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -335,6 +434,19 @@ The distribution of the maximum
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
 F_{X_{(n)}}(x) & =P\left(X_{1}\leq x,X_{2}\leq x,...,X_{n}\leq x\right)\\
@@ -343,8 +455,38 @@ F_{X_{(n)}}(x) & =P\left(X_{1}\leq x,X_{2}\leq x,...,X_{n}\leq x\right)\\
 
 \end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 The density of the maximum 
 \begin_inset Formula $X_{(n)}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -352,6 +494,19 @@ The density of the maximum
 \[
 f_{X_{(n)}}(x)=n\left[F(x)\right]^{n-1}f(x)
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -381,6 +536,18 @@ Let
 \end_inset
 
 .
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
  Solution: If 
 \begin_inset Formula $X\sim L(a)$
 \end_inset
@@ -389,19 +556,19 @@ Let
 \begin_inset Formula 
 \[
 F(x)=\begin{cases}
-\frac{1}{2}\exp\left(\frac{x}{b}\right) & \text{ if }x<0\\
-1-\frac{1}{2}\exp\left(-\frac{x}{b}\right) & \text{ if }x\geq0
+\frac{1}{2}\exp\left(\frac{x}{a}\right) & \text{ if }x<0\\
+1-\frac{1}{2}\exp\left(-\frac{x}{a}\right) & \text{ if }x\geq0
 \end{cases}
 \]
 
 \end_inset
 
-so 
+
 \begin_inset Formula 
 \[
 F_{X_{(n)}}(x)=\left[F(x)\right]^{n}=\begin{cases}
-\frac{1}{2^{n}}\exp\left(\frac{nx}{b}\right) & \text{ if }x<0\\
-\left[1-\frac{1}{2}\exp\left(-\frac{x}{b}\right)\right]^{n} & \text{ if }x\geq0
+\frac{1}{2^{n}}\exp\left(\frac{nx}{a}\right) & \text{ if }x<0\\
+\left[1-\frac{1}{2}\exp\left(-\frac{x}{a}\right)\right]^{n} & \text{ if }x\geq0
 \end{cases}
 \]
 
@@ -410,14 +577,25 @@ F_{X_{(n)}}(x)=\left[F(x)\right]^{n}=\begin{cases}
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Distribution of the minimum
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -434,6 +612,19 @@ The distribution of the minimum
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Formula 
 \begin{align*}
 F_{X_{(1)}}(x) & =1-P\left(X_{(1)}>x\right)\\
@@ -443,8 +634,38 @@ F_{X_{(1)}}(x) & =1-P\left(X_{(1)}>x\right)\\
 
 \end_inset
 
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
 The density of the minimum 
 \begin_inset Formula $X_{(n)}$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -452,6 +673,19 @@ The density of the minimum
 \[
 f_{X_{(1)}}(x)=n\left[1-F(x)\right]^{n-1}f(x)
 \]
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
 
 \end_inset
 
@@ -472,7 +706,7 @@ PencilRight]
 \end_inset
 
 Let 
-\begin_inset Formula $X_{1},...,X_{n}\sim Exp(a)$
+\begin_inset Formula $X_{1},...,X_{n}\sim Exp(\nicefrac{1}{a})$
 \end_inset
 
 .
@@ -485,14 +719,19 @@ Let
 \end_inset
 
 ?
-\series bold
+\begin_inset ERT
+status open
 
-\begin_inset Newline newline
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
-Solution
-\series default
-: We have 
+ 
 \begin_inset Formula 
 \[
 F(x)=1-e^{-ax}
@@ -500,7 +739,7 @@ F(x)=1-e^{-ax}
 
 \end_inset
 
-so
+
 \begin_inset Formula 
 \[
 f_{X_{(1)}}(x)=n\left[e^{-ax}\right]^{n-1}ae^{-ax}=ane^{-anx}
@@ -509,7 +748,7 @@ f_{X_{(1)}}(x)=n\left[e^{-ax}\right]^{n-1}ae^{-ax}=ane^{-anx}
 \end_inset
 
 so 
-\begin_inset Formula $X_{(1)}\sim Exp(an)$
+\begin_inset Formula $X_{(1)}\sim Exp(\nicefrac{1}{an})$
 \end_inset
 
  and 
@@ -520,11 +759,16 @@ so
  [Serial electric circuits]
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Marginal distribution of X
 \begin_inset Formula $_{(k)}$
 \end_inset
@@ -532,6 +776,12 @@ Marginal distribution of X
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -575,6 +825,41 @@ where
 \end_layout
 
 \begin_layout Itemize
+In particular, if 
+\begin_inset Formula $X\sim U\left(0,1\right)$
+\end_inset
+
+, then 
+\begin_inset Formula $X_{\left(k\right)}\sim\beta\left(k,n+1-k\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Marginal distribution of X
+\begin_inset Formula $_{(k)}$
+\end_inset
+
+ - example
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
 \begin_inset ERT
 status open
 
@@ -596,12 +881,26 @@ Let the individual jumps of
 \end_inset
 
  distributed.
+ Three jumps per athlete.
  What is the probability that the recorded score of the silver medalist
  is longer than 
 \begin_inset Formula $c$
 \end_inset
 
  meters? 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -644,21 +943,41 @@ F_{Y_{(n-1)}}(y)=F_{\beta(n-1,2)}\left(\left(\frac{y-a}{b-a}\right)^{3}\right)
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Joint distribution of the extremes and range
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 So far: only 
 \emph on
 marginal
 \emph default
  distributions of order statistics.
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
 \end_inset
 
 
@@ -695,7 +1014,27 @@ n(n-1)\left(F(y)-F(x)\right)^{n-2}f(y)f(x) & \text{ if }x<y\\
 \end_inset
 
 
-\begin_inset VSpace medskip
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+Prove this.
+ page 106 in the book
+\end_layout
+
 \end_inset
 
 
@@ -710,7 +1049,11 @@ From
 \begin_inset Formula $R_{n}=X_{(n)}-X_{(1)}$
 \end_inset
 
- by the transformation theorem.
+ by the transformation theorem, using 
+\begin_inset Formula $U=X_{\left(1\right)}$
+\end_inset
+
+.
 \begin_inset VSpace medskip
 \end_inset
 
@@ -747,14 +1090,25 @@ f_{R_{n}}(r)=n(n-1)\int_{-\infty}^{\infty}\left(F(u+r)-F(u)\right)^{n-2}f(u+r)f(
 
 \end_layout
 
-\begin_layout EndFrame
+\end_deeper
+\begin_layout Separator
 
 \end_layout
 
-\begin_layout BeginFrame
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
 Joint distribution of order statistics
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
 \begin_layout Itemize
 \begin_inset ERT
 status open
@@ -778,6 +1132,19 @@ n!\prod_{k=1}^{n}f(y_{k}) & \text{ if }y_{1}<y_{2}<\cdots<y_{n}\\
 \end_inset
 
 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
@@ -787,11 +1154,71 @@ The marginal densities of any order variable can be derived by integrating
 \end_inset
 
  in the usual fashion.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
 \end_layout
 
-\begin_layout EndFrame
+\end_inset
+
 
 \end_layout
 
+\begin_layout Itemize
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+[
+\backslash
+PencilRight]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $X_{1},X_{2}\sim Exp\left(1\right).$
+\end_inset
+
+What is the density of 
+\begin_inset Formula $\left(X_{\left(1\right)},X_{\left(2\right)}\right)$
+\end_inset
+
+ and of 
+\begin_inset Formula $X_{\left(1\right)}$
+\end_inset
+
+?
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{eqnarray*}
+f_{X_{\left(1\right)},X_{\left(2\right)}}\left(y_{1},y_{2}\right) & = & 2e^{-y_{1}}e^{-y_{2}},\, y_{1}<y_{2}\\
+f_{X_{\left(1\right)}}\left(y_{1}\right) & = & \int_{y_{1}}^{\infty}2e^{-y_{1}}e^{-y_{2}}dy_{2}=2e^{-2y_{1}}
+\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \end_body
 \end_document
