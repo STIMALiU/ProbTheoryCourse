@@ -1,0 +1,441 @@
+#LyX 2.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 474
+\begin_document
+\begin_header
+\textclass amsart
+\begin_preamble
+\setcounter{MaxMatrixCols}{10}
+\newtheorem{theorem}{Theorem}[section]
+\theoremstyle{plain}
+\newtheorem{acknowledgement}{Acknowledgement}
+\newtheorem{axiom}{Axiom}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{conjecture}{Conjecture}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{remark}{Remark}[section]
+\numberwithin{equation}{section}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_math auto
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 11
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine natbib
+\cite_engine_type authoryear
+\biblio_style plainnat
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.7cm
+\topmargin 3.2cm
+\rightmargin 2.7cm
+\bottommargin 3.2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Seminar Exercises in Probability Theory 732A63
+\end_layout
+
+\begin_layout Author
+Per Sidén
+\end_layout
+
+\begin_layout Section*
+5.
+ Multivariate Normal Distribution
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Exercise 5.1 (5.4 in Gut's book)
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+The random vector 
+\begin_inset Formula $\left(X,Y\right)^{\prime}$
+\end_inset
+
+ has a two-dimensional normal distribution with 
+\begin_inset Formula $Var\left(X\right)=Var\left(Y\right)$
+\end_inset
+
+.
+ Show that 
+\begin_inset Formula $X+Y$
+\end_inset
+
+ and 
+\begin_inset Formula $X-Y$
+\end_inset
+
+ are independent random variables.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Exercise 5.2 (5.12 in Gut's book)
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Let 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+ and 
+\begin_inset Formula $X_{2}$
+\end_inset
+
+ be independent, 
+\begin_inset Formula $N\left(0,1\right)$
+\end_inset
+
+-distributed random variables.
+ Set 
+\begin_inset Formula $Y_{1}=X_{1}-3X_{2}+2$
+\end_inset
+
+ and 
+\begin_inset Formula $Y_{2}=2X_{1}-X_{2}-1$
+\end_inset
+
+.
+ Determine the distribution of
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(a) 
+\begin_inset Formula $\mathbf{Y}$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(b) 
+\begin_inset Formula $Y_{1}|Y_{2}=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exercise 5.3 (5.18 in Gut's book)
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+The random vector 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ has a three-dimensional normal distribution with expectation 
+\begin_inset Formula $\mathbf{0}$
+\end_inset
+
+ and covariance matrix 
+\begin_inset Formula $\boldsymbol{\Lambda}$
+\end_inset
+
+ given by
+\begin_inset Formula 
+\[
+\boldsymbol{\Lambda}=\left(\begin{array}{ccc}
+1 & 2 & -1\\
+2 & 4 & 0\\
+-1 & 0 & 7
+\end{array}\right).
+\]
+
+\end_inset
+
+Find the distribution of 
+\begin_inset Formula $X_{3}$
+\end_inset
+
+ given that 
+\begin_inset Formula $X_{1}=1$
+\end_inset
+
+.
+
+\series bold
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Exercise 5.4 (5.20 in Gut's book)
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+The random vector 
+\begin_inset Formula $\mathbf{X}$
+\end_inset
+
+ has a three-dimensional normal distribution with mean vector 
+\begin_inset Formula $\boldsymbol{\mu}=\mathbf{0}$
+\end_inset
+
+ and covariance matrix
+\begin_inset Formula 
+\[
+\boldsymbol{\Lambda}=\left(\begin{array}{ccc}
+3 & -2 & 1\\
+-2 & 2 & 0\\
+1 & 0 & 1
+\end{array}\right).
+\]
+
+\end_inset
+
+Find the distribution of 
+\begin_inset Formula $X_{1}+X_{3}$
+\end_inset
+
+ given that
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(a) 
+\begin_inset Formula $X_{2}=0,$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(b) 
+\begin_inset Formula $X_{2}=2$
+\end_inset
+
+.
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exercise 5.5* (5.33 in Gut's book)
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ be random variables, such that
+\begin_inset Formula 
+\[
+Y|X=x\sim N\left(x,\tau^{2}\right)\,\,\text{with}\,\, X\sim N\left(\mu,\sigma^{2}\right).
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(a) Compute 
+\begin_inset Formula $E\left(Y\right),$
+\end_inset
+
+ 
+\begin_inset Formula $Var\left(Y\right)$
+\end_inset
+
+ and 
+\begin_inset Formula $Cov\left(X,Y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(b) Determine the distribution of the vector 
+\begin_inset Formula $\left(X,Y\right)^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(c) Determine the (posterior) distribution of 
+\begin_inset Formula $X|Y=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset space ~
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exercise 5.6* (5.34 in Gut's book)
+\begin_inset Newline newline
+\end_inset
+
+
+\series default
+Let 
+\begin_inset Formula $X$
+\end_inset
+
+ and 
+\begin_inset Formula $Y$
+\end_inset
+
+ be jointly normal with means 
+\begin_inset Formula $0$
+\end_inset
+
+, variances 
+\begin_inset Formula $1$
+\end_inset
+
+, and correlation coefficient 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+ Compute the moment generating function of 
+\begin_inset Formula $X\cdot Y$
+\end_inset
+
+ for 
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(a) 
+\begin_inset Formula $\rho=0$
+\end_inset
+
+, and
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+(b) general 
+\begin_inset Formula $\rho$
+\end_inset
+
+.
+\end_layout
+
+\end_body
+\end_document

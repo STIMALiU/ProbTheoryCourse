@@ -40,7 +40,7 @@
 }
 \usepackage{bbding}
 \usepackage{handoutWithNotes}
-%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
+\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
 \options handout
 \use_default_options false
@@ -1054,19 +1054,6 @@ X_{n}\sim U(\{0,1,2,...,n\})
 \end_inset
 
 
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause
-\end_layout
-
-\end_inset
-
-
 \begin_inset Note Note
 status open
 
@@ -1118,7 +1105,7 @@ and
 
 \begin_inset Formula 
 \[
-P\left(X_{n+1}=n+1|X_{n}=n,P=p\right)=p
+P\left(X_{n+1}=k+1|X_{n}=k,P=p\right)=p
 \]
 
 \end_inset
@@ -1151,7 +1138,7 @@ Conditional of
 
 \begin_inset Formula 
 \[
-P(X_{n+1}=n+1|X_{n}=n)=\frac{n+1}{n+2}\rightarrow1\text{ as }n\rightarrow\infty
+P(X_{n+1}=k+1|X_{n}=k)=\frac{k+1}{n+2}
 \]
 
 \end_inset

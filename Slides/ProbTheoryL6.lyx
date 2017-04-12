@@ -1,7 +1,9 @@
-#LyX 2.1 created this file. For more info see http://www.lyx.org/
-\lyxformat 474
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
 \begin_document
 \begin_header
+\save_transient_properties true
+\origin unavailable
 \textclass beamer
 \begin_preamble
 \setcounter{MaxMatrixCols}{10}
@@ -42,23 +44,22 @@
 \usepackage{handoutWithNotes}
 %\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
-\options handout
 \use_default_options false
 \maintain_unincluded_children false
 \language english
 \language_package default
 \inputencoding auto
 \fontencoding global
-\font_roman palatino
-\font_sans default
-\font_typewriter default
-\font_math auto
+\font_roman "palatino" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
 \font_osf false
-\font_sf_scale 100
-\font_tt_scale 100
+\font_sf_scale 100 100
+\font_tt_scale 100 100
 \graphics default
 \default_output_format default
 \output_sync 0
@@ -193,11 +194,19 @@ Overview Lecture 6
 \end_inset
 
 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
 Modes of convergence
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -247,7 +256,10 @@ Convergence of sums, differences and products.
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -259,6 +271,10 @@ status open
 Introduction
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -308,6 +324,10 @@ Example: what can we say about the sample mean
 \end_inset
 
  in large samples? 
+\begin_inset Separator latexpar
+\end_inset
+
+
 \end_layout
 
 \begin_deeper
@@ -350,7 +370,10 @@ random
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -362,6 +385,10 @@ status open
 Markov and Chebyshev's inequalities
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -484,7 +511,10 @@ Pr\left(\left|Y-m\right|\geq\varepsilon\right)\leq\frac{\sigma^{2}}{\varepsilon^
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -496,6 +526,10 @@ status open
 Almost sure convergence
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -752,7 +786,10 @@ that have probability zero.
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -764,6 +801,10 @@ status open
 Convergence in probability
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -882,7 +923,10 @@ Pr\left(\left|X_{n}-1/2\right|\geq\varepsilon\right)\leq\frac{1}{4(2n+1)\varepsi
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -894,6 +938,10 @@ status open
 Convergence in r-mean
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1016,7 +1064,10 @@ as
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1028,6 +1079,10 @@ status open
 Convergence in distribution
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1151,7 +1206,10 @@ as
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1163,6 +1221,10 @@ status open
 More on convergence
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1236,7 +1298,10 @@ So
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1248,6 +1313,10 @@ status open
 Convergence via transforms
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1363,12 +1432,15 @@ pause
 \end_layout
 
 \begin_layout Itemize
-Similar theorems hold for the generating function and moment generating
- function (Th 6.4.1-6.4.3).
+Similar theorems hold for the probability generating function and moment
+ generating function (Th 6.4.1-6.4.3).
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1380,6 +1452,10 @@ status open
 Law of large numbers - some preliminaries
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1435,7 +1511,10 @@ Var(\bar{X}_{n})=\frac{1}{n^{2}}\sum_{i=1}^{n}Var(X_{i})=\frac{\sigma^{2}}{n}.
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1447,6 +1526,10 @@ status open
 Law of large numbers
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1571,7 +1654,10 @@ The assumption of a finite mean is important.
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1583,6 +1669,10 @@ status open
 Central limit theorem
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1688,7 +1778,10 @@ F_{n}(x) & \overset{p}{\rightarrow}F(x)\\
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1700,6 +1793,10 @@ status open
 Convergence of sums of sequences of RVs
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1839,7 +1936,10 @@ Let
 \end_layout
 
 \end_deeper
-\begin_layout Separator
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
 
 \end_layout
 
@@ -1851,6 +1951,10 @@ status open
 Convergence of functions of convergent RVs
 \end_layout
 
+\end_inset
+
+
+\begin_inset Separator latexpar
 \end_inset
 
 
@@ -1996,7 +2100,7 @@ Let
  Show that
 \begin_inset Formula 
 \[
-T_{n}=\frac{Z_{n}}{\sqrt{\frac{V_{n}}{n}}}\overset{d}{\sim}N(0,1)\;\text{ as }n\rightarrow\infty.
+T_{n}=\frac{Z_{n}}{\sqrt{\frac{V_{n}}{n}}}\overset{d}{\rightarrow}N(0,1)\;\text{ as }n\rightarrow\infty.
 \]
 
 \end_inset

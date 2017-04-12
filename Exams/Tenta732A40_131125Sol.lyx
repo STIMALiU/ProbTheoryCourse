@@ -1212,8 +1212,8 @@ E(Y)=EE(Y|\theta)=E\left[n\theta\right]=\frac{n}{4}
 V(Y) & =E\left[V(Y|\theta)\right]+V\left[E(Y|\theta)\right]\\
  & =E\left[n\theta(1-\theta)\right]+V\left[n\theta\right]\\
  & =nE(\theta)-nE(\theta^{2})+\frac{3n^{2}}{80}\\
- & =\frac{n}{4}-n\left(3/80+\left(\frac{n}{4}\right)^{2}\right)+\frac{3n^{2}}{80}\\
- & =\frac{n\left(-5n^{2}+3n+17\right)}{80}.
+ & =\frac{n}{4}-n\left(3/80+\left(\frac{1}{4}\right)^{2}\right)+\frac{3n^{2}}{80}\\
+ & =\frac{n\left(3n+12\right)}{80}.
 \end{align*}
 
 \end_inset
@@ -1269,7 +1269,7 @@ status open
 
 \begin_inset Formula 
 \[
-E^{tY}=E\left(e^{tY}|\theta\right)=E\left(1-\theta+\theta e^{t}\right)=\frac{3}{4}+\frac{1}{4}e^{t}
+Ee^{tY}=EE\left(e^{tY}|\theta\right)=E\left(1-\theta+\theta e^{t}\right)=\frac{3}{4}+\frac{1}{4}e^{t}
 \]
 
 \end_inset

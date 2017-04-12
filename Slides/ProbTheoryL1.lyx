@@ -39,8 +39,9 @@
  % \fi
 }
 \usepackage{handoutWithNotes}
-%\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
+\pgfpagesuselayout{4 on 1 with notes}[a4paper,border shrink=5mm]
 \end_preamble
+\options handout
 \use_default_options false
 \maintain_unincluded_children false
 \language english
@@ -240,10 +241,9 @@ Course Outline
 \begin_layout Itemize
 
 \series bold
-Lectures
+6 Lectures
 \series default
 : theory interleaved with illustrative solved examples.
- Responsible: Per.
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -253,10 +253,9 @@ Lectures
 \begin_layout Itemize
 
 \series bold
-Exercises/Seminars
+6 Seminars
 \series default
 : problem solving sessions + open discussions.
- Responsible: Per and You.
 \begin_inset VSpace bigskip
 \end_inset
 
@@ -266,35 +265,9 @@ Exercises/Seminars
 \begin_layout Itemize
 
 \series bold
-Exam
+1 Recap session
 \series default
-: written exam with formula sheet, but no book or notes.
- Responsible: You!
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-pause
-\end_layout
-
-\end_inset
-
-
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Itemize
-
-\series bold
-Course homepage
-\series default
-: https://www.ida.liu.se/~732A40/ (select english)
+: Recap of the course.
 \end_layout
 
 \end_deeper
@@ -428,6 +401,267 @@ pause
 
 \begin_layout Itemize
 Chapter 6: Convergence
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Examination
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The examination consists of a written exam with max score 20 points and
+ grade limits:
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+A: 
+\series default
+19p, 
+\series bold
+B: 
+\series default
+17p, 
+\series bold
+C: 
+\series default
+14p, 
+\series bold
+D: 
+\series default
+12p, 
+\series bold
+E: 
+\series default
+10p.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+You are 
+\series bold
+allowed to bring
+\series default
+ a pocket calculator to the exam, but no books or notes.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The following will be 
+\series bold
+distributed with the exam
+\series default
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Table with common formulas and moment generating functions (available on
+ the course homepage).
+\end_layout
+
+\begin_layout Itemize
+Table of integrals (available on the course homepage).
+\end_layout
+
+\begin_layout Itemize
+Table with distributions from Appendix B in the course book.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Active participation in the seminars gives 
+\series bold
+bonus points
+\series default
+ to the exam.
+ A student who earns the bonus points will add 2 points to the exam result
+ in order to reach grade E, D or C, 1 point in order to reach grade B, but
+ no points in order to reach grade A.
+ Required exam results for a student who earned the bonus points for respective
+ grade:
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+A: 
+\series default
+19p, 
+\series bold
+B: 
+\series default
+16p, 
+\series bold
+C: 
+\series default
+12p, 
+\series bold
+D: 
+\series default
+10p, 
+\series bold
+E: 
+\series default
+8p.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Bonus points
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+To earn the bonus points a student must be present and active in at least
+ 5 of the 6 seminars, so maximally one seminar can be missed regardless
+ of reasons.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Active participation means that the student has made an attempt to solve
+ every exercise indicated in the timetable before respective seminar and
+ is able to present his/her solutions on the board during the seminar.
+ Active participation also means that the student gives help and comments
+ to the classmates' presented solutions.
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+In the seminars, for each exercise a student will be randomly selected to
+ present his/her solution (without replacement).
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Exercises marked with * are a bit harder and it is ok if you are not able
+ to solve these.
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Course homepage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+https://www.ida.liu.se/~732A63/ (select english)
 \end_layout
 
 \end_deeper
