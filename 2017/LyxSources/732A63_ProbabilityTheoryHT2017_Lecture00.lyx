@@ -435,6 +435,82 @@ Chapter 6: Convergence
 
 \end_layout
 
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Additional (more advaned) reading
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Grimmet, G. R. and Stirzaker, D. R.
+ 
+\shape italic
+Probability and Random Processes
+\shape default
+.
+ 
+ Oxford University Press, Oxford, 2001.
+ ISBN 978-0198572220
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+
+
+
+\begin_deeper
+\begin_layout Itemize
+Williams, D.
+ 
+\shape italic
+Probability with Martingales
+\shape default
+.
+ 
+ Cambridge University Press, Cambridge, 1991.
+ ISBN 978-0-521-40605-5
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pause
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Separator
+
+\end_layout
+
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -654,7 +730,7 @@ on Sarah's decision they might or might not be solved at the seminar sessions.
 status open
 
 \begin_layout Plain Layout
-Course homepage (one of the alternatives)
+Course homepage and materials
 \end_layout
 
 \end_inset
@@ -665,19 +741,17 @@ Course homepage (one of the alternatives)
 \begin_deeper
 
 \begin_layout Itemize
-GitHub: STIMALiU/ProbTheoryCoure
+GitHub: STIMALiU/ProbTheoryCoure (material)
 \end_layout
 \begin_layout default
-XOR
 \end_layout
 \begin_layout Itemize
-https://www.ida.liu.se/~732A63/ (select English)
+LISAM (materials and messages) 
 \end_layout
 \begin_layout default
-XOR
 \end_layout
 \begin_layout Itemize
-LISAM
+https://www.ida.liu.se/~732A63/ (select English) 2016 material, not updated for 2017
 \end_layout
 
 \end_deeper
